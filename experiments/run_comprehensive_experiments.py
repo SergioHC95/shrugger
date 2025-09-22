@@ -18,7 +18,7 @@ import warnings
 from datetime import datetime
 from pathlib import Path
 
-IN_COLAB = importlib.util.find_spec("google.colab") is not None
+IN_COLAB = False  # Set to False for local environment
 
 if IN_COLAB:
     # Install required packages for Colab
@@ -62,10 +62,19 @@ from tqdm.auto import tqdm  # Use tqdm.auto for Colab compatibility
 # Suppress tqdm warnings about ipywidgets
 warnings.filterwarnings("ignore", category=UserWarning, module="tqdm")
 
+# Add project root to Python path
+if not IN_COLAB:
+    # Get the absolute path to the project root
+    project_root = Path(__file__).parent.parent.absolute()
+    
+    # Add to Python path if not already there
+    if str(project_root) not in sys.path:
+        sys.path.insert(0, str(project_root))
+        print(f"Added {project_root} to Python path")
+
 # Import abstainer modules with error handling
 try:
     from abstainer import get_questions_by_filter, load_model, run_combined_experiment
-
     print("Successfully imported abstainer modules")
 except ImportError as e:
     print(f"Error importing abstainer modules: {e}")
