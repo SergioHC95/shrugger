@@ -1,5 +1,7 @@
 # Mechanistic Steering for Hallucination Suppression
 
+### Turning confident nonsense into honest hesitations — `¯\_(ツ)_/¯` *#MoreShrugLessSmug*
+
 ## Detailed Report
 See [`REPORT.md`](REPORT.md) for an executive summary ([`Comprehensive_Report_OLD.pdf`](Comprehensive_Report_OLD.pdf) for more details)
 
