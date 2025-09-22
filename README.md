@@ -125,7 +125,7 @@ A Python package for analyzing abstention directions in language models using Fi
 
 ## Main Scripts
 
-- `experiments/run_comprehensive_experiments.py`: Run comprehensive experiments across configurations (works in Colab and local)
+- `experiments/run_comprehensive_experiments.py`: Run experiments across configurations (works in Colab and local)
 - `experiments/run_metrics_analysis.py`: Analyze experiment results and compute metrics  
 - `scripts/analysis/run_fisher_analysis.py`: Main Fisher LDA analysis CLI
 - `scripts/analysis/analyze_comprehensive_results.py`: Analyze comprehensive experiment results
