@@ -3,13 +3,13 @@
 ## Detailed Report
 See [`REPORT.md`](REPORT.md) for an executive summary ([`Comprehensive_Report_OLD.pdf`](Comprehensive_Report_OLD.pdf) for more details)
 
-| ![Figure 1: Steer projections](figs/l22train.png) | ![Figure 2: Layer performance](figs/l22trainclass.png) | ![Figure 3: ROC on dev set](figs/roc.png) |
+| ![Fig. 1: Steer projections](figs/l22train.png) | ![Fig. 2: Layer performance](figs/l22trainclass.png) | ![Fig. 3: ROC on dev](figs/roc.png) |
 | :-- | :-- | :-- |
-| *Figure 1: Steer projections* | *Figure 2: Layer performance* | *Figure 3: ROC on dev set* |
+| *Fig. 1: Steer projections* | *Fig. 2: Layer performance* | *Fig. 3: ROC on dev* |
 
-| ![Figure 4: Prompt abstention scores](outputs/figures/ca_scores_by_form.png) | ![Figure 5: Prompt accuracy scores](outputs/figures/accuracy_by_form_and_question_type.png) |
+| ![Fig. 4: Prompt abstention scores](outputs/figures/ca_scores_by_form.png) | ![Fig. 5: Prompt accuracy scores](outputs/figures/accuracy_by_form_and_question_type.png) |
 | :-- | :-- |
-| *Figure 4: Prompt sensitivity 1* | *Figure 5: Prompt sensitivity 2* |
+| *Fig. 4: Prompt abstention scores* | *Fig. 5: Prompt accuracy scores* |
 
 
 
