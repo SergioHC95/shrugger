@@ -53,7 +53,7 @@ ENV/
 
 # Ignore all TSV files except curated_questions.tsv in dataset/data
 *.tsv
-!abstainer/dataset/data/curated_questions.tsv
+!shrugger/dataset/data/curated_questions.tsv
 
 # Logs
 *.log

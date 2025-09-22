@@ -1,4 +1,4 @@
-# abstainer/src/prompts.py
+# shrugger/src/prompts.py
 def build_quantitative_prompt(
     question: str,
     confidence_threshold: float,

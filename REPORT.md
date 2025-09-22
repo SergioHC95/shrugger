@@ -24,7 +24,7 @@ LLMs often produce **confident falsehoods** instead of abstaining. Accuracy‑ce
 
 ### Dataset
 
-LLM-assisted generation and multi-stage curation using the system and user prompts in [abstainer/dataset/prompts](abstainer/dataset/prompts) ($>95\%$ cross-model accuracy).
+LLM-assisted generation and multi-stage curation using the system and user prompts in [shrugger/dataset/prompts](shrugger/dataset/prompts) ($>95\%$ cross-model accuracy).
 Factual **Yes/No/Unanswerable** items spanning **14 subjects** and **5 difficulty tiers**, each with a **Likert-style** confidence grade and an explicit **IDK/Unsure** option. This reductionist format minimizes confounds from arithmetic, multi-hop reasoning, and option-elimination strategies, yielding a **clean behavioral signal** of epistemic uncertainty. The Likert scale is verbalized across multiple prompt variants to enhance abstention elicitation and assess robustness. **General structure** (label-token choices and permutations controlled):
 
 * [A] Certainly yes
@@ -66,7 +66,7 @@ High **HEDGE** indicates indecision between Yes/No **while avoiding IDK**.
 
 ### Empirics
 
-**Hedging is rare**, while **CA** is highly **prompt‑sensitive**; variants **V1/V2** (see [prompts.py](/abstainer/src/prompts.py)) elicit the clearest abstention signal and are used for mechanistic analysis.
+**Hedging is rare**, while **CA** is highly **prompt‑sensitive**; variants **V1/V2** (see [prompts.py](/shrugger/src/prompts.py)) elicit the clearest abstention signal and are used for mechanistic analysis.
 
 
 ## Methods

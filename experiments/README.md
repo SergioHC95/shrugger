@@ -31,7 +31,7 @@ python experiments/run_metrics_analysis.py
 ## Requirements
 
 Make sure you have:
-1. Set up the conda environment: `conda env create -f environment.yml && conda activate abstainer`
+1. Set up the conda environment: `conda env create -f environment.yml && conda activate shrugger`
 2. Created a `config.json` file (see `CONFIG.md` in project root)
 3. Sufficient disk space for experiment results
 

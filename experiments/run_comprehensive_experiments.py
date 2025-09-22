@@ -72,14 +72,14 @@ if not IN_COLAB:
         sys.path.insert(0, str(project_root))
         print(f"Added {project_root} to Python path")
 
-# Import abstainer modules with error handling
+# Import shrugger modules with error handling
 try:
-    from abstainer import get_questions_by_filter, load_model, run_combined_experiment
-    print("Successfully imported abstainer modules")
+    from shrugger import get_questions_by_filter, load_model, run_combined_experiment
+    print("Successfully imported shrugger modules")
 except ImportError as e:
-    print(f"Error importing abstainer modules: {e}")
+    print(f"Error importing shrugger modules: {e}")
     print(
-        "Make sure you're in the correct directory and the abstainer package is available"
+        "Make sure you're in the correct directory and the shrugger package is available"
     )
     sys.exit(1)
 

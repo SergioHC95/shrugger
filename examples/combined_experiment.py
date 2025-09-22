@@ -4,7 +4,7 @@
 import json
 from pathlib import Path
 
-from abstainer import (
+from shrugger import (
     get_questions_by_filter,
     load_combined_results,
     load_model,

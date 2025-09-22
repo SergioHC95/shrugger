@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "abstainer"
+name = "shrugger"
 version = "0.1.0"
 description = "Fisher LDA analysis for abstention directions in language models"
 authors = [
@@ -58,7 +58,7 @@ analysis = [
 
 [tool.setuptools.packages.find]
 where = ["."]  # look for packages in the current directory
-include = ["abstainer*"]  # only include abstainer package
+include = ["shrugger*"]  # only include shrugger package
 exclude = ["results*", "tests*", "examples*", "scripts*"]  # exclude non-package directories
 
 # Note: Scripts are run directly from their locations
@@ -109,9 +109,9 @@ ignore = [
 "tests/**/*" = ["B011", "E402"]  # assert_raises and import order (they modify sys.path)
 "*.ipynb" = ["F403", "F405", "E402", "F821", "B018", "E722", "B007", "B006", "W293", "C416", "F811", "E741", "F401"]  # Allow common notebook patterns
 # Skip Colab files entirely - they contain Jupyter magic commands
-"abstainer/src/**" = ["F401"]  # Allow unused imports in source modules (may be used by notebooks)
-"abstainer/__init__.py" = ["F401", "F403"]  # Allow star imports and unused imports in package init
-"abstainer/src/__init__.py" = ["F403"]  # Allow star imports in src init
+"shrugger/src/**" = ["F401"]  # Allow unused imports in source modules (may be used by notebooks)
+"shrugger/__init__.py" = ["F401", "F403"]  # Allow star imports and unused imports in package init
+"shrugger/src/__init__.py" = ["F403"]  # Allow star imports in src init
 "examples/**/*" = ["E402"]  # Allow import order in examples (they modify sys.path)
 "run_*.py" = ["E402"]  # Allow import order in run scripts (they modify sys.path)
 "scripts/**/*" = ["E402"]  # Allow import order in scripts (they modify sys.path)

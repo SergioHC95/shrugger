@@ -19,7 +19,7 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
-from abstainer import compute_metrics_from_experiment_result
+from shrugger import compute_metrics_from_experiment_result
 
 
 def find_experiment_runs(base_dir: Union[str, Path]) -> list[Path]:

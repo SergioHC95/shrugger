@@ -1,7 +1,7 @@
-# abstainer/__init__.py
+# shrugger/__init__.py
 
 """
-Abstainer package for analyzing abstention directions in language models.
+shrugger package for analyzing abstention directions in language models.
 
 Main API functions:
     - load_model: Load models and tokenizers

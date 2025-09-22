@@ -1,4 +1,4 @@
-# abstainer/src/parsing.py
+# shrugger/src/parsing.py
 from __future__ import annotations
 
 import re

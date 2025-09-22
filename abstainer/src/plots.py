@@ -1,4 +1,4 @@
-# abstainer/src/plots.py
+# shrugger/src/plots.py
 """
 Lightweight plotting helpers for quick inspection.
 
@@ -200,7 +200,7 @@ def save_figure(
         # Get path relative to the module location
         import os.path
         module_dir = Path(os.path.dirname(os.path.abspath(__file__)))
-        project_root = module_dir.parent.parent  # Go up two levels from abstainer/src to project root
+        project_root = module_dir.parent.parent  # Go up two levels from shrugger/src to project root
         directory = project_root / "outputs" / "figures"
     else:
         directory = Path(directory)

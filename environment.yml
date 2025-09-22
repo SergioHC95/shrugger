@@ -1,4 +1,4 @@
-name: abstainer
+name: shrugger
 channels:
   - conda-forge
 dependencies:

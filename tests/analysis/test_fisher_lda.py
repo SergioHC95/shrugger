@@ -8,7 +8,7 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from abstainer import (
+from shrugger import (
     DirectionAnalyzer,
     FisherLDAAnalyzer,
     compute_fisher_lda_direction,

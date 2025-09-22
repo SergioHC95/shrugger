@@ -6,7 +6,7 @@ Script to test the metrics implementation with sample data.
 import matplotlib.pyplot as plt
 import numpy as np
 
-from abstainer import compute_metrics_from_logits, confident_abstain_score, hedge_score
+from shrugger import compute_metrics_from_logits, confident_abstain_score, hedge_score
 
 
 def test_ca_score():

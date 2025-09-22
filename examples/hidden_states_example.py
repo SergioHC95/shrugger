@@ -3,7 +3,7 @@
 
 from pathlib import Path
 
-from abstainer import (
+from shrugger import (
     get_questions_by_filter,
     load_hidden_states,
     load_model,

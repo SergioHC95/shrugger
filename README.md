@@ -45,7 +45,7 @@ A Python package for analyzing abstention directions in language models using Fi
 ## Project Structure
 
 ```
-├── abstainer/             # 📦 Core package
+├── shrugger/             # 📦 Core package
 │   ├── src/                  # Analysis, experiments, models
 │   └── dataset/              # Data, prompts, curation scripts
 ├── examples/              # 🎯 Usage examples  
@@ -64,7 +64,7 @@ A Python package for analyzing abstention directions in language models using Fi
 1. **Create the environment:**
    ```bash
    conda env create -f environment.yml
-   conda activate abstainer
+   conda activate shrugger
    ```
 
 2. **Set up configuration:**

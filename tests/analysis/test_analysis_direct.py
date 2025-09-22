@@ -21,8 +21,8 @@ def load_module_from_path(module_name, file_path):
 
 
 # Load our analysis modules directly
-fisher_lda_path = project_root / "abstainer/src/analysis/fisher_lda.py"
-direction_analysis_path = project_root / "abstainer/src/analysis/direction_analysis.py"
+fisher_lda_path = project_root / "shrugger/src/analysis/fisher_lda.py"
+direction_analysis_path = project_root / "shrugger/src/analysis/direction_analysis.py"
 
 fisher_lda = load_module_from_path("fisher_lda", fisher_lda_path)
 direction_analysis = load_module_from_path(

@@ -1,4 +1,4 @@
-# abstainer/src/utils.py
+# shrugger/src/utils.py
 import re
 from typing import Optional, Tuple
 

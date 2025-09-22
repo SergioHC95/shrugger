@@ -1,4 +1,4 @@
-# abstainer/src/model.py
+# shrugger/src/model.py
 from __future__ import annotations
 
 import os

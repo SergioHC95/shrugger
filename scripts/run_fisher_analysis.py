@@ -14,7 +14,7 @@ import logging
 import sys
 from pathlib import Path
 
-from abstainer import DirectionAnalyzer, FisherLDAAnalyzer, ResidualVectorLoader
+from shrugger import DirectionAnalyzer, FisherLDAAnalyzer, ResidualVectorLoader
 
 
 def setup_logging(verbose: bool = False):

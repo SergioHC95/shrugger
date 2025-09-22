@@ -37,7 +37,7 @@ def get_question_by_id(
 
         # Check common locations
         possible_paths = [
-            repo_root / "abstainer" / "dataset" / "data" / "curated_questions.tsv",
+            repo_root / "shrugger" / "dataset" / "data" / "curated_questions.tsv",
             repo_root / "dataset" / "data" / "curated_questions.tsv"
         ]
 
@@ -99,7 +99,7 @@ def get_questions_by_filter(
 
         # Check common locations
         possible_paths = [
-            repo_root / "abstainer" / "dataset" / "data" / "curated_questions.tsv",
+            repo_root / "shrugger" / "dataset" / "data" / "curated_questions.tsv",
             repo_root / "dataset" / "data" / "curated_questions.tsv"
         ]
 

@@ -60,7 +60,7 @@ ci: fix lint test
 # Test coverage
 coverage:
 	@echo "Generating test coverage report..."
-	@pytest --cov=abstainer --cov-report=html --cov-report=term || echo "Coverage tools not installed"
+	@pytest --cov=shrugger --cov-report=html --cov-report=term || echo "Coverage tools not installed"
 
 # Clean test artifacts and caches
 clean:

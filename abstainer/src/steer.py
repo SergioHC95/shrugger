@@ -1,4 +1,4 @@
-# abstainer/src/steer.py
+# shrugger/src/steer.py
 from __future__ import annotations
 
 import numpy as np
