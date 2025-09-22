@@ -41,41 +41,16 @@ A Python package for analyzing abstention directions in language models using Fi
 ## Project Structure
 
 ```
-├── abstainer/              # 📦 Main package source code
-│   ├── src/               # Core modules (importable)
-│   │   ├── analysis/      # Fisher LDA and direction analysis
-│   │   ├── experiment.py  # Experiment running utilities
-│   │   ├── model.py       # Model loading and inference
-│   │   └── ...           # Other core modules
-│   └── dataset/          # Dataset utilities
-├── experiments/          # 🧪 Main experiment scripts
-│   ├── run_comprehensive_experiments.py  # Full experiment suite
-│   ├── run_metrics_analysis.py          # Results analysis
-│   └── README.md         # Experiments documentation
-├── examples/             # 🎯 Example scripts and demos
-├── notebooks/            # 📓 Jupyter notebooks
-│   ├── analysis/         # Analysis notebooks
-│   └── exploration/      # Exploratory/sandbox notebooks
-├── scripts/              # 🔧 Utility scripts
-│   ├── analysis/         # Analysis and visualization scripts
-│   ├── run_fisher_analysis.py  # Main analysis CLI
-│   └── cleanup_corrupted_files.py  # Maintenance utilities
-├── outputs/              # 📊 Generated outputs (gitignored)
-│   ├── figures/          # Generated plots and visualizations
-│   └── data/             # Processed/intermediate data files
-├── results/              # 🗂️ Raw experiment results (gitignored)
-│   ├── LDA/              # Fisher LDA analysis results
-│   ├── comprehensive_experiments/  # Full experiment runs
-│   └── ...               # Other experiment outputs
-├── tests/                # ✅ Test suite
-│   ├── unit/             # Unit tests
-│   ├── integration/      # Integration tests
-│   └── analysis/         # Analysis-specific tests
-├── config.json.template  # 📝 Configuration template
-├── CONFIG.md            # 📋 Configuration guide
-├── environment.yml       # 🐍 Conda environment specification
-├── pyproject.toml        # ⚙️ Package configuration
-└── Makefile             # 🏗️ Build and test automation
+├── abstainer/             # 📦 Core package
+│   ├── src/                  # Analysis, experiments, models
+│   └── dataset/              # Data, prompts, curation scripts
+├── experiments/           # 🧪 Main experiment runners
+├── examples/              # 🎯 Usage examples  
+├── notebooks/             # 📓 Analysis & exploration
+├── scripts/               # 🛠️ Utility scripts
+├── tests/                 # ✅ Test suite
+├── outputs/               # 📊 Generated results (gitignored)
+└── config files           # ⚙️ Environment & package setup
 ```
 
 ### Directory Guidelines
@@ -159,7 +134,7 @@ The package is installed in editable mode automatically when you create the envi
 - **Scripts**: Utility scripts go in `scripts/`, with analysis scripts in `scripts/analysis/`
 - **Outputs**: All generated files (plots, data) go in `outputs/`
 - **Configuration**: Use `config.json` (from template) for tokens and settings
-- **No clutter**: Keep project root clean - use appropriate subdirectories
+
 
 ## License
 
