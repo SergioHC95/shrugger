@@ -4,7 +4,7 @@
 
 - **Approach.** Built a **Likert‑scale dataset** that directly elicits *epistemic abstention* via graded verbal confidence and an explicit **IDK/abstain** option; then ran **layerwise linear analyses** (Fisher LDA with Ledoit–Wolf shrinkage) on **residual‑stream activations at the answer token**.
 - **Result.** A **single linear direction** in **mid‑to‑late layers** (peaking near **layer 22** of `gemma-3-4b-it`) **separates abstention vs. non‑abstention**. Near‑perfect on train (**AUC ≈ 0.99**) and strong on dev (**AUC = 0.7925**, **Cohen’s d = 1.21**).
-- **Implication.** Enables a viable **causal steering knob** for abstention that may **improve calibration** (ECE/AURC) with **minimal accuracy loss** (Fig. 3; steering plan in § Toward Causal Steering).
+- **Implication.** Enables a viable **causal steering knob** for abstention to **improve calibration** (ECE/AURC) with **minimal accuracy loss** (Fig. 3; see § Toward Causal Steering).
 
 ## Motivation
 
@@ -37,24 +37,31 @@ Factual **Yes/No/Unanswerable** items spanning **14 subjects** and **5 difficult
 ### Metrics
 
 Let the model’s probability for abstention be $p_U=p_C$. Define
+
 $$
-p_{\text{yes}} = p_A + p_B,\quad p_{\text{no}} = p_D + p_E,\quad q=\max(p_{\text{yes}},\,p_{\text{no}})
+p_{\text{yes}} = p_A + p_B,\quad p_{\text{no}} = p_D + p_E,\quad q=\max(p_{\text{yes}},  p_{\text{no}})
 $$
 
 - **Confident‑Abstain (CA):**
+
 $$
-\mathrm{CA}(p)=\frac{p_U}{\,p_U+q\,}.
+\mathrm{CA}(p)=\frac{p_U}{ p_U+q }.
 $$
+
 High when **IDK** dominates either Yes/No side.
 
 - **HEDGE (hedging without abstaining):** let $s=1-p_U$ and the conditional Yes/No distribution
+
 $$
 r=\Big[\tfrac{p_{\text{yes}}}{s},\ \tfrac{p_{\text{no}}}{s}\Big],\quad H(r)=-\sum_i r_i\log r_i.
 $$
+
 Then
+
 $$
 \mathrm{HEDGE}(p)=s\cdot \frac{H(r)}{\log 2}\in[0,1].
 $$
+
 High **HEDGE** indicates indecision between Yes/No **while avoiding IDK**.
 
 ### Empirics
@@ -95,8 +102,10 @@ High **HEDGE** indicates indecision between Yes/No **while avoiding IDK**.
 
 ## Toward Causal Steering
 
-With the **unit vector** $d^{(L^*)}$ at the answer token identified, apply **token‑local edits**
+With the **unit vector** $d_{L^*}$ at the answer token identified, apply **token‑local edits**
+
 $$
-h'^{(L^*)}=h^{(L^*)}+\alpha\, d^{(L^*)},
+h_L' \longrightarrow h_L + \alpha d_{L^*},
 $$
+
 and measure how movement along this **abstention direction** modulates **IDK probability** and **calibration** (ECE/AURC), while monitoring **accuracy** and **risk–coverage**. If successful, this provides a **compact, mechanistic control** for hallucination suppression.
