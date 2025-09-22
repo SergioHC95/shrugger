@@ -1,0 +1,33 @@
+# Prompt — Blind Answering with Questions Only (TSV)
+
+You are given a TSV file containing only a single header `question` and a list of questions.
+
+Your task is to re-answer all questions and produce a TSV table with exactly these columns, in this order:  
+`question	answer	difficulty`
+
+### Instructions
+- For each question, assign an answer: **Yes**, **No**, or **Unanswerable**.  
+- **Unanswerable** refers to questions that cannot be answered Yes/No because the fact is unknown, ill-posed, or lacks stable consensus.  
+  Examples:  
+  • “Is there life on Europa?” → Unanswerable (unknown)  
+  • “Is the number seven heavier than iron?” → Unanswerable (ill-posed)  
+- Assign a difficulty level (1–5) according to the rubric **identical to the system instructions**:  
+  - **1 = Core** — universal school-level facts with ubiquitous terms.  
+    Ex: “Is water a liquid at room temperature?” → Yes  
+  - **2 = Basic** — widely known high-school facts or everyday technical terms.  
+    Ex: “Is Ottawa the capital of Canada?” → Yes  
+  - **3 = Intermediate** — first-year undergraduate breadth; less common terms; straightforward definitions/relations.  
+    Ex: “Is tryptophan an essential amino acid in humans?” → Yes  
+  - **4 = Advanced** — upper-undergraduate depth; fine distinctions, edge-case exceptions, or scope-sensitive claims that remain timeless when scoped.  
+    Ex: “In worst case, is Quicksort O(n log n)?” → No (it’s O(n²))  
+    Ex: “Are all continuous functions differentiable?” → No  
+  - **5 = Expert** — specialist-level facts with nontrivial nuance or less-known counterexamples; still unambiguous and time-invariant when scoped.  
+    Ex: “Is the Dirac delta a distribution rather than an ordinary function?” → Yes  
+    Ex: “Is the fundamental group of the 2-sphere trivial?” → Yes  
+- Each row must contain exactly **3 tab-separated fields**.  
+- Output a **single TSV** with one header row and no commentary.  
+
+### Example Output (format only):
+"question"\t"answer"\t"difficulty"\n
+"Is the neutron electrically neutral?"\t"Yes"\t"1"\n
+"Is Pluto larger than Earth?"\t"No"\t"2"\n

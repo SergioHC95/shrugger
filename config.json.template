@@ -1,0 +1,5 @@
+{
+    "hf_token": "your_huggingface_token_here",
+    "model_id": "google/gemma-3-4b-it",
+    "dtype": "auto"
+}

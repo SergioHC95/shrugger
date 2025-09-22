@@ -1,0 +1,5602 @@
+{
+  "Q-000001": {
+    "id": "Q-000001",
+    "subject": "Biology",
+    "difficulty": "1",
+    "question": "Are humans classified as mammals?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 35.75,
+      "B": 23.75,
+      "C": 22.125,
+      "D": 21.5,
+      "E": 22.75
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 6.139278411865234e-06,
+      "C": 1.2069940567016602e-06,
+      "D": 6.48200511932373e-07,
+      "E": 2.2649765014648438e-06
+    },
+    "probs_norm": {
+      "A": 0.9999897406557733,
+      "B": 6.139215426894703e-06,
+      "C": 1.2069816737341528e-06,
+      "D": 6.481938618201932e-07,
+      "E": 2.26495326429125e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 4.174135446548462
+  },
+  "Q-000002": {
+    "id": "Q-000002",
+    "subject": "Biology",
+    "difficulty": "1",
+    "question": "Is DNA the primary carrier of genetic information?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 40.0,
+      "B": 26.625,
+      "C": 24.75,
+      "D": 24.625,
+      "E": 25.125
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.55717134475708e-06,
+      "C": 2.384185791015625e-07,
+      "D": 2.1047890186309814e-07,
+      "E": 3.46451997756958e-07
+    },
+    "probs_norm": {
+      "A": 0.9999976474847109,
+      "B": 1.5571676814876837e-06,
+      "C": 2.3841801821820995e-07,
+      "D": 2.1047840670826346e-07,
+      "E": 3.464511827233363e-07
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 4.438390493392944
+  },
+  "Q-000003": {
+    "id": "Q-000003",
+    "subject": "Biology",
+    "difficulty": "1",
+    "question": "Do all insects have six legs?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 23.75,
+      "B": 23.75,
+      "C": 22.75,
+      "D": 34.5,
+      "E": 23.5
+    },
+    "probs": {
+      "A": 2.1457672119140625e-05,
+      "B": 2.1457672119140625e-05,
+      "C": 7.867813110351562e-06,
+      "D": 1.0,
+      "E": 1.6689300537109375e-05
+    },
+    "probs_norm": {
+      "A": 2.14562244149424e-05,
+      "B": 2.14562244149424e-05,
+      "C": 7.86728228547888e-06,
+      "D": 0.9999325320943396,
+      "E": 1.66881745449552e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": -1,
+    "processing_time": 4.3176796436309814
+  },
+  "Q-000004": {
+    "id": "Q-000004",
+    "subject": "Biology",
+    "difficulty": "1",
+    "question": "Is the heart a primary organ of the circulatory system?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 39.0,
+      "B": 26.625,
+      "C": 25.0,
+      "D": 24.625,
+      "E": 25.5
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 4.231929779052734e-06,
+      "C": 8.307397365570068e-07,
+      "D": 5.699694156646729e-07,
+      "E": 1.3709068298339844e-06
+    },
+    "probs_norm": {
+      "A": 0.9999929965032882,
+      "B": 4.231900140746442e-06,
+      "C": 8.307339184739935e-07,
+      "D": 5.699654238857445e-07,
+      "E": 1.3708972286925096e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 4.747338771820068
+  },
+  "Q-000005": {
+    "id": "Q-000005",
+    "subject": "Biology",
+    "difficulty": "1",
+    "question": "Do fish breathe through lungs?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 24.875,
+      "B": 24.625,
+      "C": 23.5,
+      "D": 37.0,
+      "E": 25.5
+    },
+    "probs": {
+      "A": 5.424022674560547e-06,
+      "B": 4.231929779052734e-06,
+      "C": 1.3709068298339844e-06,
+      "D": 1.0,
+      "E": 1.0132789611816406e-05
+    },
+    "probs_norm": {
+      "A": 5.4239079065736035e-06,
+      "B": 4.231840234799185e-06,
+      "C": 1.3708778225405812e-06,
+      "D": 0.999978840798826,
+      "E": 1.0132575210082557e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 4.39385199546814
+  },
+  "Q-000006": {
+    "id": "Q-000006",
+    "subject": "Biology",
+    "difficulty": "1",
+    "question": "Are mushrooms a type of plant?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 34.75,
+      "B": 28.875,
+      "C": 29.625,
+      "D": 27.75,
+      "E": 24.625
+    },
+    "probs": {
+      "A": 0.9921875,
+      "B": 0.002777099609375,
+      "C": 0.005889892578125,
+      "D": 0.000904083251953125,
+      "E": 3.9577484130859375e-05
+    },
+    "probs_norm": {
+      "A": 0.9904065974812023,
+      "B": 0.0027721149228220167,
+      "C": 0.005879320660490651,
+      "D": 0.0009024604899846401,
+      "E": 3.950644550038245e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 4.372086524963379
+  },
+  "Q-000007": {
+    "id": "Q-000007",
+    "subject": "Biology",
+    "difficulty": "1",
+    "question": "Are spiders classified as insects?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 25.375,
+      "B": 25.25,
+      "C": 24.25,
+      "D": 37.5,
+      "E": 26.0
+    },
+    "probs": {
+      "A": 5.424022674560547e-06,
+      "B": 4.798173904418945e-06,
+      "C": 1.7583370208740234e-06,
+      "D": 1.0,
+      "E": 1.0132789611816406e-05
+    },
+    "probs_norm": {
+      "A": 5.423902734046321e-06,
+      "B": 4.798067803194822e-06,
+      "C": 1.758298139058972e-06,
+      "D": 0.9999778871657766,
+      "E": 1.01325655471195e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 4.302525043487549
+  },
+  "Q-000008": {
+    "id": "Q-000008",
+    "subject": "Biology",
+    "difficulty": "1",
+    "question": "Is the cheetah the largest land animal?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 24.75,
+      "B": 24.75,
+      "C": 23.125,
+      "D": 35.5,
+      "E": 24.5
+    },
+    "probs": {
+      "A": 2.1457672119140625e-05,
+      "B": 2.1457672119140625e-05,
+      "C": 4.231929779052734e-06,
+      "D": 1.0,
+      "E": 1.6689300537109375e-05
+    },
+    "probs_norm": {
+      "A": 2.145630242229138e-05,
+      "B": 2.145630242229138e-05,
+      "C": 4.231659644396356e-06,
+      "D": 0.9999361675002937,
+      "E": 1.668823521733774e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 4.46944522857666
+  },
+  "Q-000009": {
+    "id": "Q-000009",
+    "subject": "Biology",
+    "difficulty": "1",
+    "question": "Do all bacteria cause disease in humans?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 24.125,
+      "B": 24.0,
+      "C": 23.5,
+      "D": 36.25,
+      "E": 24.875
+    },
+    "probs": {
+      "A": 5.424022674560547e-06,
+      "B": 4.798173904418945e-06,
+      "C": 2.905726432800293e-06,
+      "D": 1.0,
+      "E": 1.150369644165039e-05
+    },
+    "probs_norm": {
+      "A": 5.423889075388884e-06,
+      "B": 4.798055720536321e-06,
+      "C": 2.905654861815474e-06,
+      "D": 0.9999753689872483,
+      "E": 1.1503413093956645e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 4.704191207885742
+  },
+  "Q-000010": {
+    "id": "Q-000010",
+    "subject": "Biology",
+    "difficulty": "1",
+    "question": "Is photosynthesis how plants make food?",
+    "answer": "Yes",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 36.5,
+      "B": 25.25,
+      "C": 23.625,
+      "D": 22.875,
+      "E": 23.75
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.2993812561035156e-05,
+      "C": 2.562999725341797e-06,
+      "D": 1.2069940567016602e-06,
+      "E": 2.905726432800293e-06
+    },
+    "probs_norm": {
+      "A": 0.999980330854107,
+      "B": 1.2993556983840188e-05,
+      "C": 2.5629493133262755e-06,
+      "D": 1.206970316159467e-06,
+      "E": 2.905669279643161e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 5.065554141998291
+  },
+  "Q-000011": {
+    "id": "Q-000011",
+    "subject": "Biology",
+    "difficulty": "2",
+    "question": "Is mitosis a process of cell division?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 38.75,
+      "B": 26.75,
+      "C": 25.125,
+      "D": 24.75,
+      "E": 25.375
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 6.139278411865234e-06,
+      "C": 1.2069940567016602e-06,
+      "D": 8.307397365570068e-07,
+      "E": 1.55717134475708e-06
+    },
+    "probs_norm": {
+      "A": 0.9999902659112035,
+      "B": 6.139218651584027e-06,
+      "C": 1.2069823077143354e-06,
+      "D": 8.307316500626444e-07,
+      "E": 1.5571561871129388e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 5.3520965576171875
+  },
+  "Q-000012": {
+    "id": "Q-000012",
+    "subject": "Biology",
+    "difficulty": "2",
+    "question": "Is hemoglobin the protein that carries oxygen in blood?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 40.25,
+      "B": 27.25,
+      "C": 25.375,
+      "D": 25.25,
+      "E": 26.125
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 2.2649765014648438e-06,
+      "C": 3.46451997756958e-07,
+      "D": 3.0547380447387695e-07,
+      "E": 7.338821887969971e-07
+    },
+    "probs_norm": {
+      "A": 0.9999963492288357,
+      "B": 2.264968232553944e-06,
+      "C": 3.464507329399948e-07,
+      "D": 3.0547268925892014e-07,
+      "E": 7.338795095610642e-07
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 5.406975507736206
+  },
+  "Q-000013": {
+    "id": "Q-000013",
+    "subject": "Biology",
+    "difficulty": "2",
+    "question": "Is the scientific name for humans Homo sapiens?",
+    "answer": "Yes",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 35.5,
+      "B": 23.0,
+      "C": 21.125,
+      "D": 21.0,
+      "E": 22.625
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 3.725290298461914e-06,
+      "C": 5.699694156646729e-07,
+      "D": 5.029141902923584e-07,
+      "E": 2.562999725341797e-06
+    },
+    "probs_norm": {
+      "A": 0.9999926388805567,
+      "B": 3.725262876155066e-06,
+      "C": 5.699652200517251e-07,
+      "D": 5.02910488280934e-07,
+      "E": 2.5629808587946856e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 5.8671698570251465
+  },
+  "Q-000014": {
+    "id": "Q-000014",
+    "subject": "Biology",
+    "difficulty": "2",
+    "question": "Are amphibians cold-blooded vertebrates?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "B",
+    "logits": {
+      "A": 30.75,
+      "B": 34.0,
+      "C": 26.5,
+      "D": 24.5,
+      "E": 22.875
+    },
+    "probs": {
+      "A": 0.037353515625,
+      "B": 0.9609375,
+      "C": 0.000530242919921875,
+      "D": 7.200241088867188e-05,
+      "E": 1.4185905456542969e-05
+    },
+    "probs_norm": {
+      "A": 0.03739437096236588,
+      "B": 0.9619885235808633,
+      "C": 0.0005308228721169175,
+      "D": 7.208116338997712e-05,
+      "E": 1.4201421263919332e-05
+    },
+    "is_valid": true,
+    "pred_label": "B",
+    "score": 1,
+    "processing_time": 5.724470376968384
+  },
+  "Q-000015": {
+    "id": "Q-000015",
+    "subject": "Biology",
+    "difficulty": "2",
+    "question": "Does the aorta carry deoxygenated blood from the heart?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 28.0,
+      "B": 28.0,
+      "C": 26.5,
+      "D": 42.0,
+      "E": 28.25
+    },
+    "probs": {
+      "A": 8.307397365570068e-07,
+      "B": 8.307397365570068e-07,
+      "C": 1.8533319234848022e-07,
+      "D": 1.0,
+      "E": 1.0654330253601074e-06
+    },
+    "probs_norm": {
+      "A": 8.307373172458345e-07,
+      "B": 8.307373172458345e-07,
+      "C": 1.8533265261426127e-07,
+      "D": 0.9999970877627903,
+      "E": 1.0654299225664066e-06
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 6.288914203643799
+  },
+  "Q-000016": {
+    "id": "Q-000016",
+    "subject": "Biology",
+    "difficulty": "2",
+    "question": "Is RNA a double-stranded helix?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 24.875,
+      "B": 24.625,
+      "C": 23.875,
+      "D": 38.5,
+      "E": 25.5
+    },
+    "probs": {
+      "A": 1.2069940567016602e-06,
+      "B": 9.424984455108643e-07,
+      "C": 4.4517219066619873e-07,
+      "D": 1.0,
+      "E": 2.2649765014648438e-06
+    },
+    "probs_norm": {
+      "A": 1.2069881911721252e-06,
+      "B": 9.424938653288509e-07,
+      "C": 4.4517002729959555e-07,
+      "D": 0.9999951403824217,
+      "E": 2.2649654945452227e-06
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 5.986518621444702
+  },
+  "Q-000017": {
+    "id": "Q-000017",
+    "subject": "Biology",
+    "difficulty": "2",
+    "question": "Is penicillin a type of virus?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 27.25,
+      "B": 26.75,
+      "C": 25.75,
+      "D": 41.5,
+      "E": 29.875
+    },
+    "probs": {
+      "A": 6.48200511932373e-07,
+      "B": 3.9301812648773193e-07,
+      "C": 1.4435499906539917e-07,
+      "D": 1.0,
+      "E": 8.940696716308594e-06
+    },
+    "probs_norm": {
+      "A": 6.481939481452124e-07,
+      "B": 3.9301414672022936e-07,
+      "C": 1.4435353730245393e-07,
+      "D": 0.9999898738321865,
+      "E": 8.940606181313274e-06
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 5.8958070278167725
+  },
+  "Q-000018": {
+    "id": "Q-000018",
+    "subject": "Biology",
+    "difficulty": "2",
+    "question": "Do marsupials lay eggs?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 22.875,
+      "B": 22.5,
+      "C": 21.625,
+      "D": 34.0,
+      "E": 23.25
+    },
+    "probs": {
+      "A": 1.4722347259521484e-05,
+      "B": 1.0132789611816406e-05,
+      "C": 4.231929779052734e-06,
+      "D": 1.0,
+      "E": 2.1457672119140625e-05
+    },
+    "probs_norm": {
+      "A": 1.4721603159935497e-05,
+      "B": 1.0132277478498116e-05,
+      "C": 4.231715888078625e-06,
+      "D": 0.999949457815872,
+      "E": 2.145658760152542e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 12.876893281936646
+  },
+  "Q-000019": {
+    "id": "Q-000019",
+    "subject": "Biology",
+    "difficulty": "2",
+    "question": "Does the human skeleton have 306 bones in adulthood?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 31.875,
+      "B": 26.0,
+      "C": 25.0,
+      "D": 25.625,
+      "E": 22.5
+    },
+    "probs": {
+      "A": 0.99609375,
+      "B": 0.0027923583984375,
+      "C": 0.00102996826171875,
+      "D": 0.001922607421875,
+      "E": 8.440017700195312e-05
+    },
+    "probs_norm": {
+      "A": 0.9941818545249467,
+      "B": 0.002786998764982617,
+      "C": 0.0010279913477394898,
+      "D": 0.0019189171824470477,
+      "E": 8.42381798842082e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 12.803127527236938
+  },
+  "Q-000020": {
+    "id": "Q-000020",
+    "subject": "Biology",
+    "difficulty": "2",
+    "question": "Is the mitochondria the powerhouse of the cell?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 35.5,
+      "B": 25.375,
+      "C": 24.0,
+      "D": 23.0,
+      "E": 23.125
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 4.00543212890625e-05,
+      "C": 1.0132789611816406e-05,
+      "D": 3.725290298461914e-06,
+      "E": 4.231929779052734e-06
+    },
+    "probs_norm": {
+      "A": 0.9999418590495883,
+      "B": 4.0051992492754655e-05,
+      "C": 1.0132200481798054e-05,
+      "D": 3.725073706543402e-06,
+      "E": 4.231683730633304e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 10.692291021347046
+  },
+  "Q-000021": {
+    "id": "Q-000021",
+    "subject": "Biology",
+    "difficulty": "3",
+    "question": "Is ATP the main energy currency of the cell?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 38.0,
+      "B": 26.0,
+      "C": 24.375,
+      "D": 24.125,
+      "E": 24.625
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 6.139278411865234e-06,
+      "C": 1.2069940567016602e-06,
+      "D": 9.424984455108643e-07,
+      "E": 1.55717134475708e-06
+    },
+    "probs_norm": {
+      "A": 0.9999901541546828,
+      "B": 6.139217965479632e-06,
+      "C": 1.206982172824879e-06,
+      "D": 9.42489165816958e-07,
+      "E": 1.5571560130888873e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 7.912001371383667
+  },
+  "Q-000022": {
+    "id": "Q-000022",
+    "subject": "Biology",
+    "difficulty": "3",
+    "question": "Does meiosis result in four haploid cells?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 36.25,
+      "B": 26.0,
+      "C": 24.625,
+      "D": 23.625,
+      "E": 24.5
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 3.528594970703125e-05,
+      "C": 8.940696716308594e-06,
+      "D": 3.293156623840332e-06,
+      "E": 7.867813110351562e-06
+    },
+    "probs_norm": {
+      "A": 0.9999446154514606,
+      "B": 3.528399541063694e-05,
+      "C": 8.940201539857334e-06,
+      "D": 3.292974233847451e-06,
+      "E": 7.867377355074454e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 6.422221660614014
+  },
+  "Q-000023": {
+    "id": "Q-000023",
+    "subject": "Biology",
+    "difficulty": "3",
+    "question": "Is tryptophan an essential amino acid in humans?",
+    "answer": "Yes",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 33.5,
+      "B": 33.0,
+      "C": 30.375,
+      "D": 41.0,
+      "E": 31.625
+    },
+    "probs": {
+      "A": 0.000553131103515625,
+      "B": 0.000335693359375,
+      "C": 2.4318695068359375e-05,
+      "D": 1.0,
+      "E": 8.487701416015625e-05
+    },
+    "probs_norm": {
+      "A": 0.0005525796179102487,
+      "B": 0.0003353586646627716,
+      "C": 2.429444871846783e-05,
+      "D": 0.9990029748790636,
+      "E": 8.47923896448485e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": -1,
+    "processing_time": 6.902194261550903
+  },
+  "Q-000024": {
+    "id": "Q-000024",
+    "subject": "Biology",
+    "difficulty": "3",
+    "question": "Are lichens a symbiotic association of a fungus and an alga?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 39.25,
+      "B": 26.625,
+      "C": 25.125,
+      "D": 24.375,
+      "E": 25.25
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 3.293156623840332e-06,
+      "C": 7.338821887969971e-07,
+      "D": 3.46451997756958e-07,
+      "E": 8.307397365570068e-07
+    },
+    "probs_norm": {
+      "A": 0.9999947957965369,
+      "B": 3.2931394855832256e-06,
+      "C": 7.338783695247686e-07,
+      "D": 3.464501947502715e-07,
+      "E": 8.307354132183929e-07
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 7.594892501831055
+  },
+  "Q-000025": {
+    "id": "Q-000025",
+    "subject": "Biology",
+    "difficulty": "3",
+    "question": "Do prokaryotic cells contain a membrane-bound nucleus?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 28.375,
+      "B": 27.75,
+      "C": 26.375,
+      "D": 42.0,
+      "E": 28.25
+    },
+    "probs": {
+      "A": 1.2069940567016602e-06,
+      "B": 6.48200511932373e-07,
+      "C": 1.6391277313232422e-07,
+      "D": 1.0,
+      "E": 1.0654330253601074e-06
+    },
+    "probs_norm": {
+      "A": 1.2069903336912532e-06,
+      "B": 6.481985125378952e-07,
+      "C": 1.6391226753831832e-07,
+      "D": 0.9999969154691473,
+      "E": 1.065429738999069e-06
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 6.885267734527588
+  },
+  "Q-000026": {
+    "id": "Q-000026",
+    "subject": "Biology",
+    "difficulty": "3",
+    "question": "Is chitin the primary component of plant cell walls?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 26.375,
+      "B": 26.25,
+      "C": 25.125,
+      "D": 39.75,
+      "E": 27.125
+    },
+    "probs": {
+      "A": 1.55717134475708e-06,
+      "B": 1.3709068298339844e-06,
+      "C": 4.4517219066619873e-07,
+      "D": 1.0,
+      "E": 3.293156623840332e-06
+    },
+    "probs_norm": {
+      "A": 1.557160964088346e-06,
+      "B": 1.3708976908720367e-06,
+      "C": 4.451692229869793e-07,
+      "D": 0.9999933336374516,
+      "E": 3.2931346704643486e-06
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 6.698269844055176
+  },
+  "Q-000027": {
+    "id": "Q-000027",
+    "subject": "Biology",
+    "difficulty": "3",
+    "question": "Are all enzymes proteins?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 27.375,
+      "B": 28.25,
+      "C": 26.625,
+      "D": 36.5,
+      "E": 24.875
+    },
+    "probs": {
+      "A": 0.0001087188720703125,
+      "B": 0.0002613067626953125,
+      "C": 5.14984130859375e-05,
+      "D": 1.0,
+      "E": 8.940696716308594e-06
+    },
+    "probs_norm": {
+      "A": 0.00010867209256574453,
+      "B": 0.0002611943277457369,
+      "C": 5.147625437324741e-05,
+      "D": 0.9995697204755977,
+      "E": 8.936849717577676e-06
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 6.220292091369629
+  },
+  "Q-000028": {
+    "id": "Q-000028",
+    "subject": "Biology",
+    "difficulty": "3",
+    "question": "Is homeostasis the process of maintaining an unstable internal environment?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 28.0,
+      "B": 29.0,
+      "C": 27.375,
+      "D": 39.5,
+      "E": 26.625
+    },
+    "probs": {
+      "A": 1.0132789611816406e-05,
+      "B": 2.753734588623047e-05,
+      "C": 5.424022674560547e-06,
+      "D": 1.0,
+      "E": 2.562999725341797e-06
+    },
+    "probs_norm": {
+      "A": 1.013232699856276e-05,
+      "B": 2.7536088666682322e-05,
+      "C": 5.423775040407124e-06,
+      "D": 0.999954344926583,
+      "E": 2.5628827114011685e-06
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 7.004454135894775
+  },
+  "Q-000029": {
+    "id": "Q-000029",
+    "subject": "Biology",
+    "difficulty": "3",
+    "question": "Is the Golgi apparatus involved in DNA replication?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 27.5,
+      "B": 27.875,
+      "C": 27.125,
+      "D": 41.5,
+      "E": 28.125
+    },
+    "probs": {
+      "A": 8.307397365570068e-07,
+      "B": 1.2069940567016602e-06,
+      "C": 5.699694156646729e-07,
+      "D": 1.0,
+      "E": 1.55717134475708e-06
+    },
+    "probs_norm": {
+      "A": 8.307362766446275e-07,
+      "B": 1.2069890297437637e-06,
+      "C": 5.69967041823444e-07,
+      "D": 0.9999958351427924,
+      "E": 1.5571648593607814e-06
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 6.694029092788696
+  },
+  "Q-000030": {
+    "id": "Q-000030",
+    "subject": "Biology",
+    "difficulty": "3",
+    "question": "Is natural selection a mechanism of evolution?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 37.5,
+      "B": 25.25,
+      "C": 23.75,
+      "D": 23.5,
+      "E": 23.625
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 4.798173904418945e-06,
+      "C": 1.0654330253601074e-06,
+      "D": 8.307397365570068e-07,
+      "E": 9.424984455108643e-07
+    },
+    "probs_norm": {
+      "A": 0.9999923632132091,
+      "B": 4.798137261787852e-06,
+      "C": 1.0654248888752528e-06,
+      "D": 8.3073339237476e-07,
+      "E": 9.424912478511852e-07
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 7.359530448913574
+  },
+  "Q-000031": {
+    "id": "Q-000031",
+    "subject": "Biology",
+    "difficulty": "4",
+    "question": "Is apoptosis a form of programmed cell death?",
+    "answer": "Yes",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 39.5,
+      "B": 27.125,
+      "C": 25.875,
+      "D": 25.5,
+      "E": 25.875
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 4.231929779052734e-06,
+      "C": 1.2069940567016602e-06,
+      "D": 8.307397365570068e-07,
+      "E": 1.2069940567016602e-06
+    },
+    "probs_norm": {
+      "A": 0.9999925233982709,
+      "B": 4.231898138599231e-06,
+      "C": 1.206985032487809e-06,
+      "D": 8.307335254468562e-07,
+      "E": 1.206985032487809e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 7.535642623901367
+  },
+  "Q-000032": {
+    "id": "Q-000032",
+    "subject": "Biology",
+    "difficulty": "4",
+    "question": "Are prions infectious agents composed solely of protein?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 37.0,
+      "B": 27.625,
+      "C": 26.25,
+      "D": 24.875,
+      "E": 25.125
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 8.487701416015625e-05,
+      "C": 2.1457672119140625e-05,
+      "D": 5.424022674560547e-06,
+      "E": 6.973743438720703e-06
+    },
+    "probs_norm": {
+      "A": 0.999881281643329,
+      "B": 8.486693770051601e-05,
+      "C": 2.1455124699568658e-05,
+      "D": 5.423378743502077e-06,
+      "E": 6.9729155273598135e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 7.509129047393799
+  },
+  "Q-000033": {
+    "id": "Q-000033",
+    "subject": "Biology",
+    "difficulty": "4",
+    "question": "Do CAM plants fix carbon dioxide during the night?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "B",
+    "logits": {
+      "A": 24.5,
+      "B": 31.25,
+      "C": 25.125,
+      "D": 23.25,
+      "E": 21.0
+    },
+    "probs": {
+      "A": 0.00116729736328125,
+      "B": 0.99609375,
+      "C": 0.0021820068359375,
+      "D": 0.0003337860107421875,
+      "E": 3.528594970703125e-05
+    },
+    "probs_norm": {
+      "A": 0.0011675167091290458,
+      "B": 0.9962809251234525,
+      "C": 0.0021824168549732493,
+      "D": 0.00033384873218559317,
+      "E": 3.5292580259619854e-05
+    },
+    "is_valid": true,
+    "pred_label": "B",
+    "score": 1,
+    "processing_time": 8.246320247650146
+  },
+  "Q-000034": {
+    "id": "Q-000034",
+    "subject": "Biology",
+    "difficulty": "4",
+    "question": "Are telomeres protective caps at the end of chromosomes?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 38.75,
+      "B": 27.0,
+      "C": 25.25,
+      "D": 24.875,
+      "E": 25.75
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 7.867813110351562e-06,
+      "C": 1.3709068298339844e-06,
+      "D": 9.424984455108643e-07,
+      "E": 2.2649765014648438e-06
+    },
+    "probs_norm": {
+      "A": 0.9999875539600187,
+      "B": 7.867715187235026e-06,
+      "C": 1.3708897674727697e-06,
+      "D": 9.424867151375291e-07,
+      "E": 2.2649483114767497e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 8.017239809036255
+  },
+  "Q-000035": {
+    "id": "Q-000035",
+    "subject": "Biology",
+    "difficulty": "4",
+    "question": "Is facilitated diffusion a form of active transport?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 28.5,
+      "B": 28.375,
+      "C": 26.75,
+      "D": 40.5,
+      "E": 27.875
+    },
+    "probs": {
+      "A": 6.139278411865234e-06,
+      "B": 5.424022674560547e-06,
+      "C": 1.0654330253601074e-06,
+      "D": 1.0,
+      "E": 3.293156623840332e-06
+    },
+    "probs_norm": {
+      "A": 6.139180664501488e-06,
+      "B": 5.423936315239179e-06,
+      "C": 1.0654160619219815e-06,
+      "D": 0.9999840783627669,
+      "E": 3.2931041913952158e-06
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 6.7930262088775635
+  },
+  "Q-000036": {
+    "id": "Q-000036",
+    "subject": "Biology",
+    "difficulty": "4",
+    "question": "Does the Krebs cycle occur in the cytoplasm of eukaryotic cells?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 28.875,
+      "B": 28.875,
+      "C": 27.125,
+      "D": 42.25,
+      "E": 28.625
+    },
+    "probs": {
+      "A": 1.55717134475708e-06,
+      "B": 1.55717134475708e-06,
+      "C": 2.7008354663848877e-07,
+      "D": 1.0,
+      "E": 1.2069940567016602e-06
+    },
+    "probs_norm": {
+      "A": 1.557164195161795e-06,
+      "B": 1.557164195161795e-06,
+      "C": 2.700823065771056e-07,
+      "D": 0.9999954086007882,
+      "E": 1.2069885149100995e-06
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 7.402880430221558
+  },
+  "Q-000037": {
+    "id": "Q-000037",
+    "subject": "Biology",
+    "difficulty": "4",
+    "question": "Is pleiotropy the effect of a single gene on a single trait?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 28.75,
+      "B": 28.75,
+      "C": 28.0,
+      "D": 42.5,
+      "E": 31.375
+    },
+    "probs": {
+      "A": 1.0654330253601074e-06,
+      "B": 1.0654330253601074e-06,
+      "C": 5.029141902923584e-07,
+      "D": 1.0,
+      "E": 1.4722347259521484e-05
+    },
+    "probs_norm": {
+      "A": 1.0654145338896164e-06,
+      "B": 1.0654145338896164e-06,
+      "C": 5.029054618010427e-07,
+      "D": 0.9999826441737294,
+      "E": 1.4722091741020153e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 7.414414882659912
+  },
+  "Q-000038": {
+    "id": "Q-000038",
+    "subject": "Biology",
+    "difficulty": "4",
+    "question": "Are Gram-positive bacteria characterized by a thin peptidoglycan layer?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 29.0,
+      "B": 28.625,
+      "C": 26.625,
+      "D": 43.0,
+      "E": 29.25
+    },
+    "probs": {
+      "A": 8.307397365570068e-07,
+      "B": 5.699694156646729e-07,
+      "C": 7.729977369308472e-08,
+      "D": 1.0,
+      "E": 1.0654330253601074e-06
+    },
+    "probs_norm": {
+      "A": 8.307376236240844e-07,
+      "B": 5.699679659842372e-07,
+      "C": 7.729957708609754e-08,
+      "D": 0.9999974565645178,
+      "E": 1.0654303154999468e-06
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 8.112975120544434
+  },
+  "Q-000039": {
+    "id": "Q-000039",
+    "subject": "Biology",
+    "difficulty": "4",
+    "question": "Is CRISPR-Cas9 a technology for protein synthesis?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "C",
+    "logits": {
+      "A": 38.5,
+      "B": 39.25,
+      "C": 45.0,
+      "D": 43.25,
+      "E": 33.25
+    },
+    "probs": {
+      "A": 0.00127410888671875,
+      "B": 0.0027008056640625,
+      "C": 0.84765625,
+      "D": 0.1474609375,
+      "E": 6.705522537231445e-06
+    },
+    "probs_norm": {
+      "A": 0.0012752581396963084,
+      "B": 0.0027032418051047493,
+      "C": 0.8484208404360397,
+      "D": 0.14759394804820508,
+      "E": 6.711570954146458e-06
+    },
+    "is_valid": true,
+    "pred_label": "C",
+    "score": 0,
+    "processing_time": 7.861258506774902
+  },
+  "Q-000040": {
+    "id": "Q-000040",
+    "subject": "Biology",
+    "difficulty": "4",
+    "question": "Is chemiosmosis the movement of ions across a semipermeable membrane?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 41.75,
+      "B": 43.25,
+      "C": 41.75,
+      "D": 49.75,
+      "E": 38.25
+    },
+    "probs": {
+      "A": 0.0003337860107421875,
+      "B": 0.00150299072265625,
+      "C": 0.0003337860107421875,
+      "D": 0.99609375,
+      "E": 1.0132789611816406e-05
+    },
+    "probs_norm": {
+      "A": 0.00033436297226232257,
+      "B": 0.0015055886979583439,
+      "C": 0.00033436297226232257,
+      "D": 0.9978155350530019,
+      "E": 1.015030451510622e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": -1,
+    "processing_time": 9.984554290771484
+  },
+  "Q-000041": {
+    "id": "Q-000041",
+    "subject": "Biology",
+    "difficulty": "5",
+    "question": "Is RNA interference a mechanism for silencing gene expression?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 39.5,
+      "B": 27.625,
+      "C": 26.375,
+      "D": 26.125,
+      "E": 26.5
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 6.973743438720703e-06,
+      "C": 1.996755599975586e-06,
+      "D": 1.55717134475708e-06,
+      "E": 2.2649765014648438e-06
+    },
+    "probs_norm": {
+      "A": 0.9999872075167648,
+      "B": 6.973654227224677e-06,
+      "C": 1.9967300565130483e-06,
+      "D": 1.557151424668758e-06,
+      "E": 2.2649475267909208e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 8.70012617111206
+  },
+  "Q-000042": {
+    "id": "Q-000042",
+    "subject": "Biology",
+    "difficulty": "5",
+    "question": "Does the sodium-potassium pump transport three sodium ions out per cycle?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 33.75,
+      "B": 26.25,
+      "C": 25.5,
+      "D": 24.75,
+      "E": 25.0
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 0.000553131103515625,
+      "C": 0.0002613067626953125,
+      "D": 0.00012302398681640625,
+      "E": 0.0001583099365234375
+    },
+    "probs_norm": {
+      "A": 0.9989054276119936,
+      "B": 0.0005525256614827693,
+      "C": 0.00026102074352806685,
+      "D": 0.00012288932815737456,
+      "E": 0.0001581366548381719
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 10.013514518737793
+  },
+  "Q-000043": {
+    "id": "Q-000043",
+    "subject": "Biology",
+    "difficulty": "5",
+    "question": "Is the lac operon an example of an inducible operon?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 40.25,
+      "B": 29.5,
+      "C": 28.25,
+      "D": 27.0,
+      "E": 27.875
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 2.1457672119140625e-05,
+      "C": 6.139278411865234e-06,
+      "D": 1.7583370208740234e-06,
+      "E": 4.231929779052734e-06
+    },
+    "probs_norm": {
+      "A": 0.9999664139107324,
+      "B": 2.1456951439849357e-05,
+      "C": 6.139072217512455e-06,
+      "D": 1.7582779652098778e-06,
+      "E": 4.2317876450814006e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 9.156861305236816
+  },
+  "Q-000044": {
+    "id": "Q-000044",
+    "subject": "Biology",
+    "difficulty": "5",
+    "question": "Is horizontal gene transfer common in prokaryotes?",
+    "answer": "Yes",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 37.5,
+      "B": 26.75,
+      "C": 25.875,
+      "D": 25.25,
+      "E": 25.625
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 2.1457672119140625e-05,
+      "C": 8.940696716308594e-06,
+      "D": 4.798173904418945e-06,
+      "E": 6.973743438720703e-06
+    },
+    "probs_norm": {
+      "A": 0.9999578314920795,
+      "B": 2.1456767281123914e-05,
+      "C": 8.940319700468297e-06,
+      "D": 4.797971572584653e-06,
+      "E": 6.973449366365272e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 8.085834980010986
+  },
+  "Q-000045": {
+    "id": "Q-000045",
+    "subject": "Biology",
+    "difficulty": "5",
+    "question": "Is the SRY gene located on the X chromosome in humans?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 26.875,
+      "B": 26.625,
+      "C": 25.0,
+      "D": 37.75,
+      "E": 25.75
+    },
+    "probs": {
+      "A": 1.895427703857422e-05,
+      "B": 1.4722347259521484e-05,
+      "C": 2.905726432800293e-06,
+      "D": 1.0,
+      "E": 6.139278411865234e-06
+    },
+    "probs_norm": {
+      "A": 1.8953467315572594e-05,
+      "B": 1.4721718323730915e-05,
+      "C": 2.9056023007363648e-06,
+      "D": 0.9999572801959169,
+      "E": 6.139016143094268e-06
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 8.268903732299805
+  },
+  "Q-000046": {
+    "id": "Q-000046",
+    "subject": "Biology",
+    "difficulty": "5",
+    "question": "Is kinesin a motor protein that typically moves towards the minus-end?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 33.0,
+      "B": 27.5,
+      "C": 25.75,
+      "D": 24.875,
+      "E": 23.875
+    },
+    "probs": {
+      "A": 0.99609375,
+      "B": 0.004058837890625,
+      "C": 0.000705718994140625,
+      "D": 0.000293731689453125,
+      "E": 0.00010824203491210938
+    },
+    "probs_norm": {
+      "A": 0.9948399724735034,
+      "B": 0.004053729054502939,
+      "C": 0.0007048307096645149,
+      "D": 0.00029336197104955485,
+      "E": 0.00010810579127962492
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 8.38538932800293
+  },
+  "Q-000047": {
+    "id": "Q-000047",
+    "subject": "Biology",
+    "difficulty": "5",
+    "question": "Are Hox genes responsible for plant development?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 27.0,
+      "B": 27.375,
+      "C": 27.125,
+      "D": 38.0,
+      "E": 27.0
+    },
+    "probs": {
+      "A": 1.6689300537109375e-05,
+      "B": 2.4318695068359375e-05,
+      "C": 1.895427703857422e-05,
+      "D": 1.0,
+      "E": 1.6689300537109375e-05
+    },
+    "probs_norm": {
+      "A": 1.6688021374017777e-05,
+      "B": 2.431683114499733e-05,
+      "C": 1.895282427477733e-05,
+      "D": 0.9999233543018322,
+      "E": 1.6688021374017777e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 7.412229299545288
+  },
+  "Q-000048": {
+    "id": "Q-000048",
+    "subject": "Biology",
+    "difficulty": "5",
+    "question": "Is the Ames test used to measure the molecular weight of proteins?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 29.125,
+      "B": 30.25,
+      "C": 29.0,
+      "D": 46.25,
+      "E": 33.0
+    },
+    "probs": {
+      "A": 3.655441105365753e-08,
+      "B": 1.126900315284729e-07,
+      "C": 3.213062882423401e-08,
+      "D": 1.0,
+      "E": 1.7583370208740234e-06
+    },
+    "probs_norm": {
+      "A": 3.655434014876192e-08,
+      "B": 1.1268981294268006e-07,
+      "C": 3.2130566500185633e-08,
+      "D": 0.9999980602916702,
+      "E": 1.7583336102130575e-06
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 8.975059986114502
+  },
+  "Q-000049": {
+    "id": "Q-000049",
+    "subject": "Biology",
+    "difficulty": "5",
+    "question": "Is C. elegans a species of vertebrate?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 26.0,
+      "B": 25.25,
+      "C": 24.25,
+      "D": 40.75,
+      "E": 27.25
+    },
+    "probs": {
+      "A": 3.9301812648773193e-07,
+      "B": 1.8533319234848022e-07,
+      "C": 6.845220923423767e-08,
+      "D": 1.0,
+      "E": 1.3709068298339844e-06
+    },
+    "probs_norm": {
+      "A": 3.930173334925873e-07,
+      "B": 1.8533281840053288e-07,
+      "C": 6.845207111778475e-08,
+      "D": 0.9999979822937133,
+      "E": 1.3709040637466552e-06
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 9.057823896408081
+  },
+  "Q-000050": {
+    "id": "Q-000050",
+    "subject": "Biology",
+    "difficulty": "5",
+    "question": "Are extremophiles organisms that thrive in harsh environments?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 39.5,
+      "B": 26.625,
+      "C": 24.375,
+      "D": 24.375,
+      "E": 25.625
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 2.562999725341797e-06,
+      "C": 2.7008354663848877e-07,
+      "D": 2.7008354663848877e-07,
+      "E": 9.424984455108643e-07
+    },
+    "probs_norm": {
+      "A": 0.9999959543511032,
+      "B": 2.5629893563447854e-06,
+      "C": 2.700824539752863e-07,
+      "D": 2.700824539752863e-07,
+      "E": 9.424946324930679e-07
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 9.203048467636108
+  },
+  "Q-000051": {
+    "id": "Q-000051",
+    "subject": "Chemistry",
+    "difficulty": "1",
+    "question": "Is H2O the chemical formula for water?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 38.75,
+      "B": 25.875,
+      "C": 23.875,
+      "D": 24.25,
+      "E": 25.0
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 2.562999725341797e-06,
+      "C": 3.46451997756958e-07,
+      "D": 5.029141902923584e-07,
+      "E": 1.0654330253601074e-06
+    },
+    "probs_norm": {
+      "A": 0.9999955222211119,
+      "B": 2.562988248795736e-06,
+      "C": 3.464504464215167e-07,
+      "D": 5.029119383538145e-07,
+      "E": 1.0654282545865997e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 9.019565343856812
+  },
+  "Q-000052": {
+    "id": "Q-000052",
+    "subject": "Chemistry",
+    "difficulty": "1",
+    "question": "Is oxygen essential for human respiration?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 36.5,
+      "B": 24.375,
+      "C": 22.375,
+      "D": 22.125,
+      "E": 22.875
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 5.424022674560547e-06,
+      "C": 7.338821887969971e-07,
+      "D": 5.699694156646729e-07,
+      "E": 1.2069940567016602e-06
+    },
+    "probs_norm": {
+      "A": 0.9999920651946259,
+      "B": 5.423979635996279e-06,
+      "C": 7.338763655846614e-07,
+      "D": 5.699648930682904e-07,
+      "E": 1.2069844794387325e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 9.224761724472046
+  },
+  "Q-000053": {
+    "id": "Q-000053",
+    "subject": "Chemistry",
+    "difficulty": "1",
+    "question": "Is diamond a form of carbon?",
+    "answer": "Yes",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 37.25,
+      "B": 24.875,
+      "C": 23.0,
+      "D": 23.0,
+      "E": 23.625
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 4.231929779052734e-06,
+      "C": 6.48200511932373e-07,
+      "D": 6.48200511932373e-07,
+      "E": 1.2069940567016602e-06
+    },
+    "probs_norm": {
+      "A": 0.9999932647205046,
+      "B": 4.231901275822868e-06,
+      "C": 6.481961461207562e-07,
+      "D": 6.481961461207562e-07,
+      "E": 1.2069859272593392e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 9.409924030303955
+  },
+  "Q-000054": {
+    "id": "Q-000054",
+    "subject": "Chemistry",
+    "difficulty": "1",
+    "question": "Is table salt primarily sodium chloride?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 39.25,
+      "B": 26.125,
+      "C": 23.625,
+      "D": 24.0,
+      "E": 24.625
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.996755599975586e-06,
+      "C": 1.6391277313232422e-07,
+      "D": 2.384185791015625e-07,
+      "E": 4.4517219066619873e-07
+    },
+    "probs_norm": {
+      "A": 0.9999971557489469,
+      "B": 1.996749920701368e-06,
+      "C": 1.6391230692324663e-07,
+      "D": 2.384179009792678e-07,
+      "E": 4.4517092448472665e-07
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 7.942310571670532
+  },
+  "Q-000055": {
+    "id": "Q-000055",
+    "subject": "Chemistry",
+    "difficulty": "1",
+    "question": "Is mercury a solid at room temperature?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 32.0,
+      "B": 25.5,
+      "C": 24.0,
+      "D": 22.75,
+      "E": 22.875
+    },
+    "probs": {
+      "A": 0.99609375,
+      "B": 0.00150299072265625,
+      "C": 0.000335693359375,
+      "D": 9.584426879882812e-05,
+      "E": 0.0001087188720703125
+    },
+    "probs_norm": {
+      "A": 0.9979529390969524,
+      "B": 0.001505796024832258,
+      "C": 0.00033631992432801703,
+      "D": 9.602316021297076e-05,
+      "E": 0.00010892179367441461
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 7.652886390686035
+  },
+  "Q-000056": {
+    "id": "Q-000056",
+    "subject": "Chemistry",
+    "difficulty": "1",
+    "question": "Is water an element?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 39.75,
+      "B": 38.75,
+      "C": 40.25,
+      "D": 45.0,
+      "E": 36.75
+    },
+    "probs": {
+      "A": 0.005157470703125,
+      "B": 0.00189971923828125,
+      "C": 0.008544921875,
+      "D": 0.984375,
+      "E": 0.0002574920654296875
+    },
+    "probs_norm": {
+      "A": 0.005156261024272946,
+      "B": 0.0018992736613076386,
+      "C": 0.008542917673351627,
+      "D": 0.9841441159701074,
+      "E": 0.0002574316709603727
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 8.556014776229858
+  },
+  "Q-000057": {
+    "id": "Q-000057",
+    "subject": "Chemistry",
+    "difficulty": "1",
+    "question": "Is CO2 an element?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 26.5,
+      "B": 26.5,
+      "C": 25.625,
+      "D": 36.0,
+      "E": 27.75
+    },
+    "probs": {
+      "A": 7.486343383789062e-05,
+      "B": 7.486343383789062e-05,
+      "C": 3.123283386230469e-05,
+      "D": 1.0,
+      "E": 0.0002613067626953125
+    },
+    "probs_norm": {
+      "A": 7.483033888849302e-05,
+      "B": 7.483033888849302e-05,
+      "C": 3.1219026733734354e-05,
+      "D": 0.999557929048923,
+      "E": 0.0002611912465662049
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 9.10340142250061
+  },
+  "Q-000058": {
+    "id": "Q-000058",
+    "subject": "Chemistry",
+    "difficulty": "1",
+    "question": "Is iron a non-metal?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 24.5,
+      "B": 24.0,
+      "C": 22.625,
+      "D": 35.75,
+      "E": 25.25
+    },
+    "probs": {
+      "A": 1.2993812561035156e-05,
+      "B": 7.867813110351562e-06,
+      "C": 1.996755599975586e-06,
+      "D": 1.0,
+      "E": 2.753734588623047e-05
+    },
+    "probs_norm": {
+      "A": 1.2993157761401698e-05,
+      "B": 7.867416626169835e-06,
+      "C": 1.9966549770961322e-06,
+      "D": 0.9999496068124437,
+      "E": 2.753595819159442e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 10.03637409210205
+  },
+  "Q-000059": {
+    "id": "Q-000059",
+    "subject": "Chemistry",
+    "difficulty": "1",
+    "question": "Is helium a compound?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 25.125,
+      "B": 24.625,
+      "C": 23.625,
+      "D": 38.25,
+      "E": 26.125
+    },
+    "probs": {
+      "A": 1.996755599975586e-06,
+      "B": 1.2069940567016602e-06,
+      "C": 4.4517219066619873e-07,
+      "D": 1.0,
+      "E": 5.424022674560547e-06
+    },
+    "probs_norm": {
+      "A": 1.9967374836871716e-06,
+      "B": 1.2069831058109022e-06,
+      "C": 4.451681516802556e-07,
+      "D": 0.9999909271377957,
+      "E": 5.423973463150227e-06
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 8.84037733078003
+  },
+  "Q-000060": {
+    "id": "Q-000060",
+    "subject": "Chemistry",
+    "difficulty": "1",
+    "question": "Is freezing the process of a liquid turning into a solid?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 35.25,
+      "B": 26.5,
+      "C": 25.5,
+      "D": 24.625,
+      "E": 24.75
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 0.0001583099365234375,
+      "C": 5.817413330078125e-05,
+      "D": 2.4318695068359375e-05,
+      "E": 2.753734588623047e-05
+    },
+    "probs_norm": {
+      "A": 0.9997317318763193,
+      "B": 0.00015826746701380634,
+      "C": 5.8158527035193897e-05,
+      "D": 2.431217113766302e-05,
+      "E": 2.7529958494118422e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 8.897559881210327
+  },
+  "Q-000061": {
+    "id": "Q-000061",
+    "subject": "Chemistry",
+    "difficulty": "2",
+    "question": "Is silver's chemical symbol Ag?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 37.25,
+      "B": 25.875,
+      "C": 24.375,
+      "D": 24.25,
+      "E": 25.125
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.150369644165039e-05,
+      "C": 2.562999725341797e-06,
+      "D": 2.2649765014648438e-06,
+      "E": 5.424022674560547e-06
+    },
+    "probs_norm": {
+      "A": 0.9999782447779569,
+      "B": 1.1503446176179987e-05,
+      "C": 2.5629439667136757e-06,
+      "D": 2.264927226398132e-06,
+      "E": 5.4239046737428955e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 8.303806781768799
+  },
+  "Q-000062": {
+    "id": "Q-000062",
+    "subject": "Chemistry",
+    "difficulty": "2",
+    "question": "Is a neutron positively charged?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 24.25,
+      "B": 24.375,
+      "C": 23.25,
+      "D": 35.25,
+      "E": 26.125
+    },
+    "probs": {
+      "A": 1.6689300537109375e-05,
+      "B": 1.895427703857422e-05,
+      "C": 6.139278411865234e-06,
+      "D": 1.0,
+      "E": 0.0001087188720703125
+    },
+    "probs_norm": {
+      "A": 1.668678914650709e-05,
+      "B": 1.8951424816390194e-05,
+      "C": 6.138354578893679e-06,
+      "D": 0.9998495209193038,
+      "E": 0.00010870251215438904
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 6.99220871925354
+  },
+  "Q-000063": {
+    "id": "Q-000063",
+    "subject": "Chemistry",
+    "difficulty": "2",
+    "question": "Is methane an organic compound?",
+    "answer": "Yes",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 35.75,
+      "B": 26.75,
+      "C": 25.75,
+      "D": 24.625,
+      "E": 25.125
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 0.00012302398681640625,
+      "C": 4.5299530029296875e-05,
+      "D": 1.4722347259521484e-05,
+      "E": 2.4318695068359375e-05
+    },
+    "probs_norm": {
+      "A": 0.999792678431972,
+      "B": 0.00012299848129055442,
+      "C": 4.529013845970027e-05,
+      "D": 1.4719294999402587e-05,
+      "E": 2.4313653278365407e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 7.227329254150391
+  },
+  "Q-000064": {
+    "id": "Q-000064",
+    "subject": "Chemistry",
+    "difficulty": "2",
+    "question": "Is copper a good electrical conductor?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 36.0,
+      "B": 24.5,
+      "C": 22.75,
+      "D": 22.5,
+      "E": 23.5
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.0132789611816406e-05,
+      "C": 1.7583370208740234e-06,
+      "D": 1.3709068298339844e-06,
+      "E": 3.725290298461914e-06
+    },
+    "probs_norm": {
+      "A": 0.9999830129648033,
+      "B": 1.013261748576263e-05,
+      "C": 1.7583071519411622e-06,
+      "D": 1.3708835421914145e-06,
+      "E": 3.725227016824496e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 9.682401657104492
+  },
+  "Q-000065": {
+    "id": "Q-000065",
+    "subject": "Chemistry",
+    "difficulty": "2",
+    "question": "Does an acid have a pH value above 7?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 26.75,
+      "B": 26.375,
+      "C": 24.625,
+      "D": 38.0,
+      "E": 26.5
+    },
+    "probs": {
+      "A": 1.2993812561035156e-05,
+      "B": 8.940696716308594e-06,
+      "C": 1.55717134475708e-06,
+      "D": 1.0,
+      "E": 1.0132789611816406e-05
+    },
+    "probs_norm": {
+      "A": 1.2993375665661848e-05,
+      "B": 8.940396100226042e-06,
+      "C": 1.5571189874560356e-06,
+      "D": 0.9999663766603331,
+      "E": 1.0132448913589514e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 8.392667293548584
+  },
+  "Q-000066": {
+    "id": "Q-000066",
+    "subject": "Chemistry",
+    "difficulty": "2",
+    "question": "Is bronze an element?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "C",
+    "logits": {
+      "A": 38.75,
+      "B": 36.25,
+      "C": 42.75,
+      "D": 38.5,
+      "E": 34.0
+    },
+    "probs": {
+      "A": 0.0177001953125,
+      "B": 0.00145721435546875,
+      "C": 0.96875,
+      "D": 0.0137939453125,
+      "E": 0.00015354156494140625
+    },
+    "probs_norm": {
+      "A": 0.017667424068628805,
+      "B": 0.0014545163780638368,
+      "C": 0.9669563959216427,
+      "D": 0.01376840634313831,
+      "E": 0.00015325728852635977
+    },
+    "is_valid": true,
+    "pred_label": "C",
+    "score": 0,
+    "processing_time": 6.844037771224976
+  },
+  "Q-000067": {
+    "id": "Q-000067",
+    "subject": "Chemistry",
+    "difficulty": "2",
+    "question": "Is dry ice the liquid form of carbon dioxide?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 30.5,
+      "B": 30.375,
+      "C": 30.625,
+      "D": 39.5,
+      "E": 30.25
+    },
+    "probs": {
+      "A": 0.00012302398681640625,
+      "B": 0.0001087188720703125,
+      "C": 0.00014019012451171875,
+      "D": 1.0,
+      "E": 9.584426879882812e-05
+    },
+    "probs_norm": {
+      "A": 0.00012296646590087473,
+      "B": 0.00010866803963333116,
+      "C": 0.00014012457742192702,
+      "D": 0.9995324414610514,
+      "E": 9.579945599254194e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 7.856570720672607
+  },
+  "Q-000068": {
+    "id": "Q-000068",
+    "subject": "Chemistry",
+    "difficulty": "2",
+    "question": "Is distillation a physical separation technique?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 36.75,
+      "B": 26.875,
+      "C": 25.125,
+      "D": 24.25,
+      "E": 23.875
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 5.14984130859375e-05,
+      "C": 8.940696716308594e-06,
+      "D": 3.725290298461914e-06,
+      "E": 2.562999725341797e-06
+    },
+    "probs_norm": {
+      "A": 0.9999332770524227,
+      "B": 5.1494976960020856e-05,
+      "C": 8.940100166670288e-06,
+      "D": 3.72504173611262e-06,
+      "E": 2.562828714445482e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 6.566831350326538
+  },
+  "Q-000069": {
+    "id": "Q-000069",
+    "subject": "Chemistry",
+    "difficulty": "2",
+    "question": "Is litmus paper a universal indicator?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 33.25,
+      "B": 27.375,
+      "C": 27.0,
+      "D": 26.375,
+      "E": 24.25
+    },
+    "probs": {
+      "A": 0.9921875,
+      "B": 0.0027923583984375,
+      "C": 0.001922607421875,
+      "D": 0.00102996826171875,
+      "E": 0.00012302398681640625
+    },
+    "probs_norm": {
+      "A": 0.9941206092092301,
+      "B": 0.0027977988355882303,
+      "C": 0.0019263532966345195,
+      "D": 0.0010319749803399212,
+      "E": 0.00012326367820726834
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 6.268112421035767
+  },
+  "Q-000070": {
+    "id": "Q-000070",
+    "subject": "Chemistry",
+    "difficulty": "2",
+    "question": "Does a catalyst increase reaction rate?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 35.25,
+      "B": 24.875,
+      "C": 23.25,
+      "D": 22.25,
+      "E": 23.375
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 3.123283386230469e-05,
+      "C": 6.139278411865234e-06,
+      "D": 2.2649765014648438e-06,
+      "E": 6.973743438720703e-06
+    },
+    "probs_norm": {
+      "A": 0.9999533913402541,
+      "B": 3.12313781417783e-05,
+      "C": 6.13899226832665e-06,
+      "D": 2.2648709339457542e-06,
+      "E": 6.973418401885612e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 6.107297658920288
+  },
+  "Q-000071": {
+    "id": "Q-000071",
+    "subject": "Chemistry",
+    "difficulty": "3",
+    "question": "Does oxidation involve the loss of electrons?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 38.0,
+      "B": 26.875,
+      "C": 25.375,
+      "D": 24.25,
+      "E": 26.0
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.4722347259521484e-05,
+      "C": 3.293156623840332e-06,
+      "D": 1.0654330253601074e-06,
+      "E": 6.139278411865234e-06
+    },
+    "probs_norm": {
+      "A": 0.9999747804207226,
+      "B": 1.4721975968117624e-05,
+      "C": 3.2930735718157844e-06,
+      "D": 1.0654061555874597e-06,
+      "E": 6.1391235818466206e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 6.334200620651245
+  },
+  "Q-000072": {
+    "id": "Q-000072",
+    "subject": "Chemistry",
+    "difficulty": "3",
+    "question": "Is argon chemically inert under normal conditions?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 37.5,
+      "B": 26.25,
+      "C": 24.25,
+      "D": 24.0,
+      "E": 25.0
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.2993812561035156e-05,
+      "C": 1.7583370208740234e-06,
+      "D": 1.3709068298339844e-06,
+      "E": 3.725290298461914e-06
+    },
+    "probs_norm": {
+      "A": 0.9999801520472389,
+      "B": 1.2993554660457257e-05,
+      "C": 1.758302121483895e-06,
+      "D": 1.3708796201399858e-06,
+      "E": 3.7252163590760484e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 6.536243677139282
+  },
+  "Q-000073": {
+    "id": "Q-000073",
+    "subject": "Chemistry",
+    "difficulty": "3",
+    "question": "Is polymerization the joining of monomers to form a polymer?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 39.75,
+      "B": 29.0,
+      "C": 27.625,
+      "D": 27.25,
+      "E": 26.875
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 2.1457672119140625e-05,
+      "C": 5.424022674560547e-06,
+      "D": 3.725290298461914e-06,
+      "E": 2.562999725341797e-06
+    },
+    "probs_norm": {
+      "A": 0.9999668311153939,
+      "B": 2.145696039209019e-05,
+      "C": 5.4238427657783535e-06,
+      "D": 3.7251667347378802e-06,
+      "E": 2.5629147134996617e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 6.5364203453063965
+  },
+  "Q-000074": {
+    "id": "Q-000074",
+    "subject": "Chemistry",
+    "difficulty": "3",
+    "question": "Is osmosis the movement of solvent through a semipermeable membrane?",
+    "answer": "Yes",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 40.5,
+      "B": 29.375,
+      "C": 27.75,
+      "D": 27.125,
+      "E": 28.5
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.4722347259521484e-05,
+      "C": 2.905726432800293e-06,
+      "D": 1.55717134475708e-06,
+      "E": 6.139278411865234e-06
+    },
+    "probs_norm": {
+      "A": 0.9999746761178663,
+      "B": 1.4721974432534753e-05,
+      "C": 2.9056528485265958e-06,
+      "D": 1.5571319111334834e-06,
+      "E": 6.139122941502347e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 7.047901391983032
+  },
+  "Q-000075": {
+    "id": "Q-000075",
+    "subject": "Chemistry",
+    "difficulty": "3",
+    "question": "Is a covalent bond formed by the transfer of electrons?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 28.0,
+      "B": 28.25,
+      "C": 27.0,
+      "D": 41.75,
+      "E": 28.125
+    },
+    "probs": {
+      "A": 1.0654330253601074e-06,
+      "B": 1.3709068298339844e-06,
+      "C": 3.9301812648773193e-07,
+      "D": 1.0,
+      "E": 1.2069940567016602e-06
+    },
+    "probs_norm": {
+      "A": 1.0654287249147018e-06,
+      "B": 1.3709012963937423e-06,
+      "C": 3.9301654013461906e-07,
+      "D": 0.9999959636642537,
+      "E": 1.2069891848684036e-06
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 6.5370001792907715
+  },
+  "Q-000076": {
+    "id": "Q-000076",
+    "subject": "Chemistry",
+    "difficulty": "3",
+    "question": "Is sucrose a monosaccharide?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 40.0,
+      "B": 30.25,
+      "C": 28.875,
+      "D": 28.0,
+      "E": 28.5
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 5.817413330078125e-05,
+      "C": 1.4722347259521484e-05,
+      "D": 6.139278411865234e-06,
+      "E": 1.0132789611816406e-05
+    },
+    "probs_norm": {
+      "A": 0.9999108394017372,
+      "B": 5.816894646025273e-05,
+      "C": 1.4721034606231992e-05,
+      "D": 6.1387310301291305e-06,
+      "E": 1.0131886166232546e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 6.499853610992432
+  },
+  "Q-000077": {
+    "id": "Q-000077",
+    "subject": "Chemistry",
+    "difficulty": "3",
+    "question": "Is sulfuric acid considered a weak acid?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 35.75,
+      "B": 28.0,
+      "C": 27.375,
+      "D": 25.875,
+      "E": 26.5
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 0.000431060791015625,
+      "C": 0.0002307891845703125,
+      "D": 5.14984130859375e-05,
+      "E": 9.584426879882812e-05
+    },
+    "probs_norm": {
+      "A": 0.9991914616058611,
+      "B": 0.00043071226181588097,
+      "C": 0.0002306025826536354,
+      "D": 5.145677464172029e-05,
+      "E": 9.576677502764611e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 6.760347604751587
+  },
+  "Q-000078": {
+    "id": "Q-000078",
+    "subject": "Chemistry",
+    "difficulty": "3",
+    "question": "Is graphene a three-dimensional allotrope of carbon?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 32.75,
+      "B": 32.75,
+      "C": 30.75,
+      "D": 41.0,
+      "E": 30.75
+    },
+    "probs": {
+      "A": 0.0002613067626953125,
+      "B": 0.0002613067626953125,
+      "C": 3.528594970703125e-05,
+      "D": 1.0,
+      "E": 3.528594970703125e-05
+    },
+    "probs_norm": {
+      "A": 0.00026115185122350596,
+      "B": 0.00026115185122350596,
+      "C": 3.5265031004634016e-05,
+      "D": 0.9994071662355437,
+      "E": 3.5265031004634016e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 6.5871031284332275
+  },
+  "Q-000079": {
+    "id": "Q-000079",
+    "subject": "Chemistry",
+    "difficulty": "3",
+    "question": "Does a catalyst increase the activation energy of a reaction?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 44.25,
+      "B": 46.5,
+      "C": 45.75,
+      "D": 49.0,
+      "E": 44.75
+    },
+    "probs": {
+      "A": 0.007568359375,
+      "B": 0.07177734375,
+      "C": 0.033935546875,
+      "D": 0.875,
+      "E": 0.012451171875
+    },
+    "probs_norm": {
+      "A": 0.007562820200048792,
+      "B": 0.071724810929495,
+      "C": 0.033910709929251034,
+      "D": 0.8743595999024152,
+      "E": 0.012442059038789949
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 6.818132400512695
+  },
+  "Q-000080": {
+    "id": "Q-000080",
+    "subject": "Chemistry",
+    "difficulty": "3",
+    "question": "Are isotopes atoms with different numbers of neutrons?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 38.25,
+      "B": 27.875,
+      "C": 26.5,
+      "D": 25.5,
+      "E": 27.125
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 3.123283386230469e-05,
+      "C": 7.867813110351562e-06,
+      "D": 2.905726432800293e-06,
+      "E": 1.4722347259521484e-05
+    },
+    "probs_norm": {
+      "A": 0.9999432744973002,
+      "B": 3.123106216410311e-05,
+      "C": 7.86736680469773e-06,
+      "D": 2.9055616040076845e-06,
+      "E": 1.4721512126972267e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 6.16025710105896
+  },
+  "Q-000081": {
+    "id": "Q-000081",
+    "subject": "Chemistry",
+    "difficulty": "4",
+    "question": "Is a buffer solution resistant to changes in pH?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 37.0,
+      "B": 26.875,
+      "C": 25.375,
+      "D": 24.375,
+      "E": 26.0
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 4.00543212890625e-05,
+      "C": 8.940696716308594e-06,
+      "D": 3.293156623840332e-06,
+      "E": 1.6689300537109375e-05
+    },
+    "probs_norm": {
+      "A": 0.9999310272823976,
+      "B": 4.005155863367147e-05,
+      "C": 8.940080052158811e-06,
+      "D": 3.2929294858784955e-06,
+      "E": 1.6688149430696448e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 6.608790397644043
+  },
+  "Q-000082": {
+    "id": "Q-000082",
+    "subject": "Chemistry",
+    "difficulty": "4",
+    "question": "Is the Haber-Bosch process used to synthesize ammonia?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 38.5,
+      "B": 26.125,
+      "C": 24.625,
+      "D": 24.625,
+      "E": 25.875
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 4.231929779052734e-06,
+      "C": 9.424984455108643e-07,
+      "D": 9.424984455108643e-07,
+      "E": 3.293156623840332e-06
+    },
+    "probs_norm": {
+      "A": 0.9999905900052549,
+      "B": 4.231889956615752e-06,
+      "C": 9.424895766054447e-07,
+      "D": 9.424895766054447e-07,
+      "E": 3.293125635253807e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 6.673391103744507
+  },
+  "Q-000083": {
+    "id": "Q-000083",
+    "subject": "Chemistry",
+    "difficulty": "4",
+    "question": "Are enantiomers non-superimposable mirror images of each other?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 35.5,
+      "B": 25.25,
+      "C": 23.375,
+      "D": 22.75,
+      "E": 24.0
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 3.528594970703125e-05,
+      "C": 5.424022674560547e-06,
+      "D": 2.905726432800293e-06,
+      "E": 1.0132789611816406e-05
+    },
+    "probs_norm": {
+      "A": 0.9999462544003185,
+      "B": 3.5284053242503915e-05,
+      "C": 5.423731157209217e-06,
+      "D": 2.905570262790652e-06,
+      "E": 1.0132245018962273e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 7.347499847412109
+  },
+  "Q-000084": {
+    "id": "Q-000084",
+    "subject": "Chemistry",
+    "difficulty": "4",
+    "question": "Is a zwitterion a molecule with no charged groups?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "E",
+    "logits": {
+      "A": 39.75,
+      "B": 39.25,
+      "C": 37.25,
+      "D": 43.5,
+      "E": 46.25
+    },
+    "probs": {
+      "A": 0.00141143798828125,
+      "B": 0.0008544921875,
+      "C": 0.00011587142944335938,
+      "D": 0.06005859375,
+      "E": 0.9375
+    },
+    "probs_norm": {
+      "A": 0.0014115221215558978,
+      "B": 0.0008545431222392463,
+      "C": 0.00011587833633043352,
+      "D": 0.060062173734529885,
+      "E": 0.9375558826853445
+    },
+    "is_valid": true,
+    "pred_label": "E",
+    "score": 2,
+    "processing_time": 6.634904861450195
+  },
+  "Q-000085": {
+    "id": "Q-000085",
+    "subject": "Chemistry",
+    "difficulty": "4",
+    "question": "Is a carbocation an electron-rich species?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 37.0,
+      "B": 26.625,
+      "C": 25.0,
+      "D": 24.375,
+      "E": 26.0
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 3.123283386230469e-05,
+      "C": 6.139278411865234e-06,
+      "D": 3.293156623840332e-06,
+      "E": 1.6689300537109375e-05
+    },
+    "probs_norm": {
+      "A": 0.9999426487199229,
+      "B": 3.1231042619302245e-05,
+      "C": 6.138926316389564e-06,
+      "D": 3.2929677570924603e-06,
+      "E": 1.668834338435998e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 7.484740257263184
+  },
+  "Q-000086": {
+    "id": "Q-000086",
+    "subject": "Chemistry",
+    "difficulty": "4",
+    "question": "Is Le Chatelier's principle about equilibrium shifts?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 38.75,
+      "B": 27.25,
+      "C": 25.375,
+      "D": 25.0,
+      "E": 25.75
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.0132789611816406e-05,
+      "C": 1.55717134475708e-06,
+      "D": 1.0654330253601074e-06,
+      "E": 2.2649765014648438e-06
+    },
+    "probs_norm": {
+      "A": 0.9999849798551247,
+      "B": 1.0132637415848447e-05,
+      "C": 1.5571479558178862e-06,
+      "D": 1.0654170224017116e-06,
+      "E": 2.2649424811896527e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 8.221259355545044
+  },
+  "Q-000087": {
+    "id": "Q-000087",
+    "subject": "Chemistry",
+    "difficulty": "4",
+    "question": "Does Boyle's Law state that pressure and volume are directly proportional?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 36.75,
+      "B": 26.75,
+      "C": 25.375,
+      "D": 24.0,
+      "E": 25.625
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 4.5299530029296875e-05,
+      "C": 1.150369644165039e-05,
+      "D": 2.905726432800293e-06,
+      "E": 1.4722347259521484e-05
+    },
+    "probs_norm": {
+      "A": 0.9999255742394428,
+      "B": 4.5296158577321563e-05,
+      "C": 1.1502840270293503e-05,
+      "D": 2.905510171900561e-06,
+      "E": 1.4721251537629508e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 7.3670666217803955
+  },
+  "Q-000088": {
+    "id": "Q-000088",
+    "subject": "Chemistry",
+    "difficulty": "4",
+    "question": "Is Faraday's constant the charge of one electron?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 37.25,
+      "B": 27.75,
+      "C": 27.0,
+      "D": 26.0,
+      "E": 26.875
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 7.486343383789062e-05,
+      "C": 3.528594970703125e-05,
+      "D": 1.2993812561035156e-05,
+      "E": 3.123283386230469e-05
+    },
+    "probs_norm": {
+      "A": 0.9998456477983119,
+      "B": 7.485187850205182e-05,
+      "C": 3.528050324300531e-05,
+      "D": 1.2991806937458037e-05,
+      "E": 3.122801300563308e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 6.947881460189819
+  },
+  "Q-000089": {
+    "id": "Q-000089",
+    "subject": "Chemistry",
+    "difficulty": "4",
+    "question": "Is quantum tunneling a phenomenon predicted by classical mechanics?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 24.0,
+      "B": 24.625,
+      "C": 24.25,
+      "D": 36.75,
+      "E": 26.125
+    },
+    "probs": {
+      "A": 2.905726432800293e-06,
+      "B": 5.424022674560547e-06,
+      "C": 3.725290298461914e-06,
+      "D": 1.0,
+      "E": 2.4318695068359375e-05
+    },
+    "probs_norm": {
+      "A": 2.905620744522849e-06,
+      "B": 5.423825389775985e-06,
+      "C": 3.7251548006703193e-06,
+      "D": 0.9999636275885263,
+      "E": 2.4317810538775845e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 6.674760341644287
+  },
+  "Q-000090": {
+    "id": "Q-000090",
+    "subject": "Chemistry",
+    "difficulty": "4",
+    "question": "Is astatine the most abundant halogen on Earth?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 42.5,
+      "B": 43.0,
+      "C": 43.5,
+      "D": 45.75,
+      "E": 40.25
+    },
+    "probs": {
+      "A": 0.031982421875,
+      "B": 0.052734375,
+      "C": 0.0869140625,
+      "D": 0.82421875,
+      "E": 0.0033721923828125
+    },
+    "probs_norm": {
+      "A": 0.032007329922883104,
+      "B": 0.0527754447583416,
+      "C": 0.0869817515461556,
+      "D": 0.8248606551118577,
+      "E": 0.0033748186607620067
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 6.540104866027832
+  },
+  "Q-000091": {
+    "id": "Q-000091",
+    "subject": "Chemistry",
+    "difficulty": "5",
+    "question": "Is oganesson a naturally occurring element?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 25.0,
+      "B": 24.875,
+      "C": 23.5,
+      "D": 38.25,
+      "E": 26.25
+    },
+    "probs": {
+      "A": 1.7583370208740234e-06,
+      "B": 1.55717134475708e-06,
+      "C": 3.9301812648773193e-07,
+      "D": 1.0,
+      "E": 6.139278411865234e-06
+    },
+    "probs_norm": {
+      "A": 1.758319705284607e-06,
+      "B": 1.5571560101884866e-06,
+      "C": 3.9301425616001276e-07,
+      "D": 0.9999901522920743,
+      "E": 6.13921795404456e-06
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 6.59299373626709
+  },
+  "Q-000092": {
+    "id": "Q-000092",
+    "subject": "Chemistry",
+    "difficulty": "5",
+    "question": "Is the Schr\u00f6dinger equation a fundamental equation of classical mechanics?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 25.0,
+      "B": 26.125,
+      "C": 25.875,
+      "D": 37.25,
+      "E": 27.375
+    },
+    "probs": {
+      "A": 4.798173904418945e-06,
+      "B": 1.4722347259521484e-05,
+      "C": 1.150369644165039e-05,
+      "D": 1.0,
+      "E": 5.14984130859375e-05
+    },
+    "probs_norm": {
+      "A": 4.797777979158631e-06,
+      "B": 1.4721132432946359e-05,
+      "C": 1.150274720469088e-05,
+      "D": 0.9999174841787312,
+      "E": 5.149416365208767e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 7.8628551959991455
+  },
+  "Q-000093": {
+    "id": "Q-000093",
+    "subject": "Chemistry",
+    "difficulty": "5",
+    "question": "Is buckminsterfullerene an allotrope of silicon?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 26.0,
+      "B": 26.5,
+      "C": 25.125,
+      "D": 39.5,
+      "E": 28.125
+    },
+    "probs": {
+      "A": 1.3709068298339844e-06,
+      "B": 2.2649765014648438e-06,
+      "C": 5.699694156646729e-07,
+      "D": 1.0,
+      "E": 1.150369644165039e-05
+    },
+    "probs_norm": {
+      "A": 1.3708852938440287e-06,
+      "B": 2.2649409202640476e-06,
+      "C": 5.69960461842762e-07,
+      "D": 0.9999842906975974,
+      "E": 1.150351572660424e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 7.470457077026367
+  },
+  "Q-000094": {
+    "id": "Q-000094",
+    "subject": "Chemistry",
+    "difficulty": "5",
+    "question": "Is Hund's rule related to electron pairing in orbitals?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 39.75,
+      "B": 28.875,
+      "C": 27.25,
+      "D": 26.375,
+      "E": 27.75
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.895427703857422e-05,
+      "C": 3.725290298461914e-06,
+      "D": 1.55717134475708e-06,
+      "E": 6.139278411865234e-06
+    },
+    "probs_norm": {
+      "A": 0.9999696249055807,
+      "B": 1.8953701300619522e-05,
+      "C": 3.725177142417359e-06,
+      "D": 1.557124045530456e-06,
+      "E": 6.139091930703808e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 8.111937046051025
+  },
+  "Q-000095": {
+    "id": "Q-000095",
+    "subject": "Chemistry",
+    "difficulty": "5",
+    "question": "Is a Lewis acid an electron pair donor?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 36.25,
+      "B": 36.5,
+      "C": 32.0,
+      "D": 42.5,
+      "E": 32.5
+    },
+    "probs": {
+      "A": 0.001922607421875,
+      "B": 0.002471923828125,
+      "C": 2.7418136596679688e-05,
+      "D": 0.99609375,
+      "E": 4.5299530029296875e-05
+    },
+    "probs_norm": {
+      "A": 0.0019215294459375642,
+      "B": 0.0024705378590625824,
+      "C": 2.7402763675944926e-05,
+      "D": 0.9955352558000332,
+      "E": 4.5274131290691617e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 7.1549155712127686
+  },
+  "Q-000096": {
+    "id": "Q-000096",
+    "subject": "Chemistry",
+    "difficulty": "5",
+    "question": "Is the Clausius-Clapeyron relation about reaction kinetics?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 25.125,
+      "B": 26.625,
+      "C": 25.75,
+      "D": 38.0,
+      "E": 27.25
+    },
+    "probs": {
+      "A": 2.562999725341797e-06,
+      "B": 1.150369644165039e-05,
+      "C": 4.798173904418945e-06,
+      "D": 1.0,
+      "E": 2.1457672119140625e-05
+    },
+    "probs_norm": {
+      "A": 2.5628963828442698e-06,
+      "B": 1.1503232602068465e-05,
+      "C": 4.7979804376503186e-06,
+      "D": 0.9999596790836514,
+      "E": 2.145680692613807e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 7.648914098739624
+  },
+  "Q-000097": {
+    "id": "Q-000097",
+    "subject": "Chemistry",
+    "difficulty": "5",
+    "question": "Are the Woodward-Hoffmann rules about pericyclic reactions?",
+    "answer": "Yes",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 37.25,
+      "B": 28.75,
+      "C": 27.5,
+      "D": 26.75,
+      "E": 25.875
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 0.00020313262939453125,
+      "C": 5.817413330078125e-05,
+      "D": 2.753734588623047e-05,
+      "E": 1.150369644165039e-05
+    },
+    "probs_norm": {
+      "A": 0.9996997423766949,
+      "B": 0.00020307163727401354,
+      "C": 5.815666607377853e-05,
+      "D": 2.752907758820254e-05,
+      "E": 1.1500242369097597e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 7.409111976623535
+  },
+  "Q-000098": {
+    "id": "Q-000098",
+    "subject": "Chemistry",
+    "difficulty": "5",
+    "question": "Is chelation therapy a process for removing liquids?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 26.625,
+      "B": 27.375,
+      "C": 26.5,
+      "D": 37.25,
+      "E": 26.875
+    },
+    "probs": {
+      "A": 2.4318695068359375e-05,
+      "B": 5.14984130859375e-05,
+      "C": 2.1457672119140625e-05,
+      "D": 1.0,
+      "E": 3.123283386230469e-05
+    },
+    "probs_norm": {
+      "A": 2.4315570332429606e-05,
+      "B": 5.1491795998086224e-05,
+      "C": 2.145491499920259e-05,
+      "D": 0.9998715088979492,
+      "E": 3.122882072106155e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 6.844615459442139
+  },
+  "Q-000099": {
+    "id": "Q-000099",
+    "subject": "Chemistry",
+    "difficulty": "5",
+    "question": "Is a Grignard reagent an organomagnesium compound?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 38.25,
+      "B": 26.625,
+      "C": 24.625,
+      "D": 24.5,
+      "E": 25.5
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 8.940696716308594e-06,
+      "C": 1.2069940567016602e-06,
+      "D": 1.0654330253601074e-06,
+      "E": 2.905726432800293e-06
+    },
+    "probs_norm": {
+      "A": 0.9999858813491079,
+      "B": 8.940570485732924e-06,
+      "C": 1.2069770155739449e-06,
+      "D": 1.0654179828831735e-06,
+      "E": 2.9056854078632004e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 8.13758635520935
+  },
+  "Q-000100": {
+    "id": "Q-000100",
+    "subject": "Chemistry",
+    "difficulty": "5",
+    "question": "Is the Aufbau principle a guide for filling atomic orbitals?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 38.0,
+      "B": 26.875,
+      "C": 25.5,
+      "D": 25.5,
+      "E": 26.625
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.4722347259521484e-05,
+      "C": 3.725290298461914e-06,
+      "D": 3.725290298461914e-06,
+      "E": 1.150369644165039e-05
+    },
+    "probs_norm": {
+      "A": 0.9999663245097787,
+      "B": 1.4721851477260312e-05,
+      "C": 3.7251648474848967e-06,
+      "D": 3.7251648474848967e-06,
+      "E": 1.1503309049033362e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 9.549761533737183
+  },
+  "Q-000101": {
+    "id": "Q-000101",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is gravity a force of attraction?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 34.25,
+      "B": 24.125,
+      "C": 22.625,
+      "D": 22.0,
+      "E": 22.0
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 4.00543212890625e-05,
+      "C": 8.940696716308594e-06,
+      "D": 4.798173904418945e-06,
+      "E": 4.798173904418945e-06
+    },
+    "probs_norm": {
+      "A": 0.9999414120669328,
+      "B": 4.0051974589167764e-05,
+      "C": 8.940172899367804e-06,
+      "D": 4.797892789327389e-06,
+      "E": 4.797892789327389e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 7.954496145248413
+  },
+  "Q-000102": {
+    "id": "Q-000102",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is the speed of light constant in a vacuum?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 33.0,
+      "B": 22.625,
+      "C": 21.125,
+      "D": 20.75,
+      "E": 21.125
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 3.123283386230469e-05,
+      "C": 6.973743438720703e-06,
+      "D": 4.798173904418945e-06,
+      "E": 6.973743438720703e-06
+    },
+    "probs_norm": {
+      "A": 0.999950024003081,
+      "B": 3.123127297029581e-05,
+      "C": 6.973394918940095e-06,
+      "D": 4.797934110894681e-06,
+      "E": 6.973394918940095e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 8.147899866104126
+  },
+  "Q-000103": {
+    "id": "Q-000103",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is friction a force that opposes motion?",
+    "answer": "Yes",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 37.0,
+      "B": 25.5,
+      "C": 23.875,
+      "D": 23.25,
+      "E": 24.0
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.0132789611816406e-05,
+      "C": 1.996755599975586e-06,
+      "D": 1.0654330253601074e-06,
+      "E": 2.2649765014648438e-06
+    },
+    "probs_norm": {
+      "A": 0.9999845402842679,
+      "B": 1.0132632961769434e-05,
+      "C": 1.9967247307016237e-06,
+      "D": 1.0654165540684037e-06,
+      "E": 2.2649414855719913e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 6.860471725463867
+  },
+  "Q-000104": {
+    "id": "Q-000104",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is a lever a simple machine?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 33.5,
+      "B": 24.0,
+      "C": 22.75,
+      "D": 21.5,
+      "E": 21.5
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 7.486343383789062e-05,
+      "C": 2.1457672119140625e-05,
+      "D": 6.139278411865234e-06,
+      "E": 6.139278411865234e-06
+    },
+    "probs_norm": {
+      "A": 0.9998914121298254,
+      "B": 7.48553045770562e-05,
+      "C": 2.14553420762263e-05,
+      "D": 6.138611760698081e-06,
+      "E": 6.138611760698081e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 7.491100788116455
+  },
+  "Q-000105": {
+    "id": "Q-000105",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is energy measured in Newtons in the SI system?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 25.25,
+      "B": 25.5,
+      "C": 24.5,
+      "D": 36.0,
+      "E": 26.5
+    },
+    "probs": {
+      "A": 2.1457672119140625e-05,
+      "B": 2.753734588623047e-05,
+      "C": 1.0132789611816406e-05,
+      "D": 1.0,
+      "E": 7.486343383789062e-05
+    },
+    "probs_norm": {
+      "A": 2.145479736420663e-05,
+      "B": 2.7533656617398507e-05,
+      "C": 1.013143208865313e-05,
+      "D": 0.9998660267097924,
+      "E": 7.485340413734312e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 8.227661848068237
+  },
+  "Q-000106": {
+    "id": "Q-000106",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Does sound travel faster in a vacuum than in air?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 31.0,
+      "B": 31.0,
+      "C": 29.125,
+      "D": 39.0,
+      "E": 34.0
+    },
+    "probs": {
+      "A": 0.0003337860107421875,
+      "B": 0.0003337860107421875,
+      "C": 5.1021575927734375e-05,
+      "D": 0.9921875,
+      "E": 0.006683349609375
+    },
+    "probs_norm": {
+      "A": 0.00033392310514141404,
+      "B": 0.00033392310514141404,
+      "C": 5.1042531785901864e-05,
+      "D": 0.9925950166269855,
+      "E": 0.006686094630945799
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 7.573499441146851
+  },
+  "Q-000107": {
+    "id": "Q-000107",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is the sun a planet?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 23.375,
+      "B": 23.125,
+      "C": 22.625,
+      "D": 35.75,
+      "E": 24.25
+    },
+    "probs": {
+      "A": 4.231929779052734e-06,
+      "B": 3.293156623840332e-06,
+      "C": 1.996755599975586e-06,
+      "D": 1.0,
+      "E": 1.0132789611816406e-05
+    },
+    "probs_norm": {
+      "A": 4.231846603666689e-06,
+      "B": 3.2930918993321773e-06,
+      "C": 1.9967163552511847e-06,
+      "D": 0.9999803457546823,
+      "E": 1.0132590459483623e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 6.883833885192871
+  },
+  "Q-000108": {
+    "id": "Q-000108",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is freezing the process of a liquid turning into a gas?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 35.25,
+      "B": 27.375,
+      "C": 26.625,
+      "D": 26.125,
+      "E": 26.25
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 0.0003795623779296875,
+      "C": 0.000179290771484375,
+      "D": 0.0001087188720703125,
+      "E": 0.00012302398681640625
+    },
+    "probs_norm": {
+      "A": 0.9992100285399822,
+      "B": 0.00037926253448382656,
+      "C": 0.00017914913689185777,
+      "D": 0.00010863298726421163,
+      "E": 0.0001229268013779237
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 8.293155193328857
+  },
+  "Q-000109": {
+    "id": "Q-000109",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is velocity a scalar quantity?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 25.5,
+      "B": 25.75,
+      "C": 23.75,
+      "D": 34.75,
+      "E": 25.125
+    },
+    "probs": {
+      "A": 9.584426879882812e-05,
+      "B": 0.00012302398681640625,
+      "C": 1.6689300537109375e-05,
+      "D": 1.0,
+      "E": 6.580352783203125e-05
+    },
+    "probs_norm": {
+      "A": 9.581539376789984e-05,
+      "B": 0.00012298692334387145,
+      "C": 1.6684272546649225e-05,
+      "D": 0.9996987297071577,
+      "E": 6.578370318393124e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 7.729825258255005
+  },
+  "Q-000110": {
+    "id": "Q-000110",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is magnetism produced by moving electric charges?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 35.75,
+      "B": 24.25,
+      "C": 22.5,
+      "D": 21.875,
+      "E": 22.625
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.0132789611816406e-05,
+      "C": 1.7583370208740234e-06,
+      "D": 9.424984455108643e-07,
+      "E": 1.996755599975586e-06
+    },
+    "probs_norm": {
+      "A": 0.9999851698392588,
+      "B": 1.0132639340917705e-05,
+      "C": 1.7583109444533666e-06,
+      "D": 9.42484468107419e-07,
+      "E": 1.9967259877690773e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 7.999562978744507
+  },
+  "Q-000111": {
+    "id": "Q-000111",
+    "subject": "Physics",
+    "difficulty": "2",
+    "question": "Is the boiling point of water 100 degrees Celsius at standard pressure?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 37.0,
+      "B": 25.375,
+      "C": 23.875,
+      "D": 23.5,
+      "E": 24.125
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 8.940696716308594e-06,
+      "C": 1.996755599975586e-06,
+      "D": 1.3709068298339844e-06,
+      "E": 2.562999725341797e-06
+    },
+    "probs_norm": {
+      "A": 0.9999851288622825,
+      "B": 8.940563757976436e-06,
+      "C": 1.9967259059480706e-06,
+      "D": 1.37088644288972e-06,
+      "E": 2.5629616106199114e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 10.23947286605835
+  },
+  "Q-000112": {
+    "id": "Q-000112",
+    "subject": "Physics",
+    "difficulty": "2",
+    "question": "Is Ohm's law related to electrical circuits?",
+    "answer": "Yes",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 37.25,
+      "B": 25.125,
+      "C": 23.75,
+      "D": 23.125,
+      "E": 23.625
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 5.424022674560547e-06,
+      "C": 1.3709068298339844e-06,
+      "D": 7.338821887969971e-07,
+      "E": 1.2069940567016602e-06
+    },
+    "probs_norm": {
+      "A": 0.9999912642705637,
+      "B": 5.423975291766006e-06,
+      "C": 1.3708948539628367e-06,
+      "D": 7.338757778007576e-07,
+      "E": 1.2069835127281497e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 9.615433692932129
+  },
+  "Q-000113": {
+    "id": "Q-000113",
+    "subject": "Physics",
+    "difficulty": "2",
+    "question": "Is kinetic energy the energy of motion?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 37.25,
+      "B": 25.5,
+      "C": 23.875,
+      "D": 23.5,
+      "E": 23.75
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 7.867813110351562e-06,
+      "C": 1.55717134475708e-06,
+      "D": 1.0654330253601074e-06,
+      "E": 1.3709068298339844e-06
+    },
+    "probs_norm": {
+      "A": 0.999988138816379,
+      "B": 7.867719788775566e-06,
+      "C": 1.5571528748618307e-06,
+      "D": 1.0654203880633577e-06,
+      "E": 1.3708905692563484e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 9.78190541267395
+  },
+  "Q-000114": {
+    "id": "Q-000114",
+    "subject": "Physics",
+    "difficulty": "2",
+    "question": "Is power the rate at which work is done?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 33.5,
+      "B": 32.5,
+      "C": 28.625,
+      "D": 28.625,
+      "E": 24.75
+    },
+    "probs": {
+      "A": 0.72265625,
+      "B": 0.265625,
+      "C": 0.005523681640625,
+      "D": 0.005523681640625,
+      "E": 0.00011444091796875
+    },
+    "probs_norm": {
+      "A": 0.7230589546485088,
+      "B": 0.26577302116810053,
+      "C": 0.005526759746257605,
+      "D": 0.005526759746257605,
+      "E": 0.00011450469087550287
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 9.53841495513916
+  },
+  "Q-000115": {
+    "id": "Q-000115",
+    "subject": "Physics",
+    "difficulty": "2",
+    "question": "Is nuclear fission the joining of atomic nuclei?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 27.875,
+      "B": 28.375,
+      "C": 26.875,
+      "D": 41.25,
+      "E": 28.375
+    },
+    "probs": {
+      "A": 1.55717134475708e-06,
+      "B": 2.562999725341797e-06,
+      "C": 5.699694156646729e-07,
+      "D": 1.0,
+      "E": 2.562999725341797e-06
+    },
+    "probs_norm": {
+      "A": 1.557160050456903e-06,
+      "B": 2.562981135680261e-06,
+      "C": 5.699652816265697e-07,
+      "D": 0.9999927469123966,
+      "E": 2.562981135680261e-06
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 8.549665451049805
+  },
+  "Q-000116": {
+    "id": "Q-000116",
+    "subject": "Physics",
+    "difficulty": "2",
+    "question": "Is a concave lens a converging lens?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 35.75,
+      "B": 26.75,
+      "C": 25.625,
+      "D": 24.875,
+      "E": 25.5
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 0.00012302398681640625,
+      "C": 4.00543212890625e-05,
+      "D": 1.895427703857422e-05,
+      "E": 3.528594970703125e-05
+    },
+    "probs_norm": {
+      "A": 0.9997827286822334,
+      "B": 0.00012299725723267373,
+      "C": 4.004561863389378e-05,
+      "D": 1.8950158817824733e-05,
+      "E": 3.5278283082239754e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 8.0830717086792
+  },
+  "Q-000117": {
+    "id": "Q-000117",
+    "subject": "Physics",
+    "difficulty": "2",
+    "question": "Is momentum the product of mass and acceleration?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 35.5,
+      "B": 27.625,
+      "C": 26.625,
+      "D": 26.125,
+      "E": 25.875
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 0.0003795623779296875,
+      "C": 0.00014019012451171875,
+      "D": 8.487701416015625e-05,
+      "E": 6.580352783203125e-05
+    },
+    "probs_norm": {
+      "A": 0.9993300161348888,
+      "B": 0.00037930807726067135,
+      "C": 0.00014009619939024797,
+      "D": 8.482014793015014e-05,
+      "E": 6.575944053011639e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 7.828919887542725
+  },
+  "Q-000118": {
+    "id": "Q-000118",
+    "subject": "Physics",
+    "difficulty": "2",
+    "question": "Does red light have a shorter wavelength than violet light?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 35.75,
+      "B": 26.75,
+      "C": 25.5,
+      "D": 24.125,
+      "E": 25.875
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 0.00012302398681640625,
+      "C": 3.528594970703125e-05,
+      "D": 8.940696716308594e-06,
+      "E": 5.14984130859375e-05
+    },
+    "probs_norm": {
+      "A": 0.9997812987943545,
+      "B": 0.0001229970813221662,
+      "C": 3.5278232627287974e-05,
+      "D": 8.938741375157426e-06,
+      "E": 5.1487150320906774e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 8.873789072036743
+  },
+  "Q-000119": {
+    "id": "Q-000119",
+    "subject": "Physics",
+    "difficulty": "2",
+    "question": "Is specific heat the energy needed to change a substance's state?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 31.25,
+      "B": 31.5,
+      "C": 30.125,
+      "D": 41.0,
+      "E": 30.0
+    },
+    "probs": {
+      "A": 5.817413330078125e-05,
+      "B": 7.486343383789062e-05,
+      "C": 1.895427703857422e-05,
+      "D": 1.0,
+      "E": 1.6689300537109375e-05
+    },
+    "probs_norm": {
+      "A": 5.816432207635188e-05,
+      "B": 7.485080791792824e-05,
+      "C": 1.8951080348647436e-05,
+      "D": 0.9998313473038155,
+      "E": 1.6686485841576357e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 10.51211404800415
+  },
+  "Q-000120": {
+    "id": "Q-000120",
+    "subject": "Physics",
+    "difficulty": "2",
+    "question": "Is the acceleration due to gravity on Earth approximately 9.8 m/s\u00b2?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 38.75,
+      "B": 25.0,
+      "C": 23.375,
+      "D": 23.75,
+      "E": 24.375
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.0654330253601074e-06,
+      "C": 2.1047890186309814e-07,
+      "D": 3.0547380447387695e-07,
+      "E": 5.699694156646729e-07
+    },
+    "probs_norm": {
+      "A": 0.9999978486494809,
+      "B": 1.0654307332402154e-06,
+      "C": 2.1047844904920338e-07,
+      "D": 3.054731472926491e-07,
+      "E": 5.699681894606746e-07
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 10.603327512741089
+  },
+  "Q-000121": {
+    "id": "Q-000121",
+    "subject": "Physics",
+    "difficulty": "3",
+    "question": "Is entropy a measure of disorder in a system?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 37.25,
+      "B": 27.0,
+      "C": 26.125,
+      "D": 25.0,
+      "E": 25.5
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 3.528594970703125e-05,
+      "C": 1.4722347259521484e-05,
+      "D": 4.798173904418945e-06,
+      "E": 7.867813110351562e-06
+    },
+    "probs_norm": {
+      "A": 0.9999373296438384,
+      "B": 3.528373832399561e-05,
+      "C": 1.4721424604775195e-05,
+      "D": 4.79787320115143e-06,
+      "E": 7.867320031701724e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 9.797086954116821
+  },
+  "Q-000122": {
+    "id": "Q-000122",
+    "subject": "Physics",
+    "difficulty": "3",
+    "question": "Is escape velocity the speed needed to leave a planet's gravitational pull?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 36.75,
+      "B": 25.5,
+      "C": 24.125,
+      "D": 23.375,
+      "E": 24.0
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.2993812561035156e-05,
+      "C": 3.293156623840332e-06,
+      "D": 1.55717134475708e-06,
+      "E": 2.905726432800293e-06
+    },
+    "probs_norm": {
+      "A": 0.9999792505635856,
+      "B": 1.2993542946747641e-05,
+      "C": 3.293088292696363e-06,
+      "D": 1.5571390343292758e-06,
+      "E": 2.905666140614438e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 10.914034128189087
+  },
+  "Q-000123": {
+    "id": "Q-000123",
+    "subject": "Physics",
+    "difficulty": "3",
+    "question": "Is a photon a massless particle?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 36.0,
+      "B": 25.0,
+      "C": 23.5,
+      "D": 23.375,
+      "E": 23.75
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.6689300537109375e-05,
+      "C": 3.725290298461914e-06,
+      "D": 3.293156623840332e-06,
+      "E": 4.798173904418945e-06
+    },
+    "probs_norm": {
+      "A": 0.9999714948912005,
+      "B": 1.6688824806781776e-05,
+      "C": 3.725184108656647e-06,
+      "D": 3.2930627520524757e-06,
+      "E": 4.798037131949761e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 9.012279033660889
+  },
+  "Q-000124": {
+    "id": "Q-000124",
+    "subject": "Physics",
+    "difficulty": "3",
+    "question": "Is time dilation a prediction of special relativity?",
+    "answer": "Yes",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 36.0,
+      "B": 24.5,
+      "C": 22.75,
+      "D": 22.875,
+      "E": 23.125
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.0132789611816406e-05,
+      "C": 1.7583370208740234e-06,
+      "D": 1.996755599975586e-06,
+      "E": 2.562999725341797e-06
+    },
+    "probs_norm": {
+      "A": 0.9999835493886691,
+      "B": 1.0132622921232803e-05,
+      "C": 1.7583080951551042e-06,
+      "D": 1.996722752125288e-06,
+      "E": 2.562957562429474e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 8.996879577636719
+  },
+  "Q-000125": {
+    "id": "Q-000125",
+    "subject": "Physics",
+    "difficulty": "3",
+    "question": "Is the strong nuclear force weaker than gravity?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 34.25,
+      "B": 29.75,
+      "C": 28.875,
+      "D": 28.5,
+      "E": 27.875
+    },
+    "probs": {
+      "A": 0.98046875,
+      "B": 0.0108642578125,
+      "C": 0.004547119140625,
+      "D": 0.00311279296875,
+      "E": 0.00167083740234375
+    },
+    "probs_norm": {
+      "A": 0.9798183883683164,
+      "B": 0.01085705136513697,
+      "C": 0.004544102959003957,
+      "D": 0.0031107282001235142,
+      "E": 0.0016697291074192393
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 9.441793203353882
+  },
+  "Q-000126": {
+    "id": "Q-000126",
+    "subject": "Physics",
+    "difficulty": "3",
+    "question": "Is dark matter directly observable through telescopes?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 24.375,
+      "B": 24.5,
+      "C": 23.625,
+      "D": 35.5,
+      "E": 24.875
+    },
+    "probs": {
+      "A": 1.4722347259521484e-05,
+      "B": 1.6689300537109375e-05,
+      "C": 6.973743438720703e-06,
+      "D": 1.0,
+      "E": 2.4318695068359375e-05
+    },
+    "probs_norm": {
+      "A": 1.4721424166070062e-05,
+      "B": 1.6688254115383067e-05,
+      "C": 6.973306183927924e-06,
+      "D": 0.9999372998452523,
+      "E": 2.4317170282415326e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 9.115108728408813
+  },
+  "Q-000127": {
+    "id": "Q-000127",
+    "subject": "Physics",
+    "difficulty": "3",
+    "question": "Is absolute zero a physically achievable temperature?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 26.125,
+      "B": 26.0,
+      "C": 25.375,
+      "D": 36.5,
+      "E": 29.25
+    },
+    "probs": {
+      "A": 3.123283386230469e-05,
+      "B": 2.753734588623047e-05,
+      "C": 1.4722347259521484e-05,
+      "D": 1.0,
+      "E": 0.00070953369140625
+    },
+    "probs_norm": {
+      "A": 3.120839686932133e-05,
+      "B": 2.7515800293180256e-05,
+      "C": 1.4710828295271696e-05,
+      "D": 0.9992175864319232,
+      "E": 0.0007089785426190861
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 7.6071295738220215
+  },
+  "Q-000128": {
+    "id": "Q-000128",
+    "subject": "Physics",
+    "difficulty": "3",
+    "question": "Is quantum entanglement a phenomenon predicted by classical physics?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 23.5,
+      "B": 24.25,
+      "C": 23.75,
+      "D": 35.25,
+      "E": 25.25
+    },
+    "probs": {
+      "A": 7.867813110351562e-06,
+      "B": 1.6689300537109375e-05,
+      "C": 1.0132789611816406e-05,
+      "D": 1.0,
+      "E": 4.5299530029296875e-05
+    },
+    "probs_norm": {
+      "A": 7.867183818776321e-06,
+      "B": 1.6687965676192197e-05,
+      "C": 1.0131979160545263e-05,
+      "D": 0.9999200169645092,
+      "E": 4.529590683537882e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 7.349836111068726
+  },
+  "Q-000129": {
+    "id": "Q-000129",
+    "subject": "Physics",
+    "difficulty": "3",
+    "question": "Is the Higgs boson an elementary particle in the Standard Model?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 35.25,
+      "B": 24.25,
+      "C": 23.0,
+      "D": 22.75,
+      "E": 22.625
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.6689300537109375e-05,
+      "C": 4.798173904418945e-06,
+      "D": 3.725290298461914e-06,
+      "E": 3.293156623840332e-06
+    },
+    "probs_norm": {
+      "A": 0.9999714948912005,
+      "B": 1.6688824806781776e-05,
+      "C": 4.798037131949761e-06,
+      "D": 3.725184108656647e-06,
+      "E": 3.2930627520524757e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 8.222616195678711
+  },
+  "Q-000130": {
+    "id": "Q-000130",
+    "subject": "Physics",
+    "difficulty": "3",
+    "question": "Is the cosmological constant a feature of Newton's law of gravity?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 24.25,
+      "B": 25.25,
+      "C": 24.75,
+      "D": 34.5,
+      "E": 25.0
+    },
+    "probs": {
+      "A": 3.528594970703125e-05,
+      "B": 9.632110595703125e-05,
+      "C": 5.817413330078125e-05,
+      "D": 1.0,
+      "E": 7.486343383789062e-05
+    },
+    "probs_norm": {
+      "A": 3.527661394084112e-05,
+      "B": 9.629562183851224e-05,
+      "C": 5.815874190246779e-05,
+      "D": 0.9997354253954437,
+      "E": 7.484362687448724e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 8.293655395507812
+  },
+  "Q-000131": {
+    "id": "Q-000131",
+    "subject": "Physics",
+    "difficulty": "4",
+    "question": "Is Hawking radiation emitted by black holes?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 32.0,
+      "B": 23.375,
+      "C": 22.375,
+      "D": 21.625,
+      "E": 21.5
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 0.000179290771484375,
+      "C": 6.580352783203125e-05,
+      "D": 3.123283386230469e-05,
+      "E": 2.753734588623047e-05
+    },
+    "probs_norm": {
+      "A": 0.9996962278265084,
+      "B": 0.00017923630793703418,
+      "C": 6.57835385513583e-05,
+      "D": 3.122334619647803e-05,
+      "E": 2.7528980806818417e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 6.973757266998291
+  },
+  "Q-000132": {
+    "id": "Q-000132",
+    "subject": "Physics",
+    "difficulty": "4",
+    "question": "Is the Chandrasekhar limit the maximum mass of a stable white dwarf star?",
+    "answer": "Yes",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 35.25,
+      "B": 24.125,
+      "C": 22.625,
+      "D": 22.625,
+      "E": 23.375
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.4722347259521484e-05,
+      "C": 3.293156623840332e-06,
+      "D": 3.293156623840332e-06,
+      "E": 6.973743438720703e-06
+    },
+    "probs_norm": {
+      "A": 0.9999717183959258,
+      "B": 1.4721930887925247e-05,
+      "C": 3.2930634880885424e-06,
+      "D": 3.2930634880885424e-06,
+      "E": 6.973546210069855e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 7.984246015548706
+  },
+  "Q-000133": {
+    "id": "Q-000133",
+    "subject": "Physics",
+    "difficulty": "4",
+    "question": "Is the Pauli exclusion principle applicable to bosons?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "E",
+    "logits": {
+      "A": 29.625,
+      "B": 29.125,
+      "C": 28.375,
+      "D": 30.125,
+      "E": 39.25
+    },
+    "probs": {
+      "A": 6.580352783203125e-05,
+      "B": 4.00543212890625e-05,
+      "C": 1.895427703857422e-05,
+      "D": 0.0001087188720703125,
+      "E": 1.0
+    },
+    "probs_norm": {
+      "A": 6.578816425636074e-05,
+      "B": 4.0044969547350016e-05,
+      "C": 1.8949851660799563e-05,
+      "D": 0.00010869348877137862,
+      "E": 0.9997665235257641
+    },
+    "is_valid": true,
+    "pred_label": "E",
+    "score": 2,
+    "processing_time": 7.489003896713257
+  },
+  "Q-000134": {
+    "id": "Q-000134",
+    "subject": "Physics",
+    "difficulty": "4",
+    "question": "Is a quark a type of lepton?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 31.875,
+      "B": 31.5,
+      "C": 30.125,
+      "D": 40.0,
+      "E": 31.125
+    },
+    "probs": {
+      "A": 0.0002956390380859375,
+      "B": 0.00020313262939453125,
+      "C": 5.14984130859375e-05,
+      "D": 1.0,
+      "E": 0.00014019012451171875
+    },
+    "probs_norm": {
+      "A": 0.00029543505193938815,
+      "B": 0.00020299247117125702,
+      "C": 5.1462880015248264e-05,
+      "D": 0.999310016201277,
+      "E": 0.0001400933955970647
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 7.366810083389282
+  },
+  "Q-000135": {
+    "id": "Q-000135",
+    "subject": "Physics",
+    "difficulty": "4",
+    "question": "Is the Coriolis effect responsible for planetary orbits?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 26.25,
+      "B": 27.375,
+      "C": 25.5,
+      "D": 36.0,
+      "E": 24.875
+    },
+    "probs": {
+      "A": 5.817413330078125e-05,
+      "B": 0.000179290771484375,
+      "C": 2.753734588623047e-05,
+      "D": 1.0,
+      "E": 1.4722347259521484e-05
+    },
+    "probs_norm": {
+      "A": 5.815786511534534e-05,
+      "B": 0.00017924063347024466,
+      "C": 2.7529645167304865e-05,
+      "D": 0.9997203536260386,
+      "E": 1.471823020849416e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 7.340963840484619
+  },
+  "Q-000136": {
+    "id": "Q-000136",
+    "subject": "Physics",
+    "difficulty": "4",
+    "question": "Is a femtosecond a unit of mass?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 27.0,
+      "B": 27.5,
+      "C": 26.75,
+      "D": 41.5,
+      "E": 30.0
+    },
+    "probs": {
+      "A": 5.029141902923584e-07,
+      "B": 8.307397365570068e-07,
+      "C": 3.9301812648773193e-07,
+      "D": 1.0,
+      "E": 1.0132789611816406e-05
+    },
+    "probs_norm": {
+      "A": 5.029082260715302e-07,
+      "B": 8.307298845477869e-07,
+      "C": 3.9301346555960324e-07,
+      "D": 0.99998814067898,
+      "E": 1.0132669443811572e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 7.052670478820801
+  },
+  "Q-000137": {
+    "id": "Q-000137",
+    "subject": "Physics",
+    "difficulty": "4",
+    "question": "Is the Stefan-Boltzmann law related to black-body radiation?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 38.75,
+      "B": 26.625,
+      "C": 25.5,
+      "D": 25.75,
+      "E": 26.5
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 5.424022674560547e-06,
+      "C": 1.7583370208740234e-06,
+      "D": 2.2649765014648438e-06,
+      "E": 4.798173904418945e-06
+    },
+    "probs_norm": {
+      "A": 0.9999857546928304,
+      "B": 5.423945407691452e-06,
+      "C": 1.7583119728230532e-06,
+      "D": 2.2649442361788485e-06,
+      "E": 4.798105552957824e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 7.965383291244507
+  },
+  "Q-000138": {
+    "id": "Q-000138",
+    "subject": "Physics",
+    "difficulty": "4",
+    "question": "Is Maxwell's demon a violation of the first law of thermodynamics?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 34.0,
+      "B": 29.25,
+      "C": 28.125,
+      "D": 28.125,
+      "E": 26.25
+    },
+    "probs": {
+      "A": 0.984375,
+      "B": 0.008544921875,
+      "C": 0.0027618408203125,
+      "D": 0.0027618408203125,
+      "E": 0.0004253387451171875
+    },
+    "probs_norm": {
+      "A": 0.985489645690717,
+      "B": 0.00855459761884303,
+      "C": 0.002764968158947479,
+      "D": 0.002764968158947479,
+      "E": 0.00042582037254508824
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 8.28667426109314
+  },
+  "Q-000139": {
+    "id": "Q-000139",
+    "subject": "Physics",
+    "difficulty": "4",
+    "question": "Is a superconductor a material with high electrical resistance?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 31.875,
+      "B": 24.25,
+      "C": 22.875,
+      "D": 22.25,
+      "E": 24.125
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 0.00048828125,
+      "C": 0.00012302398681640625,
+      "D": 6.580352783203125e-05,
+      "E": 0.000431060791015625
+    },
+    "probs_norm": {
+      "A": 0.9988930571247302,
+      "B": 0.00048774075054918467,
+      "C": 0.00012288780629071255,
+      "D": 6.573068708572997e-05,
+      "E": 0.0004305836313442021
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 7.380911588668823
+  },
+  "Q-000140": {
+    "id": "Q-000140",
+    "subject": "Physics",
+    "difficulty": "4",
+    "question": "Is special relativity a theory of quantum mechanics?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "C",
+    "logits": {
+      "A": 32.5,
+      "B": 29.75,
+      "C": 36.0,
+      "D": 29.5,
+      "E": 25.5
+    },
+    "probs": {
+      "A": 0.0291748046875,
+      "B": 0.00186920166015625,
+      "C": 0.96875,
+      "D": 0.00145721435546875,
+      "E": 2.658367156982422e-05
+    },
+    "probs_norm": {
+      "A": 0.02913757256980232,
+      "B": 0.001866816234205431,
+      "C": 0.9675137067529339,
+      "D": 0.0014553546968703564,
+      "E": 2.6549746187998156e-05
+    },
+    "is_valid": true,
+    "pred_label": "C",
+    "score": 0,
+    "processing_time": 6.997830867767334
+  },
+  "Q-000141": {
+    "id": "Q-000141",
+    "subject": "Physics",
+    "difficulty": "5",
+    "question": "Is string theory a scientifically proven fact?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "C",
+    "logits": {
+      "A": 19.0,
+      "B": 20.25,
+      "C": 29.25,
+      "D": 22.125,
+      "E": 19.875
+    },
+    "probs": {
+      "A": 3.528594970703125e-05,
+      "B": 0.00012302398681640625,
+      "C": 1.0,
+      "D": 0.000804901123046875,
+      "E": 8.487701416015625e-05
+    },
+    "probs_norm": {
+      "A": 3.5249005644604285e-05,
+      "B": 0.00012289518184199872,
+      "C": 0.9989530092647725,
+      "D": 0.0008040583990282707,
+      "E": 8.478814871269678e-05
+    },
+    "is_valid": true,
+    "pred_label": "C",
+    "score": 0,
+    "processing_time": 6.102932453155518
+  },
+  "Q-000142": {
+    "id": "Q-000142",
+    "subject": "Physics",
+    "difficulty": "5",
+    "question": "Is a magnetic monopole a confirmed elementary particle?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "C",
+    "logits": {
+      "A": 23.875,
+      "B": 24.375,
+      "C": 32.5,
+      "D": 24.75,
+      "E": 23.0
+    },
+    "probs": {
+      "A": 0.000179290771484375,
+      "B": 0.0002956390380859375,
+      "C": 1.0,
+      "D": 0.000431060791015625,
+      "E": 7.486343383789062e-05
+    },
+    "probs_norm": {
+      "A": 0.00017911508572991065,
+      "B": 0.0002953493434908101,
+      "C": 0.9990201070974829,
+      "D": 0.0004306383976059554,
+      "E": 7.479007569041481e-05
+    },
+    "is_valid": true,
+    "pred_label": "C",
+    "score": 0,
+    "processing_time": 6.13561487197876
+  },
+  "Q-000143": {
+    "id": "Q-000143",
+    "subject": "Physics",
+    "difficulty": "5",
+    "question": "Is parity conserved in weak nuclear interactions?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 33.75,
+      "B": 29.5,
+      "C": 28.125,
+      "D": 26.625,
+      "E": 24.875
+    },
+    "probs": {
+      "A": 0.98046875,
+      "B": 0.01397705078125,
+      "C": 0.0035400390625,
+      "D": 0.000789642333984375,
+      "E": 0.0001373291015625
+    },
+    "probs_norm": {
+      "A": 0.9815358647210903,
+      "B": 0.013992263011773512,
+      "C": 0.0035438919418465664,
+      "D": 0.0007905017585799991,
+      "E": 0.00013747856670956506
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 6.0203821659088135
+  },
+  "Q-000144": {
+    "id": "Q-000144",
+    "subject": "Physics",
+    "difficulty": "5",
+    "question": "Is the Lamb shift a small difference in energy between two energy levels of the hydrogen atom?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 37.25,
+      "B": 26.375,
+      "C": 25.0,
+      "D": 25.0,
+      "E": 25.875
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.895427703857422e-05,
+      "C": 4.798173904418945e-06,
+      "D": 4.798173904418945e-06,
+      "E": 1.150369644165039e-05
+    },
+    "probs_norm": {
+      "A": 0.9999599472829953,
+      "B": 1.8953517868279966e-05,
+      "C": 4.7979817245174124e-06,
+      "D": 4.7979817245174124e-06,
+      "E": 1.1503235687352306e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 7.202336072921753
+  },
+  "Q-000145": {
+    "id": "Q-000145",
+    "subject": "Physics",
+    "difficulty": "5",
+    "question": "Is the Aharonov-Bohm effect a quantum mechanical phenomenon?",
+    "answer": "Yes",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 34.5,
+      "B": 24.0,
+      "C": 22.75,
+      "D": 23.25,
+      "E": 23.0
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 2.753734588623047e-05,
+      "C": 7.867813110351562e-06,
+      "D": 1.2993812561035156e-05,
+      "E": 1.0132789611816406e-05
+    },
+    "probs_norm": {
+      "A": 0.9999414716645971,
+      "B": 2.7535734171214335e-05,
+      "C": 7.867352620346953e-06,
+      "D": 1.2993052054815422e-05,
+      "E": 1.013219655650744e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 6.619484186172485
+  },
+  "Q-000146": {
+    "id": "Q-000146",
+    "subject": "Physics",
+    "difficulty": "5",
+    "question": "Is asymptotic freedom a property of quantum electrodynamics?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 36.0,
+      "B": 24.5,
+      "C": 23.125,
+      "D": 23.25,
+      "E": 23.375
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.0132789611816406e-05,
+      "C": 2.562999725341797e-06,
+      "D": 2.905726432800293e-06,
+      "E": 3.293156623840332e-06
+    },
+    "probs_norm": {
+      "A": 0.9999811056846081,
+      "B": 1.0132598159693681e-05,
+      "C": 2.562951299216637e-06,
+      "D": 2.905671531088629e-06,
+      "E": 3.293094401900446e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 6.532146692276001
+  },
+  "Q-000147": {
+    "id": "Q-000147",
+    "subject": "Physics",
+    "difficulty": "5",
+    "question": "Is a Penrose diagram used to describe causal relations in spacetime?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 38.0,
+      "B": 27.5,
+      "C": 26.125,
+      "D": 26.0,
+      "E": 25.875
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 2.753734588623047e-05,
+      "C": 6.973743438720703e-06,
+      "D": 6.139278411865234e-06,
+      "E": 5.424022674560547e-06
+    },
+    "probs_norm": {
+      "A": 0.9999539277323403,
+      "B": 2.753607717826016e-05,
+      "C": 6.973422142546404e-06,
+      "D": 6.1389955613870054e-06,
+      "E": 5.423772777536092e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 6.7098283767700195
+  },
+  "Q-000148": {
+    "id": "Q-000148",
+    "subject": "Physics",
+    "difficulty": "5",
+    "question": "Is the Chern-Simons form a concept in general relativity?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 38.5,
+      "B": 38.5,
+      "C": 35.75,
+      "D": 35.75,
+      "E": 30.125
+    },
+    "probs": {
+      "A": 0.470703125,
+      "B": 0.470703125,
+      "C": 0.030029296875,
+      "D": 0.030029296875,
+      "E": 0.00010824203491210938
+    },
+    "probs_norm": {
+      "A": 0.4699638315771232,
+      "B": 0.4699638315771232,
+      "C": 0.02998213240870651,
+      "D": 0.02998213240870651,
+      "E": 0.00010807202834058019
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 6.914779424667358
+  },
+  "Q-000149": {
+    "id": "Q-000149",
+    "subject": "Physics",
+    "difficulty": "5",
+    "question": "Is a Majorana fermion its own antiparticle?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 35.25,
+      "B": 25.0,
+      "C": 23.875,
+      "D": 24.0,
+      "E": 24.125
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 3.528594970703125e-05,
+      "C": 1.150369644165039e-05,
+      "D": 1.2993812561035156e-05,
+      "E": 1.4722347259521484e-05
+    },
+    "probs_norm": {
+      "A": 0.9999254997447323,
+      "B": 3.528332089477071e-05,
+      "C": 1.1502839413328966e-05,
+      "D": 1.2992844518682459e-05,
+      "E": 1.472125044089251e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 6.432265996932983
+  },
+  "Q-000150": {
+    "id": "Q-000150",
+    "subject": "Physics",
+    "difficulty": "5",
+    "question": "Is graphene a zero-gap semiconductor?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "B",
+    "logits": {
+      "A": 37.75,
+      "B": 41.75,
+      "C": 39.25,
+      "D": 41.0,
+      "E": 33.25
+    },
+    "probs": {
+      "A": 0.01165771484375,
+      "B": 0.63671875,
+      "C": 0.05224609375,
+      "D": 0.30078125,
+      "E": 0.00012969970703125
+    },
+    "probs_norm": {
+      "A": 0.011639865014130857,
+      "B": 0.6357438315571367,
+      "C": 0.05216609660783253,
+      "D": 0.30032070570490504,
+      "E": 0.00012950111599491137
+    },
+    "is_valid": true,
+    "pred_label": "B",
+    "score": 1,
+    "processing_time": 6.61487078666687
+  },
+  "Q-000151": {
+    "id": "Q-000151",
+    "subject": "Earth",
+    "difficulty": "1",
+    "question": "Is the Earth's core primarily made of iron?",
+    "answer": "Yes",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 37.0,
+      "B": 24.625,
+      "C": 22.75,
+      "D": 22.5,
+      "E": 22.75
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 4.231929779052734e-06,
+      "C": 6.48200511932373e-07,
+      "D": 5.029141902923584e-07,
+      "E": 6.48200511932373e-07
+    },
+    "probs_norm": {
+      "A": 0.9999939687913825,
+      "B": 4.231904255401383e-06,
+      "C": 6.481966024998596e-07,
+      "D": 5.029111571119601e-07,
+      "E": 6.481966024998596e-07
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 6.496035575866699
+  },
+  "Q-000152": {
+    "id": "Q-000152",
+    "subject": "Earth",
+    "difficulty": "1",
+    "question": "Is erosion the process of depositing sediment?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 26.75,
+      "B": 26.875,
+      "C": 25.625,
+      "D": 39.25,
+      "E": 26.5
+    },
+    "probs": {
+      "A": 3.725290298461914e-06,
+      "B": 4.231929779052734e-06,
+      "C": 1.2069940567016602e-06,
+      "D": 1.0,
+      "E": 2.905726432800293e-06
+    },
+    "probs_norm": {
+      "A": 3.7252453349721235e-06,
+      "B": 4.231878700528332e-06,
+      "C": 1.206979488530968e-06,
+      "D": 0.9999879302051147,
+      "E": 2.905691361278256e-06
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 6.74275803565979
+  },
+  "Q-000153": {
+    "id": "Q-000153",
+    "subject": "Earth",
+    "difficulty": "1",
+    "question": "Is Mount Everest the tallest mountain on Earth?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 33.0,
+      "B": 22.625,
+      "C": 21.25,
+      "D": 20.75,
+      "E": 20.625
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 3.123283386230469e-05,
+      "C": 7.867813110351562e-06,
+      "D": 4.798173904418945e-06,
+      "E": 4.231929779052734e-06
+    },
+    "probs_norm": {
+      "A": 0.9999518715658016,
+      "B": 3.123133067491531e-05,
+      "C": 7.867434444825995e-06,
+      "D": 4.797942975821913e-06,
+      "E": 4.23172610289883e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 7.100888967514038
+  },
+  "Q-000154": {
+    "id": "Q-000154",
+    "subject": "Earth",
+    "difficulty": "1",
+    "question": "Are glaciers made of salt water?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 24.5,
+      "B": 24.125,
+      "C": 23.0,
+      "D": 36.25,
+      "E": 25.0
+    },
+    "probs": {
+      "A": 7.867813110351562e-06,
+      "B": 5.424022674560547e-06,
+      "C": 1.7583370208740234e-06,
+      "D": 1.0,
+      "E": 1.2993812561035156e-05
+    },
+    "probs_norm": {
+      "A": 7.867592471703414e-06,
+      "B": 5.423870567613717e-06,
+      "C": 1.758287711479172e-06,
+      "D": 0.9999719568010762,
+      "E": 1.2993448172964729e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 6.4337732791900635
+  },
+  "Q-000155": {
+    "id": "Q-000155",
+    "subject": "Earth",
+    "difficulty": "1",
+    "question": "Is a tsunami a type of weather storm?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 25.75,
+      "B": 25.75,
+      "C": 25.25,
+      "D": 37.5,
+      "E": 27.0
+    },
+    "probs": {
+      "A": 7.867813110351562e-06,
+      "B": 7.867813110351562e-06,
+      "C": 4.798173904418945e-06,
+      "D": 1.0,
+      "E": 2.753734588623047e-05
+    },
+    "probs_norm": {
+      "A": 7.867434913739089e-06,
+      "B": 7.867434913739089e-06,
+      "C": 4.797943261787854e-06,
+      "D": 0.9999519311647126,
+      "E": 2.7536022198086812e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 6.318310022354126
+  },
+  "Q-000156": {
+    "id": "Q-000156",
+    "subject": "Earth",
+    "difficulty": "1",
+    "question": "Is the atmosphere primarily composed of oxygen?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 32.25,
+      "B": 25.75,
+      "C": 24.375,
+      "D": 23.75,
+      "E": 22.375
+    },
+    "probs": {
+      "A": 0.99609375,
+      "B": 0.00150299072265625,
+      "C": 0.0003795623779296875,
+      "D": 0.00020313262939453125,
+      "E": 5.125999450683594e-05
+    },
+    "probs_norm": {
+      "A": 0.9978592666668736,
+      "B": 0.001505654683925966,
+      "C": 0.00038023512957013607,
+      "D": 0.0002034926698453241,
+      "E": 5.135084978491159e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 6.934200286865234
+  },
+  "Q-000157": {
+    "id": "Q-000157",
+    "subject": "Earth",
+    "difficulty": "1",
+    "question": "Is lava molten rock that has erupted onto the surface?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 36.5,
+      "B": 25.75,
+      "C": 24.375,
+      "D": 23.75,
+      "E": 24.0
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 2.1457672119140625e-05,
+      "C": 5.424022674560547e-06,
+      "D": 2.905726432800293e-06,
+      "E": 3.725290298461914e-06
+    },
+    "probs_norm": {
+      "A": 0.9999664884115392,
+      "B": 2.1456953038463244e-05,
+      "C": 5.423840906944875e-06,
+      "D": 2.9056290572918973e-06,
+      "E": 3.725165458066535e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 7.0444629192352295
+  },
+  "Q-000158": {
+    "id": "Q-000158",
+    "subject": "Earth",
+    "difficulty": "1",
+    "question": "Is the process of rock formation called lithification?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 38.25,
+      "B": 27.125,
+      "C": 26.125,
+      "D": 25.375,
+      "E": 26.75
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.4722347259521484e-05,
+      "C": 5.424022674560547e-06,
+      "D": 2.562999725341797e-06,
+      "E": 1.0132789611816406e-05
+    },
+    "probs_norm": {
+      "A": 0.9999671589193008,
+      "B": 1.4721863761727052e-05,
+      "C": 5.423844543794177e-06,
+      "D": 2.5629155536609847e-06,
+      "E": 1.0132456840055056e-05
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 6.42914080619812
+  },
+  "Q-000159": {
+    "id": "Q-000159",
+    "subject": "Earth",
+    "difficulty": "1",
+    "question": "Is Pangaea the name of a modern continent?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 25.5,
+      "B": 25.25,
+      "C": 24.5,
+      "D": 39.5,
+      "E": 26.875
+    },
+    "probs": {
+      "A": 8.307397365570068e-07,
+      "B": 6.48200511932373e-07,
+      "C": 3.0547380447387695e-07,
+      "D": 1.0,
+      "E": 3.293156623840332e-06
+    },
+    "probs_norm": {
+      "A": 8.307355184386982e-07,
+      "B": 6.481972206651726e-07,
+      "C": 3.0547225341692043e-07,
+      "D": 0.9999949224551048,
+      "E": 3.2931399026897275e-06
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 6.210976839065552
+  },
+  "Q-000160": {
+    "id": "Q-000160",
+    "subject": "Earth",
+    "difficulty": "1",
+    "question": "Is seismology the study of earthquakes?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 36.75,
+      "B": 25.625,
+      "C": 24.25,
+      "D": 23.75,
+      "E": 23.375
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.4722347259521484e-05,
+      "C": 3.725290298461914e-06,
+      "D": 2.2649765014648438e-06,
+      "E": 1.55717134475708e-06
+    },
+    "probs_norm": {
+      "A": 0.9999777307105281,
+      "B": 1.4722019403308655e-05,
+      "C": 3.725207338893891e-06,
+      "D": 2.2649260620474855e-06,
+      "E": 1.5571366676576463e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 6.598474979400635
+  }
+}

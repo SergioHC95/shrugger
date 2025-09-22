@@ -1,0 +1,128 @@
+Canonical Generation Prompt — Yes/No Knowledge Dataset
+
+This document defines the single, canonical prompt to generate a balanced, unambiguous Yes/No knowledge dataset with embedded Unanswerable items in every subject. It is structured for clarity and robustness against known benchmark pitfalls, and optimized for long outputs by using TSV (tab-separated values) instead of JSON.
+
+---
+
+1) Summary
+• Goal: Produce single-fact, knowledge-retrieval questions (not multi-step reasoning) with a Yes/No/Unanswerable ground truth.
+• Scope: 14 single-word subjects × 5 difficulty levels.
+• Balance: Per subject × level: 5 Yes + 5 No + 5 Unanswerable (15 total).
+• Split: In every subject × level, mark exactly 3 items as "dev" (1 Yes + 1 No + 1 Unanswerable). Mark the remaining 12 as "train".
+• Length: ≤ 20 words per question (≈ ≤ 30 tokens).
+• Output: One TSV table with a single header row; no extra prose.
+
+---
+
+2) Subjects
+
+Biology, Chemistry, Physics, Earth, Math, Computing, Medicine, Psychology, Economics, History, Geography, Law, Language, Engineering
+
+Use these exact strings for the subject field.
+
+---
+
+3) Data Organization
+• Per subject × level: 15 rows.
+• Composition per cell: 5 “Yes”, 5 “No”, 5 “Unanswerable”.
+• Splits within each subject × level (cell):
+  • Dev: exactly 1 Yes + 1 No + 1 Unanswerable → "dev".
+  • Train: the remaining 12 → "train".
+• Totals:
+  • Per level: 14 subjects × 15 = 210 rows.
+  • Entire dataset: 5 levels × 210 = 1,050 rows.
+  • Split totals: 840 train / 210 dev.
+
+---
+
+4) Difficulty Levels
+• Level 1 — Core: universal school-level facts with ubiquitous terms.
+  Ex: “Is water a liquid at room temperature?” (Yes)
+
+• Level 2 — Basic: widely known high-school facts or everyday technical terms.
+  Ex: “Is Ottawa the capital of Canada?” (Yes)
+
+• Level 3 — Intermediate: first-year undergraduate breadth; less common terms; straightforward definitions/relations.
+  Ex: “Is tryptophan an essential amino acid in humans?” (Yes)
+
+• Level 4 — Advanced: upper-undergraduate depth; fine distinctions, edge-case exceptions, or scope-sensitive claims that remain timeless when scoped.
+  Ex: “In worst case, is Quicksort O(n log n)?” (No; it’s O(n²))
+  Ex: “Are all continuous functions differentiable?” (No)
+
+• Level 5 — Expert: specialist-level facts with nontrivial nuance or less-known counterexamples; still unambiguous and time-invariant when scoped.
+  Ex: “Is the Dirac delta a distribution rather than an ordinary function?” (Yes)
+  Ex: “Is the fundamental group of the 2-sphere trivial?” (Yes)
+
+• Unanswerable (all levels): Yes/No-style questions that appear well-formed but cannot be definitively answered for reasons such as being unknown, ill-posed, or lacking stable consensus. They must remain plausible-sounding, on-topic for the subject, and framed in the same Yes/No style as answerable items.
+  Examples: “Is there life on Europa?” (unknown); “Is the number seven heavier than iron?” (ill-posed).
+
+---
+
+5) Rules
+
+R1. Answer space
+• Ground truth is exactly one of: "Yes", "No", "Unanswerable".
+• Use "Unanswerable" only when genuinely unknown/ill-posed/contested; keep the question plausible (avoid trivial nonsense at lower levels).
+
+R2. Style & length
+• ≤ 20 words; present tense; single clause; no lists, no “and/or”.
+• Avoid hedges or frequency terms (“often”, “usually”), modal verbs (“might”, “could”), and quantifiers unless universally true.
+• Encourage stylistic and structural diversity across subjects, levels, and within each set (e.g., varying entity focus, syntactic form, and phrasing), while preserving clarity and neutrality.
+
+R3. Negation & artifact control
+• Do not form “No” by adding “not/never/no”. Falsify by content (swap entity/property/relation).
+• Maintain surface-form parity: Yes/No/Unanswerable should look equally natural in length/structure.
+• Avoid label-cue words (“always”, “only”, “must”) that correlate with answers.
+
+R4. Timelessness & scope
+• Prefer time-invariant facts (definitions, anatomy, SI units, physical laws).
+• If scope is needed, state it (e.g., “In the SI…”, “In U.S. federal law…”).
+• Ban time-sensitive facts (current office holders, recent records), news, recency-driven pop culture, or facts likely to drift.
+
+R5. Ambiguity & polysemy
+• Avoid multi-sense terms unless disambiguated (“Java the language”, not the island).
+• Avoid regionally variable conventions unless scoped.
+• No opinion/etiquette/normative claims.
+
+R6. Entity variety & duplication
+• Within a subject × level cell, do not reuse the same head entity.
+• Across the dataset, vary entity families (e.g., Biology ≠ only mammals).
+
+R7. Unanswerable design (plausible-but-empty)
+• Within each subject × level, mix: (a) unknown scientific state, (b) ill-posed category mismatch (sparingly, higher levels), (c) consensus-lacking claims even when scoped.
+• Keep them in Yes/No-question format, subject-appropriate, and never trivially absurd—especially at lower levels.
+
+R8. Balance & splits
+• Per subject × level: exactly 5 Yes / 5 No / 5 Unanswerable.
+• Dev: exactly 1 Yes + 1 No + 1 Unanswerable.
+• Train: the remaining 12.
+
+R9. TSV output format
+• Print one TSV table (tab-separated values) with exactly this header as the first line:
+id	subject	difficulty	question	answer	split
+• Use a single header only (do not repeat across sections).
+• Use one row per item; rows must contain exactly 6 tab-separated fields.
+• If a field contains line breaks or tabs, replace them with spaces. Avoid tabs inside fields.
+• Keep questions ≤ 20 words; avoid punctuation that risks accidental tabs.
+• Do not include surrounding quotes around fields.
+• Line endings: UNIX \n.
+
+R10. Internal self-check (do not print the check)
+• Totals: 1,050 rows = 14 subjects × 5 levels × 15.
+• Per cell: exactly 5 Yes / 5 No / 5 Unanswerable.
+• Splits per cell: exactly 3 dev (1 Yes, 1 No, 1 Unanswerable); 12 train.
+• No head-entity repetition within a cell; wording parity across labels; all items ≤ 20 words; subject names valid; answer set valid.
+• TSV integrity: exactly 6 columns per row; no extra headers; no empty lines; no trailing tabs.
+
+---
+
+6) Output Format & Validation
+• Output TSV only, no commentary or code fences.
+• Delimiter: literal \t (backslash + t, not an actual tab).
+• Strings: every field must be enclosed in double quotes ("...").
+• Quotes inside strings: escape by doubling them ("").
+
+Example snippet (format only):
+"id"\t"subject"\t"difficulty"\t"question"\t"answer"\t"split"\n
+"Q-000001"\t"Physics"\t"1"\t"Is the neutron electrically neutral?"\t"Yes"\t"train"\n
+"Q-000002"\t"Earth"\t"2"\t"Is Pluto larger than Earth?"\t"No"\t"dev"\n

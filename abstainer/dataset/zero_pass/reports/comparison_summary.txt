@@ -1,0 +1,32 @@
+=== Dataset Comparison Summary ===
+Files: questions.tsv vs blind_questions.tsv
+Date: 2025-09-21 22:22:54
+
+DATASET OVERLAP:
+  Questions in both datasets: 1050
+  Questions only in A: 0
+  Questions only in B: 0
+
+ANSWER AGREEMENT:
+  Exact matches: 797/1050 (75.9%)
+  Answer differences: 253 questions
+
+DIFFICULTY AGREEMENT:
+  Exact matches: 397/1050 (37.8%)
+  Mean absolute difference: 0.85
+
+CONFUSION MATRIX (Answer Agreement):
+Rows=Dataset A, Cols=Dataset B
+_ans_B          Yes   No  Unanswerable
+rows=A  cols=B                        
+Yes             341    3             0
+No               47  309             0
+Unanswerable     16  187           147
+
+ANSWER DIFFERENCE BREAKDOWN:
+  A='Unanswerable' → B='No': 187 questions
+  A='No' → B='Yes': 47 questions
+  A='Unanswerable' → B='Yes': 16 questions
+  A='Yes' → B='No': 3 questions
+
+See comparison_details.tsv for complete question list.

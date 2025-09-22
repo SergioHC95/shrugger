@@ -1,0 +1,138 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "abstainer"
+version = "0.1.0"
+description = "Fisher LDA analysis for abstention directions in language models"
+authors = [
+    {name = "MATS Team", email = "team@example.com"}
+]
+license = "MIT"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy",
+    "scikit-learn",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "tqdm",
+    "scipy",
+    "torch",
+    "transformers",
+    "accelerate",
+    "sentencepiece",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "pytest-sugar",
+    "black",
+    "ruff",
+    "mypy",
+    "coverage",
+]
+notebook = [
+    "jupyter",
+    "ipykernel",
+    "ipywidgets",
+    "nbformat",
+]
+analysis = [
+    "psutil",
+    "tokenize-rt",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]  # look for packages in the current directory
+include = ["abstainer*"]  # only include abstainer package
+exclude = ["results*", "tests*", "examples*", "scripts*"]  # exclude non-package directories
+
+# Note: Scripts are run directly from their locations
+# [project.scripts]
+# run-fisher-analysis = "scripts.run_fisher_analysis:main"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+| .*_colab\.py$  # Skip Colab files with Jupyter magic commands
+'''
+
+[tool.ruff]
+target-version = "py38"
+line-length = 88
+extend-exclude = ["*_colab.py"]  # Skip Colab files with Jupyter magic commands
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "C4", # flake8-comprehensions
+    "UP", # pyupgrade
+]
+ignore = [
+    "E501",  # line too long, handled by black
+    "B008",  # do not perform function calls in argument defaults
+    "C901",  # too complex
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*" = ["B011", "E402"]  # assert_raises and import order (they modify sys.path)
+"*.ipynb" = ["F403", "F405", "E402", "F821", "B018", "E722", "B007", "B006", "W293", "C416", "F811", "E741", "F401"]  # Allow common notebook patterns
+# Skip Colab files entirely - they contain Jupyter magic commands
+"abstainer/src/**" = ["F401"]  # Allow unused imports in source modules (may be used by notebooks)
+"abstainer/__init__.py" = ["F401", "F403"]  # Allow star imports and unused imports in package init
+"abstainer/src/__init__.py" = ["F403"]  # Allow star imports in src init
+"examples/**/*" = ["E402"]  # Allow import order in examples (they modify sys.path)
+"run_*.py" = ["E402"]  # Allow import order in run scripts (they modify sys.path)
+"scripts/**/*" = ["E402"]  # Allow import order in scripts (they modify sys.path)
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "-v",
+    "--tb=short",
+    "--strict-markers",
+]
+filterwarnings = [
+    "ignore:Implicit None on return values is deprecated:DeprecationWarning",
+]
+markers = [
+    "unit: Unit tests for individual functions and classes",
+    "integration: Integration tests for full pipelines",
+    "analysis: Tests for Fisher LDA analysis functionality", 
+    "examples: Tests for example code",
+    "slow: Tests that take a long time to run",
+]

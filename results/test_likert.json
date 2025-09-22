@@ -1,0 +1,352 @@
+{
+  "Q-000101": {
+    "id": "Q-000101",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is gravity a force of attraction?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 34.25,
+      "B": 24.125,
+      "C": 22.625,
+      "D": 22.0,
+      "E": 22.0
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 4.00543212890625e-05,
+      "C": 8.940696716308594e-06,
+      "D": 4.798173904418945e-06,
+      "E": 4.798173904418945e-06
+    },
+    "probs_norm": {
+      "A": 0.9999414120669328,
+      "B": 4.0051974589167764e-05,
+      "C": 8.940172899367804e-06,
+      "D": 4.797892789327389e-06,
+      "E": 4.797892789327389e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 4.341308116912842
+  },
+  "Q-000102": {
+    "id": "Q-000102",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is the speed of light constant in a vacuum?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 33.0,
+      "B": 22.625,
+      "C": 21.125,
+      "D": 20.75,
+      "E": 21.125
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 3.123283386230469e-05,
+      "C": 6.973743438720703e-06,
+      "D": 4.798173904418945e-06,
+      "E": 6.973743438720703e-06
+    },
+    "probs_norm": {
+      "A": 0.999950024003081,
+      "B": 3.123127297029581e-05,
+      "C": 6.973394918940095e-06,
+      "D": 4.797934110894681e-06,
+      "E": 6.973394918940095e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 4.569772005081177
+  },
+  "Q-000103": {
+    "id": "Q-000103",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is friction a force that opposes motion?",
+    "answer": "Yes",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 37.0,
+      "B": 25.5,
+      "C": 23.875,
+      "D": 23.25,
+      "E": 24.0
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.0132789611816406e-05,
+      "C": 1.996755599975586e-06,
+      "D": 1.0654330253601074e-06,
+      "E": 2.2649765014648438e-06
+    },
+    "probs_norm": {
+      "A": 0.9999845402842679,
+      "B": 1.0132632961769434e-05,
+      "C": 1.9967247307016237e-06,
+      "D": 1.0654165540684037e-06,
+      "E": 2.2649414855719913e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 4.380627393722534
+  },
+  "Q-000104": {
+    "id": "Q-000104",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is a lever a simple machine?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 33.5,
+      "B": 24.0,
+      "C": 22.75,
+      "D": 21.5,
+      "E": 21.5
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 7.486343383789062e-05,
+      "C": 2.1457672119140625e-05,
+      "D": 6.139278411865234e-06,
+      "E": 6.139278411865234e-06
+    },
+    "probs_norm": {
+      "A": 0.9998914121298254,
+      "B": 7.48553045770562e-05,
+      "C": 2.14553420762263e-05,
+      "D": 6.138611760698081e-06,
+      "E": 6.138611760698081e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 4.419396638870239
+  },
+  "Q-000105": {
+    "id": "Q-000105",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is energy measured in Newtons in the SI system?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 25.25,
+      "B": 25.5,
+      "C": 24.5,
+      "D": 36.0,
+      "E": 26.5
+    },
+    "probs": {
+      "A": 2.1457672119140625e-05,
+      "B": 2.753734588623047e-05,
+      "C": 1.0132789611816406e-05,
+      "D": 1.0,
+      "E": 7.486343383789062e-05
+    },
+    "probs_norm": {
+      "A": 2.145479736420663e-05,
+      "B": 2.7533656617398507e-05,
+      "C": 1.013143208865313e-05,
+      "D": 0.9998660267097924,
+      "E": 7.485340413734312e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 4.60408353805542
+  },
+  "Q-000106": {
+    "id": "Q-000106",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Does sound travel faster in a vacuum than in air?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 31.0,
+      "B": 31.0,
+      "C": 29.125,
+      "D": 39.0,
+      "E": 34.0
+    },
+    "probs": {
+      "A": 0.0003337860107421875,
+      "B": 0.0003337860107421875,
+      "C": 5.1021575927734375e-05,
+      "D": 0.9921875,
+      "E": 0.006683349609375
+    },
+    "probs_norm": {
+      "A": 0.00033392310514141404,
+      "B": 0.00033392310514141404,
+      "C": 5.1042531785901864e-05,
+      "D": 0.9925950166269855,
+      "E": 0.006686094630945799
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 4.6133105754852295
+  },
+  "Q-000107": {
+    "id": "Q-000107",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is the sun a planet?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 23.375,
+      "B": 23.125,
+      "C": 22.625,
+      "D": 35.75,
+      "E": 24.25
+    },
+    "probs": {
+      "A": 4.231929779052734e-06,
+      "B": 3.293156623840332e-06,
+      "C": 1.996755599975586e-06,
+      "D": 1.0,
+      "E": 1.0132789611816406e-05
+    },
+    "probs_norm": {
+      "A": 4.231846603666689e-06,
+      "B": 3.2930918993321773e-06,
+      "C": 1.9967163552511847e-06,
+      "D": 0.9999803457546823,
+      "E": 1.0132590459483623e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 4.261671781539917
+  },
+  "Q-000108": {
+    "id": "Q-000108",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is freezing the process of a liquid turning into a gas?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 35.25,
+      "B": 27.375,
+      "C": 26.625,
+      "D": 26.125,
+      "E": 26.25
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 0.0003795623779296875,
+      "C": 0.000179290771484375,
+      "D": 0.0001087188720703125,
+      "E": 0.00012302398681640625
+    },
+    "probs_norm": {
+      "A": 0.9992100285399822,
+      "B": 0.00037926253448382656,
+      "C": 0.00017914913689185777,
+      "D": 0.00010863298726421163,
+      "E": 0.0001229268013779237
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": -2,
+    "processing_time": 5.765162944793701
+  },
+  "Q-000109": {
+    "id": "Q-000109",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is velocity a scalar quantity?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "D",
+    "logits": {
+      "A": 25.5,
+      "B": 25.75,
+      "C": 23.75,
+      "D": 34.75,
+      "E": 25.125
+    },
+    "probs": {
+      "A": 9.584426879882812e-05,
+      "B": 0.00012302398681640625,
+      "C": 1.6689300537109375e-05,
+      "D": 1.0,
+      "E": 6.580352783203125e-05
+    },
+    "probs_norm": {
+      "A": 9.581539376789984e-05,
+      "B": 0.00012298692334387145,
+      "C": 1.6684272546649225e-05,
+      "D": 0.9996987297071577,
+      "E": 6.578370318393124e-05
+    },
+    "is_valid": true,
+    "pred_label": "D",
+    "score": 1,
+    "processing_time": 5.099198341369629
+  },
+  "Q-000110": {
+    "id": "Q-000110",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is magnetism produced by moving electric charges?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_letters",
+    "output": "A",
+    "logits": {
+      "A": 35.75,
+      "B": 24.25,
+      "C": 22.5,
+      "D": 21.875,
+      "E": 22.625
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 1.0132789611816406e-05,
+      "C": 1.7583370208740234e-06,
+      "D": 9.424984455108643e-07,
+      "E": 1.996755599975586e-06
+    },
+    "probs_norm": {
+      "A": 0.9999851698392588,
+      "B": 1.0132639340917705e-05,
+      "C": 1.7583109444533666e-06,
+      "D": 9.42484468107419e-07,
+      "E": 1.9967259877690773e-06
+    },
+    "is_valid": true,
+    "pred_label": "A",
+    "score": 2,
+    "processing_time": 5.250676393508911
+  }
+}

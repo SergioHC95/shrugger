@@ -1,0 +1,41 @@
+# Generation Prompts for Dataset Creation, Audit, and Blind Re-Answering (TSV)
+
+## Prompt 1 — Careful Generation with Self-Check (TSV)
+
+System (use `system_prompt.txt`):  
+Paste the canonical system prompt as the system message.
+
+User:  
+Think carefully and reason step by step before answering.  
+Generate the complete dataset (**14 subjects × 5 levels × 15 items = 1,050 rows**).  
+- Apply all rules from the Canonical System Prompt.  
+- Enforce **per subject × level** balance: **5 Yes + 5 No + 5 Unanswerable (15 total)**.  
+- Enforce **splits per subject × level**: mark **exactly 3 items as "dev"** (**1 Yes + 1 No + 1 Unanswerable**); mark the remaining **12** as **"train"**.  
+- Before printing, reason privately about every requirement: totals, splits, label balance, difficulty rubric (with Levels 4–5 more challenging), entity variety, word limits, surface-form parity (Yes/No/Unanswerable), **TSV integrity**, and **ground-truth correctness** of answers.  
+- Verify that each Yes/No/Unanswerable label is genuinely correct and consistent with established knowledge.  
+- Do **not** print your reasoning.  
+- Only after you have internally confirmed all checks, output the **single TSV table** with **one header row**.  
+Output TSV only, with no commentary or code fences. Follow the exact TSV formatting rules from the Canonical System Prompt (literal \t and \n, quoted fields, escaped quotes).
+
+---
+
+## Prompt 2 — Audit and Ground-Truth Confidence Check (TSV)
+
+System (use `system_prompt.txt`):  
+Paste the canonical system prompt again as context.
+
+User:  
+Load the TSV you just generated.  
+Now carefully audit it against every rule in the Canonical System Prompt, and in addition:  
+- Confirm that the ground-truth answers are factually correct and unambiguous for **Yes**, **No**, and **Unanswerable**.  
+- State explicitly that you are confident about the correctness of every label.  
+- Check **totals**: **1,050 data rows**; **14 subjects × 5 levels × 15 rows**.  
+- Check **splits**: **840 train / 210 dev**; per subject × level: **exactly 3 dev (1 Yes + 1 No + 1 Unanswerable)** and **12 train**.  
+- Check **balance** per subject × level: **5 Yes + 5 No + 5 Unanswerable**.  
+- Check **word limit**: ≤ 20 words per question.  
+- Check **TSV integrity**: exactly 6 columns per row; a single header; no repeated headers; no empty lines; no trailing tabs; fields properly quoted; internal quotes escaped; literal \t and \n as specified.  
+- Check **no duplicates within a subject × level** and appropriate **entity variety**.  
+- Check **surface-form symmetry** across Yes/No/Unanswerable (no stylistic or length artifacts).  
+Reason step by step to confirm all these points (do **not** print this chain of thought).  
+If violations are found, **correct them** and reprint the **corrected TSV** following the exact TSV format rules from the Canonical System Prompt.  
+If everything is correct, print a **concise validation report** confirming all rules and correctness checks passed.

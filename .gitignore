@@ -1,0 +1,88 @@
+# Ignore config file with sensitive tokens
+config.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Virtual Environment
+venv/
+ENV/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Output files - these should go in outputs/ directory
+/*.png
+/*.jpg
+/*.jpeg
+/*.svg
+/*.pdf
+/*.pkl
+/*.npz
+/*.h5
+/*.hdf5
+/*.json
+/*.csv
+/*.tsv
+
+# Ignore all TSV files except curated_questions.tsv in dataset/data
+*.tsv
+!abstainer/dataset/data/curated_questions.tsv
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Test coverage
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Cache directories
+.ruff_cache/
+__pycache__/
+
+# Conda environment files (except the main one)
+conda-meta/
+
+# Results directories (keep structure but ignore contents)
+results/*/
+!results/.gitkeep
+outputs/*/
+!outputs/.gitkeep
