@@ -1,38 +1,17 @@
-# MATS Abstention Direction Project
+# Mechanistic Steering for Hallucination Suppression
 
-## Scientific Overview
+## Executive Summary
+See [`REPORT.md`](REPORT.md)
 
-This project investigates **epistemic abstention in large language models** - whether LLMs encode "I don't know" as a simple internal feature that can be causally steered. We address the fundamental question: *Do models have a mechanistic one-dimensional knob for epistemic abstention?*
+## Overview
 
-### Key Research Question
-**Do LLMs encode epistemic abstention ("I don't know") as a simple internal feature that can be causally steered?**
+> **Do LLMs encode epistemic abstention as an internal feature that can be causally steered?**
 
-### Dataset Creation & Curation
-Existing benchmarks proved inadequate for studying epistemic abstention, as they focus on safety refusals or post-hoc calibration rather than genuine uncertainty, or suffer from severe compositional generalization issues. We constructed a Likert-scale dataset using **Gemini 2.5 Pro** (leveraging its large context window for comprehensive generation):
+This project investigates **epistemic abstention** in LLMs, i.e., whether models encode "I don't know" as a simple internal feature that can be mechanistically controlled to:
+  * Reduce hallucinations in cases of epistemic uncertainty
+  * Improve calibration metrics (ECE, AURC)
+  * Control risk in high-stakes situations (cf. deontic refusal)
 
-- **LLM-assisted generation**: Carefully crafted prompts to generate factual Yes/No questions across 14 subjects and 5 difficulty levels
-- **Likert-style design**: Explicit abstention options alongside graded confidence to isolate epistemic uncertainty  
-- **Blind curation**: LLM blind cross-checks to ensure question quality
-
-**Dataset & Tools Location:**
-- 📝 **System & user prompts**: [`abstainer/dataset/prompts/`](abstainer/dataset/prompts/) (generation and curation prompts)
-- 🛠️ **Generation & quality control scripts**: [`abstainer/dataset/scripts/`](abstainer/dataset/scripts/) (including [`check_blind.py`](abstainer/dataset/scripts/check_blind.py) for dataset validation and comparison)
-- 📊 **Curated dataset**: [`abstainer/dataset/data/curated_questions.tsv`](abstainer/dataset/data/curated_questions.tsv)
-
-### Key Findings
-Using this curated dataset, we discovered that **abstention is encoded as a single linear direction** in the residual stream:
-
-- **Near-perfect separability**: AUC ≈ 0.99 on training data at layer 22 of `gemma-3-4b-it`
-- **Strong generalization**: AUC = 0.79 on held-out data with large effect size (Cohen's d = 1.21)  
-- **Late-layer concentration**: Separability emerges in mid-to-late layers, peaking around layer 22
-
-### Research Methods
-1. **Fisher Linear Discriminant Analysis** to identify abstention directions in representation space
-2. **Mechanistic probing** of internal model states during abstention decisions
-3. **Cross-validation** across prompt variants and held-out subjects
-4. **Geometric analysis** of how models represent epistemic uncertainty
-
-This work opens the door to **causal steering experiments** for improving model calibration and provides mechanistic insights into where epistemic uncertainty lives inside language models.
 
 ## Package Description
 
@@ -44,24 +23,16 @@ A Python package for analyzing abstention directions in language models using Fi
 ├── abstainer/             # 📦 Core package
 │   ├── src/                  # Analysis, experiments, models
 │   └── dataset/              # Data, prompts, curation scripts
-├── experiments/           # 🧪 Main experiment runners
 ├── examples/              # 🎯 Usage examples  
+├── experiments/           # 🧪 Main experiment runners
 ├── notebooks/             # 📓 Analysis & exploration
 ├── scripts/               # 🛠️ Utility scripts
 ├── tests/                 # ✅ Test suite
-├── outputs/               # 📊 Generated results (gitignored)
+├── results/               # 🗂️ Raw experiment results (large files, gitignored)
+├── outputs/               # 📊 Processed data and visualizations (gitignored)
 └── config files           # ⚙️ Environment & package setup
 ```
 
-### Directory Guidelines
-
-- **`abstainer/`**: Package source code only - no outputs or experiments
-- **`experiments/`**: Main experiment scripts for running comprehensive studies
-- **`results/`**: Raw experiment data, model outputs, large files
-- **`outputs/`**: Processed visualizations and analysis outputs  
-- **`examples/`**: Demonstration scripts and sample usage
-- **`notebooks/`**: Interactive analysis and exploration
-- **`scripts/`**: Command-line utilities and batch processing
 
 ## Quick Start
 
@@ -99,11 +70,11 @@ A Python package for analyzing abstention directions in language models using Fi
 - **Direction Evaluation**: Analyze effectiveness of computed directions
 - **Comprehensive Experiments**: Run experiments across multiple prompt forms and configurations
 - **Visualization**: Generate plots and analysis visualizations
-- **Professional Package Structure**: Clean, maintainable codebase following Python best practices
+
 
 ## Development
 
-The package is installed in editable mode automatically when you create the environment, so any changes to the source code are immediately available.
+The package is installed in editable mode automatically when you create the environment.
 
 ### Running Different Test Suites
 
@@ -125,16 +96,6 @@ The package is installed in editable mode automatically when you create the envi
 - `scripts/run_fisher_analysis.py`: Main Fisher LDA analysis CLI
 - `scripts/reorganize_by_layer.py`: Reorganize experiment data by layer
 - `scripts/cleanup_corrupted_files.py`: Clean up corrupted NPZ files
-
-## Directory Guidelines
-
-- **Source code**: Only in `abstainer/` package
-- **Experiments**: Main experiment scripts in `experiments/`
-- **Notebooks**: Use `notebooks/analysis/` for analysis, `notebooks/exploration/` for experimentation
-- **Scripts**: Utility scripts go in `scripts/`, with analysis scripts in `scripts/analysis/`
-- **Outputs**: All generated files (plots, data) go in `outputs/`
-- **Configuration**: Use `config.json` (from template) for tokens and settings
-
 
 ## License
 
