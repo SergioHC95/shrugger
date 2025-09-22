@@ -11,7 +11,6 @@ This script:
 6. Removes all original files except the newly promoted questions.tsv
 """
 
-import os
 import shutil
 from pathlib import Path
 
@@ -22,32 +21,32 @@ def main():
     dataset_dir = script_dir.parent
     data_dir = dataset_dir / "data"
     reports_dir = dataset_dir / "reports"
-    
+
     if not data_dir.exists():
         print(f"Error: Data directory not found at {data_dir}")
         return False
-    
+
     # Create archive directory structure
     archive_dir = dataset_dir / "zero_pass"
     archive_data_dir = archive_dir / "data"
     archive_reports_dir = archive_dir / "reports"
-    
+
     archive_dir.mkdir(exist_ok=True)
     archive_data_dir.mkdir(exist_ok=True)
     print(f"Created archive directory: {archive_dir}")
     print(f"Created archive data directory: {archive_data_dir}")
-    
+
     # Find all TSV files in the data directory
     tsv_files = list(data_dir.glob("*.tsv"))
-    
+
     if not tsv_files:
         print("No TSV files found in data directory")
         return False
-    
+
     print(f"\nFound {len(tsv_files)} TSV files to archive:")
     for tsv_file in tsv_files:
         print(f"  - {tsv_file.name}")
-    
+
     # Check for reports directory and files
     report_files = []
     if reports_dir.exists():
@@ -58,50 +57,52 @@ def main():
             print(f"\nFound {len(report_files)} report files to archive:")
             for report_file in report_files:
                 print(f"  - {report_file.name}")
-    
+
     # Archive all TSV files to data subfolder
     print("\nArchiving TSV files...")
     for tsv_file in tsv_files:
         archive_path = archive_data_dir / tsv_file.name
         shutil.copy2(tsv_file, archive_path)
         print(f"  ✓ Archived: {tsv_file.name} -> zero_pass/data/{tsv_file.name}")
-    
+
     # Archive report files to reports subfolder if they exist
     if report_files:
         print("\nArchiving report files...")
         for report_file in report_files:
             archive_path = archive_reports_dir / report_file.name
             shutil.copy2(report_file, archive_path)
-            print(f"  ✓ Archived: {report_file.name} -> zero_pass/reports/{report_file.name}")
-    
+            print(
+                f"  ✓ Archived: {report_file.name} -> zero_pass/reports/{report_file.name}"
+            )
+
     # Check if curated_questions.tsv exists
     curated_file = data_dir / "curated_questions.tsv"
     if not curated_file.exists():
         print(f"\nError: curated_questions.tsv not found at {curated_file}")
         return False
-    
+
     # Promote curated_questions.tsv to questions.tsv
     new_questions_file = data_dir / "questions.tsv"
     shutil.copy2(curated_file, new_questions_file)
-    print(f"\n✓ Promoted: curated_questions.tsv -> questions.tsv")
-    
+    print("\n✓ Promoted: curated_questions.tsv -> questions.tsv")
+
     # Remove original files after archiving (except the promoted questions.tsv)
     print("\nRemoving original files...")
     files_removed = 0
-    
+
     # Remove TSV files (except the newly promoted questions.tsv)
     for tsv_file in tsv_files:
         if tsv_file.name != "questions.tsv":  # Don't remove the newly promoted file
             tsv_file.unlink()
             print(f"  ✓ Removed: {tsv_file.name}")
             files_removed += 1
-    
+
     # Remove report files
     for report_file in report_files:
         report_file.unlink()
         print(f"  ✓ Removed: {report_file.name}")
         files_removed += 1
-    
+
     # Summary
     total_archived = len(tsv_files) + len(report_files)
     print(f"\n{'='*50}")
@@ -116,10 +117,10 @@ def main():
         print(f"Archived report files: {len(report_files)}")
     print(f"Total archived files: {total_archived}")
     print(f"Files removed: {files_removed}")
-    print(f"New main file: questions.tsv (from curated_questions.tsv)")
-    print(f"Remaining files in data/: questions.tsv only")
+    print("New main file: questions.tsv (from curated_questions.tsv)")
+    print("Remaining files in data/: questions.tsv only")
     print(f"{'='*50}")
-    
+
     return True
 
 

@@ -7,24 +7,34 @@ label types, and permutations.
 
 import argparse
 import json
+import os
+import sys
 from pathlib import Path
 
 import matplotlib.pyplot as plt
 import pandas as pd
 
+# Get the project root directory
+PROJECT_ROOT = Path(os.path.abspath(__file__)).parents[2]
+sys.path.append(str(PROJECT_ROOT))
 
-def find_latest_run(base_dir="./results/comprehensive_experiments"):
+
+def find_latest_run(base_dir=None):
     """Find the most recent experiment run directory."""
-    base_path = Path(base_dir)
+    if base_dir is None:
+        base_path = PROJECT_ROOT / "results" / "comprehensive_experiments"
+    else:
+        base_path = Path(base_dir)
+        
     if not base_path.exists():
-        print(f"Error: Directory {base_dir} does not exist.")
+        print(f"Error: Directory {base_path} does not exist.")
         return None
 
     run_dirs = [
         d for d in base_path.iterdir() if d.is_dir() and d.name.startswith("run_")
     ]
     if not run_dirs:
-        print(f"Error: No run directories found in {base_dir}.")
+        print(f"Error: No run directories found in {base_path}.")
         return None
 
     # Sort by name (which includes timestamp)
@@ -109,8 +119,9 @@ def analyze_by_form(df):
     plt.ylabel("Average Score")
     plt.grid(True, axis="y", linestyle="--", alpha=0.7)
     plt.tight_layout()
-    plt.savefig("avg_score_by_form.png")
-    print("Saved plot: avg_score_by_form.png")
+    output_path = PROJECT_ROOT / "outputs" / "figures" / "avg_score_by_form.png"
+    plt.savefig(output_path)
+    print(f"Saved plot: {output_path}")
 
     return form_metrics
 
@@ -140,8 +151,9 @@ def analyze_by_label_type(df):
     plt.ylabel("Average Score")
     plt.grid(True, axis="y", linestyle="--", alpha=0.7)
     plt.tight_layout()
-    plt.savefig("avg_score_by_label_type.png")
-    print("Saved plot: avg_score_by_label_type.png")
+    output_path = PROJECT_ROOT / "outputs" / "figures" / "avg_score_by_label_type.png"
+    plt.savefig(output_path)
+    print(f"Saved plot: {output_path}")
 
     return label_metrics
 
@@ -171,8 +183,9 @@ def analyze_by_permutation(df):
     plt.ylabel("Average Score")
     plt.grid(True, axis="y", linestyle="--", alpha=0.7)
     plt.tight_layout()
-    plt.savefig("avg_score_by_permutation.png")
-    print("Saved plot: avg_score_by_permutation.png")
+    output_path = PROJECT_ROOT / "outputs" / "figures" / "avg_score_by_permutation.png"
+    plt.savefig(output_path)
+    print(f"Saved plot: {output_path}")
 
     return perm_metrics
 
@@ -210,8 +223,9 @@ def analyze_form_label_interaction(df):
             )
 
     plt.tight_layout()
-    plt.savefig("form_label_interaction.png")
-    print("Saved plot: form_label_interaction.png")
+    output_path = PROJECT_ROOT / "outputs" / "figures" / "form_label_interaction.png"
+    plt.savefig(output_path)
+    print(f"Saved plot: {output_path}")
 
     return pivot
 
@@ -276,7 +290,7 @@ def main():
 
     print(f"\nAnalysis complete. Report saved to: {report_file}")
     print(f"CSV data saved to: {csv_file}")
-    print("Plots saved to current directory.")
+    print(f"Plots saved to {PROJECT_ROOT / 'outputs' / 'figures'}")
 
 
 if __name__ == "__main__":

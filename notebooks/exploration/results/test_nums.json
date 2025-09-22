@@ -1,0 +1,1172 @@
+{
+  "Q-000151": {
+    "id": "Q-000151",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is gravity the force that pulls objects toward Earth?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_numbers",
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "prompt": "Question: Is gravity the force that pulls objects toward Earth?\n\nA) Definitely yes\nB) Probably yes\nC) Not sure\nD) Probably no\nE) Definitely no\nRespond with exactly one token.\nAnswer:\n",
+    "pred_label": "A",
+    "canonical_label": "YY",
+    "token_ids": {
+      "A": 236776,
+      "B": 236799,
+      "C": 236780,
+      "D": 236796,
+      "E": 236788
+    },
+    "canonical_token_ids": {
+      "YY": 236776,
+      "Y": 236799,
+      "A": 236780,
+      "N": 236796,
+      "NN": 236788
+    },
+    "logits": {
+      "A": 26.375,
+      "B": 15.875,
+      "C": 14.375,
+      "D": 14.25,
+      "E": 14.5625
+    },
+    "canonical_logits": {
+      "YY": 26.375,
+      "Y": 15.875,
+      "A": 14.375,
+      "N": 14.25,
+      "NN": 14.5625
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 2.753734588623047e-05,
+      "C": 6.139278411865234e-06,
+      "D": 5.424022674560547e-06,
+      "E": 7.420778274536133e-06
+    },
+    "canonical_probs": {
+      "YY": 1.0,
+      "Y": 2.753734588623047e-05,
+      "A": 6.139278411865234e-06,
+      "N": 5.424022674560547e-06,
+      "NN": 7.420778274536133e-06
+    },
+    "probs_norm": {
+      "A": 0.9999534807388951,
+      "B": 2.753606486924705e-05,
+      "C": 6.138992817169798e-06,
+      "D": 5.42377035303351e-06,
+      "E": 7.420433065413978e-06
+    },
+    "canonical_probs_norm": {
+      "YY": 0.9999534807388951,
+      "Y": 2.753606486924705e-05,
+      "A": 6.138992817169798e-06,
+      "N": 5.42377035303351e-06,
+      "NN": 7.420433065413978e-06
+    },
+    "is_valid": true,
+    "score": 2,
+    "processing_time": 6.040206432342529
+  },
+  "Q-000152": {
+    "id": "Q-000152",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is light a form of energy?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_numbers",
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "prompt": "Question: Is light a form of energy?\n\nA) Definitely yes\nB) Probably yes\nC) Not sure\nD) Probably no\nE) Definitely no\nRespond with exactly one token.\nAnswer:\n",
+    "pred_label": "A",
+    "canonical_label": "YY",
+    "token_ids": {
+      "A": 236776,
+      "B": 236799,
+      "C": 236780,
+      "D": 236796,
+      "E": 236788
+    },
+    "canonical_token_ids": {
+      "YY": 236776,
+      "Y": 236799,
+      "A": 236780,
+      "N": 236796,
+      "NN": 236788
+    },
+    "logits": {
+      "A": 25.25,
+      "B": 14.875,
+      "C": 13.6875,
+      "D": 13.875,
+      "E": 13.8125
+    },
+    "canonical_logits": {
+      "YY": 25.25,
+      "Y": 14.875,
+      "A": 13.6875,
+      "N": 13.875,
+      "NN": 13.8125
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 3.123283386230469e-05,
+      "C": 9.5367431640625e-06,
+      "D": 1.150369644165039e-05,
+      "E": 1.0788440704345703e-05
+    },
+    "canonical_probs": {
+      "YY": 1.0,
+      "Y": 3.123283386230469e-05,
+      "A": 9.5367431640625e-06,
+      "N": 1.150369644165039e-05,
+      "NN": 1.0788440704345703e-05
+    },
+    "probs_norm": {
+      "A": 0.9999369422623566,
+      "B": 3.123086439046114e-05,
+      "C": 9.536141798614088e-06,
+      "D": 1.1502971044578245e-05,
+      "E": 1.0787760409682189e-05
+    },
+    "canonical_probs_norm": {
+      "YY": 0.9999369422623566,
+      "Y": 3.123086439046114e-05,
+      "A": 9.536141798614088e-06,
+      "N": 1.1502971044578245e-05,
+      "NN": 1.0787760409682189e-05
+    },
+    "is_valid": true,
+    "score": 2,
+    "processing_time": 5.1808693408966064
+  },
+  "Q-000153": {
+    "id": "Q-000153",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is the neutron an electrically neutral particle?",
+    "answer": "Yes",
+    "split": "dev",
+    "form": "V0_numbers",
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "prompt": "Question: Is the neutron an electrically neutral particle?\n\nA) Definitely yes\nB) Probably yes\nC) Not sure\nD) Probably no\nE) Definitely no\nRespond with exactly one token.\nAnswer:\n",
+    "pred_label": "A",
+    "canonical_label": "YY",
+    "token_ids": {
+      "A": 236776,
+      "B": 236799,
+      "C": 236780,
+      "D": 236796,
+      "E": 236788
+    },
+    "canonical_token_ids": {
+      "YY": 236776,
+      "Y": 236799,
+      "A": 236780,
+      "N": 236796,
+      "NN": 236788
+    },
+    "logits": {
+      "A": 26.125,
+      "B": 15.75,
+      "C": 13.875,
+      "D": 14.125,
+      "E": 15.125
+    },
+    "canonical_logits": {
+      "YY": 26.125,
+      "Y": 15.75,
+      "A": 13.875,
+      "N": 14.125,
+      "NN": 15.125
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 3.123283386230469e-05,
+      "C": 4.798173904418945e-06,
+      "D": 6.139278411865234e-06,
+      "E": 1.6689300537109375e-05
+    },
+    "canonical_probs": {
+      "YY": 1.0,
+      "Y": 3.123283386230469e-05,
+      "A": 4.798173904418945e-06,
+      "N": 6.139278411865234e-06,
+      "NN": 1.6689300537109375e-05
+    },
+    "probs_norm": {
+      "A": 0.9999411438775313,
+      "B": 3.1230995618809846e-05,
+      "C": 4.7978915025080005e-06,
+      "D": 6.138917077743157e-06,
+      "E": 1.6688318269593047e-05
+    },
+    "canonical_probs_norm": {
+      "YY": 0.9999411438775313,
+      "Y": 3.1230995618809846e-05,
+      "A": 4.7978915025080005e-06,
+      "N": 6.138917077743157e-06,
+      "NN": 1.6688318269593047e-05
+    },
+    "is_valid": true,
+    "score": 2,
+    "processing_time": 5.905694246292114
+  },
+  "Q-000154": {
+    "id": "Q-000154",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Does a typical bar magnet have a north and a south pole?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_numbers",
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "prompt": "Question: Does a typical bar magnet have a north and a south pole?\n\nA) Definitely yes\nB) Probably yes\nC) Not sure\nD) Probably no\nE) Definitely no\nRespond with exactly one token.\nAnswer:\n",
+    "pred_label": "A",
+    "canonical_label": "YY",
+    "token_ids": {
+      "A": 236776,
+      "B": 236799,
+      "C": 236780,
+      "D": 236796,
+      "E": 236788
+    },
+    "canonical_token_ids": {
+      "YY": 236776,
+      "Y": 236799,
+      "A": 236780,
+      "N": 236796,
+      "NN": 236788
+    },
+    "logits": {
+      "A": 28.25,
+      "B": 16.625,
+      "C": 14.4375,
+      "D": 15.0625,
+      "E": 15.3125
+    },
+    "canonical_logits": {
+      "YY": 28.25,
+      "Y": 16.625,
+      "A": 14.4375,
+      "N": 15.0625,
+      "NN": 15.3125
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 8.940696716308594e-06,
+      "C": 1.0058283805847168e-06,
+      "D": 1.8700957298278809e-06,
+      "E": 2.3990869522094727e-06
+    },
+    "canonical_probs": {
+      "YY": 1.0,
+      "Y": 8.940696716308594e-06,
+      "A": 1.0058283805847168e-06,
+      "N": 1.8700957298278809e-06,
+      "NN": 2.3990869522094727e-06
+    },
+    "probs_norm": {
+      "A": 0.9999857844943045,
+      "B": 8.940569619783502e-06,
+      "C": 1.0058140822256439e-06,
+      "D": 1.8700691454713824e-06,
+      "E": 2.3990528479752396e-06
+    },
+    "canonical_probs_norm": {
+      "YY": 0.9999857844943045,
+      "Y": 8.940569619783502e-06,
+      "A": 1.0058140822256439e-06,
+      "N": 1.8700691454713824e-06,
+      "NN": 2.3990528479752396e-06
+    },
+    "is_valid": true,
+    "score": 2,
+    "processing_time": 6.905847787857056
+  },
+  "Q-000155": {
+    "id": "Q-000155",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is sound a vibration that travels through a medium?",
+    "answer": "Yes",
+    "split": "train",
+    "form": "V0_numbers",
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "prompt": "Question: Is sound a vibration that travels through a medium?\n\nA) Definitely yes\nB) Probably yes\nC) Not sure\nD) Probably no\nE) Definitely no\nRespond with exactly one token.\nAnswer:\n",
+    "pred_label": "A",
+    "canonical_label": "YY",
+    "token_ids": {
+      "A": 236776,
+      "B": 236799,
+      "C": 236780,
+      "D": 236796,
+      "E": 236788
+    },
+    "canonical_token_ids": {
+      "YY": 236776,
+      "Y": 236799,
+      "A": 236780,
+      "N": 236796,
+      "NN": 236788
+    },
+    "logits": {
+      "A": 25.875,
+      "B": 15.75,
+      "C": 14.5625,
+      "D": 14.125,
+      "E": 14.25
+    },
+    "canonical_logits": {
+      "YY": 25.875,
+      "Y": 15.75,
+      "A": 14.5625,
+      "N": 14.125,
+      "NN": 14.25
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 4.00543212890625e-05,
+      "C": 1.2218952178955078e-05,
+      "D": 7.867813110351562e-06,
+      "E": 8.940696716308594e-06
+    },
+    "canonical_probs": {
+      "YY": 1.0,
+      "Y": 4.00543212890625e-05,
+      "A": 1.2218952178955078e-05,
+      "N": 7.867813110351562e-06,
+      "NN": 8.940696716308594e-06
+    },
+    "probs_norm": {
+      "A": 0.9999309229886685,
+      "B": 4.0051554456256935e-05,
+      "C": 1.2218108130256953e-05,
+      "D": 7.867269625336183e-06,
+      "E": 8.94007911970021e-06
+    },
+    "canonical_probs_norm": {
+      "YY": 0.9999309229886685,
+      "Y": 4.0051554456256935e-05,
+      "A": 1.2218108130256953e-05,
+      "N": 7.867269625336183e-06,
+      "NN": 8.94007911970021e-06
+    },
+    "is_valid": true,
+    "score": 2,
+    "processing_time": 7.395599603652954
+  },
+  "Q-000156": {
+    "id": "Q-000156",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Does an electron have more mass than a proton?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_numbers",
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "prompt": "Question: Does an electron have more mass than a proton?\n\nA) Definitely yes\nB) Probably yes\nC) Not sure\nD) Probably no\nE) Definitely no\nRespond with exactly one token.\nAnswer:\n",
+    "pred_label": "D",
+    "canonical_label": "N",
+    "token_ids": {
+      "A": 236776,
+      "B": 236799,
+      "C": 236780,
+      "D": 236796,
+      "E": 236788
+    },
+    "canonical_token_ids": {
+      "YY": 236776,
+      "Y": 236799,
+      "A": 236780,
+      "N": 236796,
+      "NN": 236788
+    },
+    "logits": {
+      "A": 17.625,
+      "B": 17.5,
+      "C": 17.75,
+      "D": 26.5,
+      "E": 19.375
+    },
+    "canonical_logits": {
+      "YY": 17.625,
+      "Y": 17.5,
+      "A": 17.75,
+      "N": 26.5,
+      "NN": 19.375
+    },
+    "probs": {
+      "A": 0.0001392364501953125,
+      "B": 0.00012302398681640625,
+      "C": 0.0001583099365234375,
+      "D": 1.0,
+      "E": 0.000804901123046875
+    },
+    "canonical_probs": {
+      "YY": 0.0001392364501953125,
+      "Y": 0.00012302398681640625,
+      "A": 0.0001583099365234375,
+      "N": 1.0,
+      "NN": 0.000804901123046875
+    },
+    "probs_norm": {
+      "A": 0.0001390660287409476,
+      "B": 0.00012287340895604276,
+      "C": 0.00015811616966436508,
+      "D": 0.9987760284456704,
+      "E": 0.0008039159469682177
+    },
+    "canonical_probs_norm": {
+      "YY": 0.0001390660287409476,
+      "Y": 0.00012287340895604276,
+      "A": 0.00015811616966436508,
+      "N": 0.9987760284456704,
+      "NN": 0.0008039159469682177
+    },
+    "is_valid": true,
+    "score": 1,
+    "processing_time": 7.613046646118164
+  },
+  "Q-000157": {
+    "id": "Q-000157",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is friction a force that speeds up motion between surfaces?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_numbers",
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "prompt": "Question: Is friction a force that speeds up motion between surfaces?\n\nA) Definitely yes\nB) Probably yes\nC) Not sure\nD) Probably no\nE) Definitely no\nRespond with exactly one token.\nAnswer:\n",
+    "pred_label": "D",
+    "canonical_label": "N",
+    "token_ids": {
+      "A": 236776,
+      "B": 236799,
+      "C": 236780,
+      "D": 236796,
+      "E": 236788
+    },
+    "canonical_token_ids": {
+      "YY": 236776,
+      "Y": 236799,
+      "A": 236780,
+      "N": 236796,
+      "NN": 236788
+    },
+    "logits": {
+      "A": 21.0,
+      "B": 23.25,
+      "C": 22.5,
+      "D": 28.625,
+      "E": 21.625
+    },
+    "canonical_logits": {
+      "YY": 21.0,
+      "Y": 23.25,
+      "A": 22.5,
+      "N": 28.625,
+      "NN": 21.625
+    },
+    "probs": {
+      "A": 0.000484466552734375,
+      "B": 0.00457763671875,
+      "C": 0.002166748046875,
+      "D": 0.9921875,
+      "E": 0.000904083251953125
+    },
+    "canonical_probs": {
+      "YY": 0.000484466552734375,
+      "Y": 0.00457763671875,
+      "A": 0.002166748046875,
+      "N": 0.9921875,
+      "NN": 0.000904083251953125
+    },
+    "probs_norm": {
+      "A": 0.00048431136263099285,
+      "B": 0.004576170355568437,
+      "C": 0.0021660539683023934,
+      "D": 0.9918696706682734,
+      "E": 0.0009037936452247663
+    },
+    "canonical_probs_norm": {
+      "YY": 0.00048431136263099285,
+      "Y": 0.004576170355568437,
+      "A": 0.0021660539683023934,
+      "N": 0.9918696706682734,
+      "NN": 0.0009037936452247663
+    },
+    "is_valid": true,
+    "score": 1,
+    "processing_time": 7.525740146636963
+  },
+  "Q-000158": {
+    "id": "Q-000158",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Does heat naturally flow from a colder object to a hotter one?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_numbers",
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "prompt": "Question: Does heat naturally flow from a colder object to a hotter one?\n\nA) Definitely yes\nB) Probably yes\nC) Not sure\nD) Probably no\nE) Definitely no\nRespond with exactly one token.\nAnswer:\n",
+    "pred_label": "A",
+    "canonical_label": "YY",
+    "token_ids": {
+      "A": 236776,
+      "B": 236799,
+      "C": 236780,
+      "D": 236796,
+      "E": 236788
+    },
+    "canonical_token_ids": {
+      "YY": 236776,
+      "Y": 236799,
+      "A": 236780,
+      "N": 236796,
+      "NN": 236788
+    },
+    "logits": {
+      "A": 25.125,
+      "B": 17.125,
+      "C": 15.875,
+      "D": 14.9375,
+      "E": 15.125
+    },
+    "canonical_logits": {
+      "YY": 25.125,
+      "Y": 17.125,
+      "A": 15.875,
+      "N": 14.9375,
+      "NN": 15.125
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 0.000335693359375,
+      "C": 9.584426879882812e-05,
+      "D": 3.7670135498046875e-05,
+      "E": 4.5299530029296875e-05
+    },
+    "canonical_probs": {
+      "YY": 1.0,
+      "Y": 0.000335693359375,
+      "A": 9.584426879882812e-05,
+      "N": 3.7670135498046875e-05,
+      "NN": 4.5299530029296875e-05
+    },
+    "probs_norm": {
+      "A": 0.9994857572879249,
+      "B": 0.0003355207315114494,
+      "C": 9.579498158210416e-05,
+      "D": 3.765076390540412e-05,
+      "E": 4.527623507611888e-05
+    },
+    "canonical_probs_norm": {
+      "YY": 0.9994857572879249,
+      "Y": 0.0003355207315114494,
+      "A": 9.579498158210416e-05,
+      "N": 3.765076390540412e-05,
+      "NN": 4.527623507611888e-05
+    },
+    "is_valid": true,
+    "score": -2,
+    "processing_time": 7.373830556869507
+  },
+  "Q-000159": {
+    "id": "Q-000159",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is a shadow a form of matter?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_numbers",
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "prompt": "Question: Is a shadow a form of matter?\n\nA) Definitely yes\nB) Probably yes\nC) Not sure\nD) Probably no\nE) Definitely no\nRespond with exactly one token.\nAnswer:\n",
+    "pred_label": "D",
+    "canonical_label": "N",
+    "token_ids": {
+      "A": 236776,
+      "B": 236799,
+      "C": 236780,
+      "D": 236796,
+      "E": 236788
+    },
+    "canonical_token_ids": {
+      "YY": 236776,
+      "Y": 236799,
+      "A": 236780,
+      "N": 236796,
+      "NN": 236788
+    },
+    "logits": {
+      "A": 17.25,
+      "B": 17.125,
+      "C": 18.625,
+      "D": 26.25,
+      "E": 18.625
+    },
+    "canonical_logits": {
+      "YY": 17.25,
+      "Y": 17.125,
+      "A": 18.625,
+      "N": 26.25,
+      "NN": 18.625
+    },
+    "probs": {
+      "A": 0.00012302398681640625,
+      "B": 0.0001087188720703125,
+      "C": 0.00048828125,
+      "D": 1.0,
+      "E": 0.00048828125
+    },
+    "canonical_probs": {
+      "YY": 0.00012302398681640625,
+      "Y": 0.0001087188720703125,
+      "A": 0.00048828125,
+      "N": 1.0,
+      "NN": 0.00048828125
+    },
+    "probs_norm": {
+      "A": 0.0001228755156723434,
+      "B": 0.00010858766501276858,
+      "C": 0.0004876919691801536,
+      "D": 0.9987931528809546,
+      "E": 0.0004876919691801536
+    },
+    "canonical_probs_norm": {
+      "YY": 0.0001228755156723434,
+      "Y": 0.00010858766501276858,
+      "A": 0.0004876919691801536,
+      "N": 0.9987931528809546,
+      "NN": 0.0004876919691801536
+    },
+    "is_valid": true,
+    "score": 1,
+    "processing_time": 8.589478492736816
+  },
+  "Q-000160": {
+    "id": "Q-000160",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "In electronics, is voltage the same as current?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_numbers",
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "prompt": "Question: In electronics, is voltage the same as current?\n\nA) Definitely yes\nB) Probably yes\nC) Not sure\nD) Probably no\nE) Definitely no\nRespond with exactly one token.\nAnswer:\n",
+    "pred_label": "D",
+    "canonical_label": "N",
+    "token_ids": {
+      "A": 236776,
+      "B": 236799,
+      "C": 236780,
+      "D": 236796,
+      "E": 236788
+    },
+    "canonical_token_ids": {
+      "YY": 236776,
+      "Y": 236799,
+      "A": 236780,
+      "N": 236796,
+      "NN": 236788
+    },
+    "logits": {
+      "A": 17.875,
+      "B": 18.75,
+      "C": 19.25,
+      "D": 28.125,
+      "E": 21.375
+    },
+    "canonical_logits": {
+      "YY": 17.875,
+      "Y": 18.75,
+      "A": 19.25,
+      "N": 28.125,
+      "NN": 21.375
+    },
+    "probs": {
+      "A": 3.528594970703125e-05,
+      "B": 8.487701416015625e-05,
+      "C": 0.0001392364501953125,
+      "D": 1.0,
+      "E": 0.00116729736328125
+    },
+    "canonical_probs": {
+      "YY": 3.528594970703125e-05,
+      "Y": 8.487701416015625e-05,
+      "A": 0.0001392364501953125,
+      "N": 1.0,
+      "NN": 0.00116729736328125
+    },
+    "probs_norm": {
+      "A": 3.523567907724423e-05,
+      "B": 8.475609291553341e-05,
+      "C": 0.00013903808500750426,
+      "D": 0.9985753357864985,
+      "E": 0.0011656343565012684
+    },
+    "canonical_probs_norm": {
+      "YY": 3.523567907724423e-05,
+      "Y": 8.475609291553341e-05,
+      "A": 0.00013903808500750426,
+      "N": 0.9985753357864985,
+      "NN": 0.0011656343565012684
+    },
+    "is_valid": true,
+    "score": 1,
+    "processing_time": 10.840576887130737
+  },
+  "Q-000161": {
+    "id": "Q-000161",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is the universe infinitely old?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_numbers",
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "prompt": "Question: Is the universe infinitely old?\n\nA) Definitely yes\nB) Probably yes\nC) Not sure\nD) Probably no\nE) Definitely no\nRespond with exactly one token.\nAnswer:\n",
+    "pred_label": "C",
+    "canonical_label": "A",
+    "token_ids": {
+      "A": 236776,
+      "B": 236799,
+      "C": 236780,
+      "D": 236796,
+      "E": 236788
+    },
+    "canonical_token_ids": {
+      "YY": 236776,
+      "Y": 236799,
+      "A": 236780,
+      "N": 236796,
+      "NN": 236788
+    },
+    "logits": {
+      "A": 15.0,
+      "B": 15.0,
+      "C": 24.375,
+      "D": 16.75,
+      "E": 15.5
+    },
+    "canonical_logits": {
+      "YY": 15.0,
+      "Y": 15.0,
+      "A": 24.375,
+      "N": 16.75,
+      "NN": 15.5
+    },
+    "probs": {
+      "A": 8.487701416015625e-05,
+      "B": 8.487701416015625e-05,
+      "C": 1.0,
+      "D": 0.00048828125,
+      "E": 0.0001392364501953125
+    },
+    "canonical_probs": {
+      "YY": 8.487701416015625e-05,
+      "Y": 8.487701416015625e-05,
+      "A": 1.0,
+      "N": 0.00048828125,
+      "NN": 0.0001392364501953125
+    },
+    "probs_norm": {
+      "A": 8.480939802479865e-05,
+      "B": 8.480939802479865e-05,
+      "C": 0.9992033634073176,
+      "D": 0.0004878922672887293,
+      "E": 0.00013912552934405173
+    },
+    "canonical_probs_norm": {
+      "YY": 8.480939802479865e-05,
+      "Y": 8.480939802479865e-05,
+      "A": 0.9992033634073176,
+      "N": 0.0004878922672887293,
+      "NN": 0.00013912552934405173
+    },
+    "is_valid": true,
+    "score": 0,
+    "processing_time": 11.789620399475098
+  },
+  "Q-000162": {
+    "id": "Q-000162",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Does time travel to the past violate known laws of physics?",
+    "answer": "Unanswerable",
+    "split": "train",
+    "form": "V0_numbers",
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "prompt": "Question: Does time travel to the past violate known laws of physics?\n\nA) Definitely yes\nB) Probably yes\nC) Not sure\nD) Probably no\nE) Definitely no\nRespond with exactly one token.\nAnswer:\n",
+    "pred_label": "A",
+    "canonical_label": "YY",
+    "token_ids": {
+      "A": 236776,
+      "B": 236799,
+      "C": 236780,
+      "D": 236796,
+      "E": 236788
+    },
+    "canonical_token_ids": {
+      "YY": 236776,
+      "Y": 236799,
+      "A": 236780,
+      "N": 236796,
+      "NN": 236788
+    },
+    "logits": {
+      "A": 24.25,
+      "B": 18.375,
+      "C": 18.75,
+      "D": 17.25,
+      "E": 16.375
+    },
+    "canonical_logits": {
+      "YY": 24.25,
+      "Y": 18.375,
+      "A": 18.75,
+      "N": 17.25,
+      "NN": 16.375
+    },
+    "probs": {
+      "A": 0.9921875,
+      "B": 0.0027923583984375,
+      "C": 0.004058837890625,
+      "D": 0.000904083251953125,
+      "E": 0.000377655029296875
+    },
+    "canonical_probs": {
+      "YY": 0.9921875,
+      "Y": 0.0027923583984375,
+      "A": 0.004058837890625,
+      "N": 0.000904083251953125,
+      "NN": 0.000377655029296875
+    },
+    "probs_norm": {
+      "A": 0.9918696706682734,
+      "B": 0.002791463916896746,
+      "C": 0.00405753771527068,
+      "D": 0.0009037936452247663,
+      "E": 0.00037753405433439604
+    },
+    "canonical_probs_norm": {
+      "YY": 0.9918696706682734,
+      "Y": 0.002791463916896746,
+      "A": 0.00405753771527068,
+      "N": 0.0009037936452247663,
+      "NN": 0.00037753405433439604
+    },
+    "is_valid": true,
+    "score": -2,
+    "processing_time": 11.528604745864868
+  },
+  "Q-000163": {
+    "id": "Q-000163",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is there a theory of everything that is experimentally verified?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_numbers",
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "prompt": "Question: Is there a theory of everything that is experimentally verified?\n\nA) Definitely yes\nB) Probably yes\nC) Not sure\nD) Probably no\nE) Definitely no\nRespond with exactly one token.\nAnswer:\n",
+    "pred_label": "D",
+    "canonical_label": "N",
+    "token_ids": {
+      "A": 236776,
+      "B": 236799,
+      "C": 236780,
+      "D": 236796,
+      "E": 236788
+    },
+    "canonical_token_ids": {
+      "YY": 236776,
+      "Y": 236799,
+      "A": 236780,
+      "N": 236796,
+      "NN": 236788
+    },
+    "logits": {
+      "A": 16.25,
+      "B": 16.375,
+      "C": 19.25,
+      "D": 25.75,
+      "E": 19.125
+    },
+    "canonical_logits": {
+      "YY": 16.25,
+      "Y": 16.375,
+      "A": 19.25,
+      "N": 25.75,
+      "NN": 19.125
+    },
+    "probs": {
+      "A": 7.43865966796875e-05,
+      "B": 8.440017700195312e-05,
+      "C": 0.001495361328125,
+      "D": 0.99609375,
+      "E": 0.00131988525390625
+    },
+    "canonical_probs": {
+      "YY": 7.43865966796875e-05,
+      "Y": 8.440017700195312e-05,
+      "A": 0.001495361328125,
+      "N": 0.99609375,
+      "NN": 0.00131988525390625
+    },
+    "probs_norm": {
+      "A": 7.445600580756845e-05,
+      "B": 8.447892966627959e-05,
+      "C": 0.00149675662956753,
+      "D": 0.9970231916139628,
+      "E": 0.00132111682099583
+    },
+    "canonical_probs_norm": {
+      "YY": 7.445600580756845e-05,
+      "Y": 8.447892966627959e-05,
+      "A": 0.00149675662956753,
+      "N": 0.9970231916139628,
+      "NN": 0.00132111682099583
+    },
+    "is_valid": true,
+    "score": 1,
+    "processing_time": 12.418383359909058
+  },
+  "Q-000164": {
+    "id": "Q-000164",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is iron heavier than hay?",
+    "answer": "Unanswerable",
+    "split": "train",
+    "form": "V0_numbers",
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "prompt": "Question: Is iron heavier than hay?\n\nA) Definitely yes\nB) Probably yes\nC) Not sure\nD) Probably no\nE) Definitely no\nRespond with exactly one token.\nAnswer:\n",
+    "pred_label": "A",
+    "canonical_label": "YY",
+    "token_ids": {
+      "A": 236776,
+      "B": 236799,
+      "C": 236780,
+      "D": 236796,
+      "E": 236788
+    },
+    "canonical_token_ids": {
+      "YY": 236776,
+      "Y": 236799,
+      "A": 236780,
+      "N": 236796,
+      "NN": 236788
+    },
+    "logits": {
+      "A": 23.75,
+      "B": 18.125,
+      "C": 17.75,
+      "D": 17.75,
+      "E": 16.25
+    },
+    "canonical_logits": {
+      "YY": 23.75,
+      "Y": 18.125,
+      "A": 17.75,
+      "N": 17.75,
+      "NN": 16.25
+    },
+    "probs": {
+      "A": 0.9921875,
+      "B": 0.003570556640625,
+      "C": 0.0024566650390625,
+      "D": 0.0024566650390625,
+      "E": 0.00054931640625
+    },
+    "canonical_probs": {
+      "YY": 0.9921875,
+      "Y": 0.003570556640625,
+      "A": 0.0024566650390625,
+      "N": 0.0024566650390625,
+      "NN": 0.00054931640625
+    },
+    "probs_norm": {
+      "A": 0.9909778102901732,
+      "B": 0.003566203365032919,
+      "C": 0.0024536698366252135,
+      "D": 0.0024536698366252135,
+      "E": 0.0005486466715435259
+    },
+    "canonical_probs_norm": {
+      "YY": 0.9909778102901732,
+      "Y": 0.003566203365032919,
+      "A": 0.0024536698366252135,
+      "N": 0.0024536698366252135,
+      "NN": 0.0005486466715435259
+    },
+    "is_valid": true,
+    "score": -2,
+    "processing_time": 11.008347034454346
+  },
+  "Q-000165": {
+    "id": "Q-000165",
+    "subject": "Physics",
+    "difficulty": "1",
+    "question": "Is the speed of light a type of sound?",
+    "answer": "No",
+    "split": "train",
+    "form": "V0_numbers",
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "prompt": "Question: Is the speed of light a type of sound?\n\nA) Definitely yes\nB) Probably yes\nC) Not sure\nD) Probably no\nE) Definitely no\nRespond with exactly one token.\nAnswer:\n",
+    "pred_label": "D",
+    "canonical_label": "N",
+    "token_ids": {
+      "A": 236776,
+      "B": 236799,
+      "C": 236780,
+      "D": 236796,
+      "E": 236788
+    },
+    "canonical_token_ids": {
+      "YY": 236776,
+      "Y": 236799,
+      "A": 236780,
+      "N": 236796,
+      "NN": 236788
+    },
+    "logits": {
+      "A": 16.375,
+      "B": 16.25,
+      "C": 17.125,
+      "D": 26.625,
+      "E": 18.375
+    },
+    "canonical_logits": {
+      "YY": 16.375,
+      "Y": 16.25,
+      "A": 17.125,
+      "N": 26.625,
+      "NN": 18.375
+    },
+    "probs": {
+      "A": 3.528594970703125e-05,
+      "B": 3.123283386230469e-05,
+      "C": 7.486343383789062e-05,
+      "D": 1.0,
+      "E": 0.0002613067626953125
+    },
+    "canonical_probs": {
+      "YY": 3.528594970703125e-05,
+      "Y": 3.123283386230469e-05,
+      "A": 7.486343383789062e-05,
+      "N": 1.0,
+      "NN": 0.0002613067626953125
+    },
+    "probs_norm": {
+      "A": 3.527174616354222e-05,
+      "B": 3.1220261806919124e-05,
+      "C": 7.483329929292065e-05,
+      "D": 0.999597473113039,
+      "E": 0.00026120157969758293
+    },
+    "canonical_probs_norm": {
+      "YY": 3.527174616354222e-05,
+      "Y": 3.1220261806919124e-05,
+      "A": 7.483329929292065e-05,
+      "N": 0.999597473113039,
+      "NN": 0.00026120157969758293
+    },
+    "is_valid": true,
+    "score": 1,
+    "processing_time": 11.712072610855103
+  }
+}

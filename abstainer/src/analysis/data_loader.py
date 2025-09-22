@@ -303,3 +303,127 @@ class ResidualVectorLoader:
         layer_files = list(data_dir.glob("*layer*.pkl"))
         runs = self._group_files_by_run(layer_files)
         return sorted(runs.keys(), reverse=True)  # Most recent first
+
+
+def load_dev_form_data(form: str, layer_dir: Path):
+    """
+    Load development set data for a specific form.
+
+    Args:
+        form: Form to load (e.g., 'V1', 'V2')
+        layer_dir: Directory containing layer data
+
+    Returns:
+        Tuple of (vectors, question_ids, metadata)
+    """
+    import json
+
+    import numpy as np
+
+    dev_vectors = []
+    dev_question_ids = []
+    dev_metadata = []
+
+    # Find all files for this form
+    form_files = list(layer_dir.glob(f"{form}_*.json"))
+
+    for json_file in form_files:
+        # Load JSON metadata
+        with open(json_file) as f:
+            metadata = json.load(f)
+
+        # Load corresponding NPZ file
+        npz_file = json_file.with_suffix(".npz")
+        if not npz_file.exists():
+            print(f"Warning: NPZ file not found for {json_file}")
+            continue
+
+        npz_data = np.load(npz_file)
+        vectors = npz_data["vectors"]
+        question_ids = npz_data["question_ids"]
+
+        # Filter for dev split
+        dev_indices = []
+        for i, qid in enumerate(question_ids):
+            if (
+                qid in metadata["question_metadata"]
+                and metadata["question_metadata"][qid].get("split") == "dev"
+            ):
+                dev_indices.append(i)
+
+        if dev_indices:
+            dev_vectors.append(vectors[dev_indices])
+            filtered_qids = [question_ids[i] for i in dev_indices]
+            dev_question_ids.extend(filtered_qids)
+
+            # Add metadata for these questions
+            for qid in filtered_qids:
+                if qid in metadata["question_metadata"]:
+                    dev_metadata.append(
+                        {
+                            "qid": qid,
+                            "question": metadata["question_metadata"][qid].get(
+                                "question", ""
+                            ),
+                            "answer": metadata["question_metadata"][qid].get(
+                                "answer", ""
+                            ),
+                            "subject": metadata["question_metadata"][qid].get(
+                                "subject", ""
+                            ),
+                            "difficulty": metadata["question_metadata"][qid].get(
+                                "difficulty", ""
+                            ),
+                            "form": form,
+                            "experiment_id": metadata.get("experiment_id", ""),
+                        }
+                    )
+
+    if dev_vectors:
+        # Combine all dev vectors
+        combined_vectors = np.vstack(dev_vectors)
+        print(
+            f"Form {form}: Found {len(dev_question_ids)} dev questions with vectors shape {combined_vectors.shape}"
+        )
+        return combined_vectors, dev_question_ids, dev_metadata
+    else:
+        print(f"Form {form}: No dev data found")
+        return None, [], []
+
+
+def load_dev_data(layer_dir: Path, forms: list[str] = None):
+    """
+    Load development set data for multiple forms.
+
+    Args:
+        layer_dir: Directory containing layer data
+        forms: List of forms to load (default: ['V1', 'V2'])
+
+    Returns:
+        Tuple of (combined_vectors, combined_metadata)
+    """
+    import numpy as np
+
+    if forms is None:
+        forms = ["V1", "V2"]
+
+    all_vectors = []
+    all_metadata = []
+
+    print(
+        f"Loading development set data for forms {', '.join(forms)} from {layer_dir}..."
+    )
+
+    for form in forms:
+        vectors, _, metadata = load_dev_form_data(form, layer_dir)
+        if vectors is not None:
+            all_vectors.append(vectors)
+            all_metadata.extend(metadata)
+
+    if all_vectors:
+        combined_vectors = np.vstack(all_vectors)
+        print(f"Combined dev data: {combined_vectors.shape[0]} examples")
+        return combined_vectors, all_metadata
+    else:
+        print("No development data found")
+        return None, []

@@ -1,0 +1,45 @@
+{
+  "model_id": "google/gemma-3-4b-it",
+  "subject": "Physics",
+  "difficulty": 3,
+  "split": "dev",
+  "form": "V0_letters",
+  "custom_labels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "likert_results_file": "results/combined_experiment/likert_results_V0_letters.json",
+  "hidden_states_file": "results/combined_experiment/hidden_states_V0_letters.npz",
+  "likert_stats": {
+    "total_questions": 3,
+    "completed_questions": 3,
+    "skipped_questions": 0,
+    "scores": [
+      2,
+      -2,
+      -2
+    ],
+    "score_distribution": {
+      "-3": 0,
+      "-2": 2,
+      "-1": 0,
+      "0": 0,
+      "1": 0,
+      "2": 1
+    },
+    "valid_predictions": 3,
+    "invalid_predictions": 0,
+    "average_score": -0.6666666666666666
+  },
+  "hidden_stats": {
+    "total_questions": 3,
+    "completed_questions": 3,
+    "hidden_state_shape": [
+      35,
+      2560
+    ]
+  }
+}

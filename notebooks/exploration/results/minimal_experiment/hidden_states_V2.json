@@ -1,0 +1,107 @@
+{
+  "Q-000153": {
+    "question": "Is the neutron an electrically neutral particle?",
+    "subject": "Physics",
+    "difficulty": "1",
+    "answer": "Yes",
+    "split": "dev"
+  },
+  "Q-000157": {
+    "question": "Is friction a force that speeds up motion between surfaces?",
+    "subject": "Physics",
+    "difficulty": "1",
+    "answer": "No",
+    "split": "dev"
+  },
+  "Q-000163": {
+    "question": "Is there a theory of everything that is experimentally verified?",
+    "subject": "Physics",
+    "difficulty": "1",
+    "answer": "No",
+    "split": "dev"
+  },
+  "Q-000169": {
+    "question": "Is the frequency of a wave the number of cycles per second?",
+    "subject": "Physics",
+    "difficulty": "2",
+    "answer": "Yes",
+    "split": "dev"
+  },
+  "Q-000174": {
+    "question": "In an inertial frame, is centrifugal force a real force?",
+    "subject": "Physics",
+    "difficulty": "2",
+    "answer": "No",
+    "split": "dev"
+  },
+  "Q-000176": {
+    "question": "Is the universe spatially infinite?",
+    "subject": "Physics",
+    "difficulty": "2",
+    "answer": "Unanswerable",
+    "split": "dev"
+  },
+  "Q-000184": {
+    "question": "Is a quark a fundamental constituent of matter?",
+    "subject": "Physics",
+    "difficulty": "3",
+    "answer": "Yes",
+    "split": "dev"
+  },
+  "Q-000186": {
+    "question": "Is special relativity primarily a theory of gravity?",
+    "subject": "Physics",
+    "difficulty": "3",
+    "answer": "No",
+    "split": "dev"
+  },
+  "Q-000191": {
+    "question": "Does the hypothesized graviton particle mediate the force of gravity?",
+    "subject": "Physics",
+    "difficulty": "3",
+    "answer": "Unanswerable",
+    "split": "dev"
+  },
+  "Q-000199": {
+    "question": "Is a fermion a particle with half-integer spin?",
+    "subject": "Physics",
+    "difficulty": "4",
+    "answer": "Yes",
+    "split": "dev"
+  },
+  "Q-000204": {
+    "question": "Is a phonon a quantum of electromagnetic radiation?",
+    "subject": "Physics",
+    "difficulty": "4",
+    "answer": "No",
+    "split": "dev"
+  },
+  "Q-000206": {
+    "question": "Is string theory a scientifically testable theory with current technology?",
+    "subject": "Physics",
+    "difficulty": "4",
+    "answer": "No",
+    "split": "dev"
+  },
+  "Q-000215": {
+    "question": "Is a Hilbert space an inner product space that is also a complete metric space?",
+    "subject": "Physics",
+    "difficulty": "5",
+    "answer": "Yes",
+    "split": "dev"
+  },
+  "Q-000217": {
+    "question": "Is the Ricci tensor a measure of a manifold's volume change?",
+    "subject": "Physics",
+    "difficulty": "5",
+    "answer": "Yes",
+    "split": "dev"
+  },
+  "Q-000221": {
+    "question": "Is M-theory the final, unified theory of all string theories?",
+    "subject": "Physics",
+    "difficulty": "5",
+    "answer": "Unanswerable",
+    "split": "dev"
+  }
+}

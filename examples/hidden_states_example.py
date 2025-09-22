@@ -15,7 +15,7 @@ def main():
     # Configure paths
     output_dir = Path("./results")
     output_dir.mkdir(exist_ok=True)
-    output_file = output_dir / "hidden_states.npz"
+    output_file = output_dir / "combined_experiment/hidden_states_V0_letters.npz"
 
     # Load model (replace with your model ID)
     model_id = "google/gemma-3-4b-it"  # Example model
@@ -24,9 +24,8 @@ def main():
 
     # Get a small set of questions for demonstration
     questions = get_questions_by_filter(
-        subject="Physics",  # Optional: filter by subject
-        split="test",  # Optional: use test split
-        limit=5,  # Optional: limit to 5 questions
+        subject="Biology",  # Optional: filter by subject
+        split="dev",  # Optional: use test split
     )
 
     # Run the experiment to collect hidden states

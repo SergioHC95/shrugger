@@ -1,0 +1,23 @@
+{
+  "Q-000184": {
+    "question": "Is a quark a fundamental constituent of matter?",
+    "subject": "Physics",
+    "difficulty": "3",
+    "answer": "Yes",
+    "split": "dev"
+  },
+  "Q-000186": {
+    "question": "Is special relativity primarily a theory of gravity?",
+    "subject": "Physics",
+    "difficulty": "3",
+    "answer": "No",
+    "split": "dev"
+  },
+  "Q-000191": {
+    "question": "Does the hypothesized graviton particle mediate the force of gravity?",
+    "subject": "Physics",
+    "difficulty": "3",
+    "answer": "Unanswerable",
+    "split": "dev"
+  }
+}

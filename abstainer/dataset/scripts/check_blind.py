@@ -340,47 +340,57 @@ if __name__ == "__main__":
 
         # Create comprehensive details TSV with all information
         detailed_data = []
-        
+
         # Add all differences (answer and/or difficulty)
         for _, row in diffs_out.iterrows():
-            detailed_data.append({
-                "question": row["question"],
-                "answer_A": row["answer_A"],
-                "answer_B": row["answer_B"],
-                "difficulty_A": row["difficulty_A"],
-                "difficulty_B": row["difficulty_B"],
-                "diff_type": row["diff_type"],
-                "status": "both_datasets"
-            })
-        
+            detailed_data.append(
+                {
+                    "question": row["question"],
+                    "answer_A": row["answer_A"],
+                    "answer_B": row["answer_B"],
+                    "difficulty_A": row["difficulty_A"],
+                    "difficulty_B": row["difficulty_B"],
+                    "diff_type": row["diff_type"],
+                    "status": "both_datasets",
+                }
+            )
+
         # Add unique questions from A
         if len(only_in_A) > 0:
-            unique_in_A = A[A[key].isin(only_in_A[key])][["question", "answer", "difficulty"]].copy()
+            unique_in_A = A[A[key].isin(only_in_A[key])][
+                ["question", "answer", "difficulty"]
+            ].copy()
             for _, row in unique_in_A.iterrows():
-                detailed_data.append({
-                    "question": row["question"],
-                    "answer_A": row["answer"],
-                    "answer_B": "",
-                    "difficulty_A": row["difficulty"],
-                    "difficulty_B": "",
-                    "diff_type": "unique_to_A",
-                    "status": "only_in_A"
-                })
-        
+                detailed_data.append(
+                    {
+                        "question": row["question"],
+                        "answer_A": row["answer"],
+                        "answer_B": "",
+                        "difficulty_A": row["difficulty"],
+                        "difficulty_B": "",
+                        "diff_type": "unique_to_A",
+                        "status": "only_in_A",
+                    }
+                )
+
         # Add unique questions from B
         if len(only_in_B) > 0:
-            unique_in_B = B[B[key].isin(only_in_B[key])][["question", "answer", "difficulty"]].copy()
+            unique_in_B = B[B[key].isin(only_in_B[key])][
+                ["question", "answer", "difficulty"]
+            ].copy()
             for _, row in unique_in_B.iterrows():
-                detailed_data.append({
-                    "question": row["question"],
-                    "answer_A": "",
-                    "answer_B": row["answer"],
-                    "difficulty_A": "",
-                    "difficulty_B": row["difficulty"],
-                    "diff_type": "unique_to_B",
-                    "status": "only_in_B"
-                })
-        
+                detailed_data.append(
+                    {
+                        "question": row["question"],
+                        "answer_A": "",
+                        "answer_B": row["answer"],
+                        "difficulty_A": "",
+                        "difficulty_B": row["difficulty"],
+                        "diff_type": "unique_to_B",
+                        "status": "only_in_B",
+                    }
+                )
+
         # Export comprehensive details to single TSV
         if detailed_data:
             details_df = pd.DataFrame(detailed_data)
@@ -394,35 +404,45 @@ if __name__ == "__main__":
         # Save concise summary report to a text file
         summary_file = os.path.join(reports_dir, f"comparison_summary{num_suffix}.txt")
         with open(summary_file, "w") as f:
-            f.write(f"=== Dataset Comparison Summary ===\n")
-            f.write(f"Files: {os.path.basename(file_a)} vs {os.path.basename(file_b)}\n")
+            f.write("=== Dataset Comparison Summary ===\n")
+            f.write(
+                f"Files: {os.path.basename(file_a)} vs {os.path.basename(file_b)}\n"
+            )
             f.write(f"Date: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
 
             f.write("DATASET OVERLAP:\n")
             f.write(f"  Questions in both datasets: {total_both}\n")
-            
+
             # List questions only in A
             if len(only_in_A) > 0:
                 f.write(f"  Questions only in A ({len(only_in_A)}):\n")
                 unique_in_A = A[A[key].isin(only_in_A[key])][["question"]].copy()
                 for i, row in unique_in_A.iterrows():
                     # Show first 60 characters of each question
-                    question_preview = row['question'][:60] + "..." if len(row['question']) > 60 else row['question']
+                    question_preview = (
+                        row["question"][:60] + "..."
+                        if len(row["question"]) > 60
+                        else row["question"]
+                    )
                     f.write(f"    - {question_preview}\n")
             else:
-                f.write(f"  Questions only in A: 0\n")
-            
+                f.write("  Questions only in A: 0\n")
+
             # List questions only in B
             if len(only_in_B) > 0:
                 f.write(f"  Questions only in B ({len(only_in_B)}):\n")
                 unique_in_B = B[B[key].isin(only_in_B[key])][["question"]].copy()
                 for i, row in unique_in_B.iterrows():
                     # Show first 60 characters of each question
-                    question_preview = row['question'][:60] + "..." if len(row['question']) > 60 else row['question']
+                    question_preview = (
+                        row["question"][:60] + "..."
+                        if len(row["question"]) > 60
+                        else row["question"]
+                    )
                     f.write(f"    - {question_preview}\n")
             else:
-                f.write(f"  Questions only in B: 0\n")
-            
+                f.write("  Questions only in B: 0\n")
+
             f.write("\n")
 
             f.write("ANSWER AGREEMENT:\n")
@@ -430,7 +450,9 @@ if __name__ == "__main__":
             f.write(f"  Answer differences: {len(ans_only_out)} questions\n\n")
 
             f.write("DIFFICULTY AGREEMENT:\n")
-            f.write(f"  Exact matches: {diff_exact}/{diff_total} ({diff_match_rate:.1f}%)\n")
+            f.write(
+                f"  Exact matches: {diff_exact}/{diff_total} ({diff_match_rate:.1f}%)\n"
+            )
             f.write(f"  Mean absolute difference: {mad:.2f}\n\n")
 
             f.write("CONFUSION MATRIX (Answer Agreement):\n")
@@ -440,11 +462,19 @@ if __name__ == "__main__":
             # Summary of answer differences by category
             if len(ans_only_out) > 0:
                 f.write("ANSWER DIFFERENCE BREAKDOWN:\n")
-                diff_breakdown = ans_only_out.groupby(['answer_A', 'answer_B']).size().reset_index(name='count')
-                diff_breakdown = diff_breakdown.sort_values('count', ascending=False)
+                diff_breakdown = (
+                    ans_only_out.groupby(["answer_A", "answer_B"])
+                    .size()
+                    .reset_index(name="count")
+                )
+                diff_breakdown = diff_breakdown.sort_values("count", ascending=False)
                 for _, row in diff_breakdown.iterrows():
-                    f.write(f"  A='{row['answer_A']}' → B='{row['answer_B']}': {row['count']} questions\n")
-                f.write(f"\nSee comparison_details{num_suffix}.tsv for complete question list.\n")
+                    f.write(
+                        f"  A='{row['answer_A']}' → B='{row['answer_B']}': {row['count']} questions\n"
+                    )
+                f.write(
+                    f"\nSee comparison_details{num_suffix}.tsv for complete question list.\n"
+                )
             else:
                 f.write("Perfect answer agreement! 🎉\n")
 
@@ -474,7 +504,9 @@ if __name__ == "__main__":
         if len(ans_only_out) > 0:
             print()
             print(f"Found {len(ans_only_out)} questions with different answers.")
-            print(f"See comparison_summary{num_suffix}.txt and comparison_details{num_suffix}.tsv for details.")
+            print(
+                f"See comparison_summary{num_suffix}.txt and comparison_details{num_suffix}.tsv for details."
+            )
 
     except Exception as e:
         print(f"Error: {str(e)}")

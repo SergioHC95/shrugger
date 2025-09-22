@@ -9,7 +9,7 @@ def get_question_by_id(
     question_id: str, dataset_path: Optional[str] = None
 ) -> dict[str, str]:
     """
-    Extract a question from questions_curated.tsv by its ID.
+    Extract a question from curated_questions.tsv by its ID.
 
     Args:
         question_id (str): The ID of the question to retrieve (e.g., "Q-000001")
@@ -37,9 +37,8 @@ def get_question_by_id(
 
         # Check common locations
         possible_paths = [
-            repo_root / "abstainer" / "dataset" / "questions_curated.tsv",
-            repo_root / "dataset" / "questions_curated.tsv",
-            repo_root / "data" / "questions_curated.tsv",
+            repo_root / "abstainer" / "dataset" / "data" / "curated_questions.tsv",
+            repo_root / "dataset" / "data" / "curated_questions.tsv"
         ]
 
         for path in possible_paths:
@@ -49,7 +48,7 @@ def get_question_by_id(
 
         if dataset_path is None:
             raise FileNotFoundError(
-                "Could not find questions_curated.tsv. Please provide the dataset_path parameter."
+                f"Could not find curated_questions.tsv from root {repo_root}. Please provide the dataset_path parameter."
             )
 
     # Read the dataset and find the question
@@ -77,7 +76,7 @@ def get_questions_by_filter(
     dataset_path: Optional[str] = None,
 ) -> list[dict[str, str]]:
     """
-    Extract questions from questions_curated.tsv by filtering criteria.
+    Extract questions from curated_questions.tsv by filtering criteria.
 
     Args:
         subject (Optional[str]): Filter by subject category (e.g., "Biology")
@@ -100,9 +99,8 @@ def get_questions_by_filter(
 
         # Check common locations
         possible_paths = [
-            repo_root / "abstainer" / "dataset" / "questions_curated.tsv",
-            repo_root / "dataset" / "questions_curated.tsv",
-            repo_root / "data" / "questions_curated.tsv",
+            repo_root / "abstainer" / "dataset" / "data" / "curated_questions.tsv",
+            repo_root / "dataset" / "data" / "curated_questions.tsv"
         ]
 
         for path in possible_paths:
@@ -112,7 +110,7 @@ def get_questions_by_filter(
 
         if dataset_path is None:
             raise FileNotFoundError(
-                "Could not find questions_curated.tsv. Please provide the dataset_path parameter."
+                f"Could not find curated_questions.tsv from root {repo_root}. Please provide the dataset_path parameter."
             )
 
     # Convert difficulty to string if it's an integer

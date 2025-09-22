@@ -1,145 +1,38 @@
 #!/usr/bin/env python
-# Combined experiment script for Likert evaluation and hidden states collection
+# Example script for running the combined experiment function
 
 import json
 from pathlib import Path
 
 from abstainer import (
     get_questions_by_filter,
+    load_combined_results,
     load_model,
-    run_hidden_states_experiment,
-    run_likert_experiment,
+    run_combined_experiment,
 )
 
 
-def run_combined_experiment(
-    model_id: str,
-    output_dir: str,
-    subject: str = None,
-    difficulty: str = None,
-    split: str = None,
-    form: str = "V0_letters",
-    custom_labels: list = None,
-    dataset_path: str = None,
-    verbose: bool = True,
-):
-    """
-    Run a combined experiment that performs both Likert evaluation and hidden states collection.
-
-    Args:
-        model_id: HuggingFace model ID to use
-        output_dir: Directory to save results
-        subject: Filter questions by subject
-        difficulty: Filter questions by difficulty
-        split: Filter questions by dataset split
-        form: Likert prompt template to use
-        custom_labels: Custom labels for Likert scale
-        dataset_path: Path to the dataset file
-        verbose: Whether to show progress information
-    """
-    # Create output directory
-    output_dir = Path(output_dir)
+def main():
+    """Run a combined experiment that collects both Likert results and hidden states efficiently."""
+    # Configure paths
+    output_dir = Path("./results/efficient_combined")
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    # Load model
-    if verbose:
-        print(f"Loading model: {model_id}")
+    # Load model (replace with your model ID)
+    model_id = "google/gemma-3-4b-it"  # Example model
+    print(f"Loading model: {model_id}")
     tokenizer, model = load_model(model_id)
 
-    # Get questions based on filters
+    # Get questions for the experiment
+    # For this example, we'll use Biology questions from the dev split
     questions = get_questions_by_filter(
-        subject=subject, difficulty=difficulty, split=split, dataset_path=dataset_path
+        subject="Biology",  # Filter by subject
+        split="dev",  # Use dev split
     )
 
-    if verbose:
-        print(f"Found {len(questions)} questions matching filters")
+    print(f"Found {len(questions)} questions matching the filter criteria")
 
-    # Define output files
-    likert_output = output_dir / f"likert_results_{form}.json"
-    hidden_states_output = output_dir / f"hidden_states_{form}.npz"
-
-    # Run Likert experiment
-    if verbose:
-        print(f"Running Likert experiment with form '{form}'...")
-        if custom_labels:
-            print(f"Using custom labels: {custom_labels}")
-
-    likert_stats = run_likert_experiment(
-        model=model,
-        tokenizer=tokenizer,
-        output_file=str(likert_output),
-        questions=questions,
-        form=form,
-        custom_labels=custom_labels,  # Pass the custom labels
-        dataset_path=dataset_path,
-        verbose=verbose,
-        force_reprocess=True,  # Set to False if you want to resume from existing results
-    )
-
-    if verbose:
-        print(
-            f"Likert experiment completed: {likert_stats['completed_questions']} questions processed"
-        )
-        print(f"Average score: {likert_stats.get('average_score')}")
-        print(f"Score distribution: {likert_stats.get('score_distribution')}")
-
-    # Run hidden states experiment
-    if verbose:
-        print("\nCollecting hidden states...")
-
-    hidden_stats = run_hidden_states_experiment(
-        model=model,
-        tokenizer=tokenizer,
-        output_file=str(hidden_states_output),
-        questions=questions,
-        dataset_path=dataset_path,
-        verbose=verbose,
-        force_reprocess=True,  # Set to False if you want to resume from existing results
-    )
-
-    if verbose:
-        print(
-            f"Hidden states collection completed: {hidden_stats['completed_questions']} questions processed"
-        )
-        print(f"Hidden state shape: {hidden_stats['hidden_state_shape']}")
-
-    # Save experiment configuration
-    config = {
-        "model_id": model_id,
-        "subject": subject,
-        "difficulty": difficulty,
-        "split": split,
-        "form": form,
-        "custom_labels": custom_labels,
-        "likert_results_file": str(likert_output),
-        "hidden_states_file": str(hidden_states_output),
-        "likert_stats": likert_stats,
-        "hidden_stats": hidden_stats,
-    }
-
-    config_file = output_dir / "experiment_config.json"
-    with open(config_file, "w", encoding="utf-8") as f:
-        json.dump(config, f, indent=2)
-
-    if verbose:
-        print(f"\nExperiment configuration saved to {config_file}")
-        print(f"Likert results saved to {likert_output}")
-        print(f"Hidden states saved to {hidden_states_output}")
-
-    return {
-        "likert_stats": likert_stats,
-        "hidden_stats": hidden_stats,
-        "config": config,
-    }
-
-
-def main():
-    # Example usage
-    # You can modify these parameters or add command-line argument parsing
-
-    # Custom labels for Likert options
-    # These are the actual tokens the model will generate as responses
-    # They should be single tokens in the model's vocabulary for best results
+    # Define custom labels for the Likert scale
     custom_labels = [
         "A",  # Definitely Yes
         "B",  # Probably Yes
@@ -148,22 +41,72 @@ def main():
         "E",  # Definitely No
     ]
 
-    # You can also use other tokens as long as they're in the model's vocabulary
-    # For example:
-    # custom_labels = ["YES", "LIKELY", "UNSURE", "UNLIKELY", "NO"]
-
-    # Run the experiment
-    _results = run_combined_experiment(
-        model_id="google/gemma-3-4b-it",  # Replace with your model
-        output_dir="./results/combined_experiment",
-        subject="Physics",  # Optional: filter by subject
-        split="test",  # Optional: use test split
-        form="V0_letters",  # Likert form to use
-        custom_labels=custom_labels,  # Optional: custom labels
+    # Run the combined experiment
+    print("Running combined experiment...")
+    results = run_combined_experiment(
+        model=model,
+        tokenizer=tokenizer,
+        output_dir=str(output_dir),
+        questions=questions,
+        form="V2_letters",  # Use the "Certainly yes/no" style descriptions
+        labels=custom_labels,
         verbose=True,
+        force_reprocess=True,  # Set to False to use existing results if available
     )
 
-    print("\nExperiment completed successfully!")
+    # Print summary statistics
+    print("\nExperiment completed!")
+    print(
+        f"Likert evaluation: {results['likert_stats']['completed_questions']} questions processed"
+    )
+    print(f"Average score: {results['likert_stats'].get('average_score')}")
+    print(f"Score distribution: {results['likert_stats'].get('score_distribution')}")
+    print(
+        f"Hidden states: {results['hidden_stats']['completed_questions']} questions processed"
+    )
+    print(f"Hidden state shape: {results['hidden_stats']['hidden_state_shape']}")
+
+    # Save the experiment configuration
+    config_file = output_dir / "experiment_config.json"
+    with open(config_file, "w", encoding="utf-8") as f:
+        json.dump(
+            {
+                "model_id": model_id,
+                "form": "V2_letters",
+                "labels": custom_labels,
+                "likert_stats": results["likert_stats"],
+                "hidden_stats": results["hidden_stats"],
+                "output_files": results["output_files"],
+            },
+            f,
+            indent=2,
+        )
+
+    print(f"\nExperiment configuration saved to {config_file}")
+    print("Output files:")
+    for name, path in results["output_files"].items():
+        print(f"- {name}: {path}")
+
+    # Optional: Load and analyze the results
+    print("\nLoading results for analysis...")
+    loaded_results = load_combined_results(str(output_dir), form="V2_letters")
+
+    print(f"Loaded {len(loaded_results['likert_results'])} Likert results")
+    print(f"Loaded {len(loaded_results['hidden_states'])} hidden state tensors")
+
+    # Example: Print information about the first question
+    if loaded_results["likert_results"]:
+        first_qid = next(iter(loaded_results["likert_results"]))
+        first_result = loaded_results["likert_results"][first_qid]
+        first_hidden_state = loaded_results["hidden_states"].get(first_qid)
+
+        print(f"\nExample question (ID: {first_qid}):")
+        print(f"Question: {first_result['question']}")
+        print(f"Answer: {first_result['answer']}")
+        print(f"Prediction: {first_result['pred_label']}")
+        print(f"Score: {first_result['score']}")
+        if first_hidden_state is not None:
+            print(f"Hidden state shape: {first_hidden_state.shape}")
 
 
 if __name__ == "__main__":

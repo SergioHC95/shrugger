@@ -10,6 +10,10 @@ from pathlib import Path
 
 import numpy as np
 
+# Get the project root directory
+PROJECT_ROOT = Path(os.path.abspath(__file__)).parents[2]
+sys.path.append(str(PROJECT_ROOT))
+
 
 def examine_npz(npz_file):
     """Examine the structure of an NPZ file containing hidden states"""
@@ -40,6 +44,19 @@ def examine_npz(npz_file):
             metadata = json.load(f)
         if qid in metadata:
             print(f"Question: {metadata[qid]['question']}")
+    else:
+        # Try looking for metadata in standard locations
+        metadata_paths = [
+            Path(PROJECT_ROOT) / "outputs" / "data" / f"{Path(npz_file).stem}.json",
+            Path(PROJECT_ROOT) / "data" / f"{Path(npz_file).stem}.json"
+        ]
+        for path in metadata_paths:
+            if path.exists():
+                with open(path) as f:
+                    metadata = json.load(f)
+                if qid in metadata:
+                    print(f"Question: {metadata[qid]['question']}")
+                    break
 
     return first_item.shape
 
@@ -49,9 +66,20 @@ def main():
         print("Usage: python examine_hidden_states.py <npz_file>")
         sys.exit(1)
 
+    # Handle both absolute paths and paths relative to project root
     npz_file = sys.argv[1]
+    if not os.path.isabs(npz_file):
+        # Try relative to current directory first
+        if not os.path.exists(npz_file):
+            # Then try relative to project root
+            project_relative_path = os.path.join(PROJECT_ROOT, npz_file)
+            if os.path.exists(project_relative_path):
+                npz_file = project_relative_path
+    
     if not os.path.exists(npz_file):
         print(f"Error: File {npz_file} does not exist")
+        print(f"Tried: {npz_file}")
+        print(f"Also tried relative to project root: {os.path.join(PROJECT_ROOT, sys.argv[1])}")
         sys.exit(1)
 
     examine_npz(npz_file)

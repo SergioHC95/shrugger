@@ -1,0 +1,236 @@
+{
+  "Q-000184": {
+    "id": "Q-000184",
+    "subject": "Physics",
+    "difficulty": "3",
+    "question": "Is a quark a fundamental constituent of matter?",
+    "answer": "Yes",
+    "split": "dev",
+    "form": "V0_letters",
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "prompt": "Question: Is a quark a fundamental constituent of matter?\n\nA) Definitely yes\nB) Probably yes\nC) Not sure\nD) Probably no\nE) Definitely no\nRespond with exactly one token.\nAnswer:\n",
+    "pred_label": "A",
+    "canonical_label": "YY",
+    "token_ids": {
+      "A": 236776,
+      "B": 236799,
+      "C": 236780,
+      "D": 236796,
+      "E": 236788
+    },
+    "canonical_token_ids": {
+      "YY": 236776,
+      "Y": 236799,
+      "A": 236780,
+      "N": 236796,
+      "NN": 236788
+    },
+    "logits": {
+      "A": 25.125,
+      "B": 16.375,
+      "C": 15.75,
+      "D": 15.75,
+      "E": 15.375
+    },
+    "canonical_logits": {
+      "YY": 25.125,
+      "Y": 16.375,
+      "A": 15.75,
+      "N": 15.75,
+      "NN": 15.375
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 0.0001583099365234375,
+      "C": 8.487701416015625e-05,
+      "D": 8.487701416015625e-05,
+      "E": 5.817413330078125e-05
+    },
+    "canonical_probs": {
+      "YY": 1.0,
+      "Y": 0.0001583099365234375,
+      "A": 8.487701416015625e-05,
+      "N": 8.487701416015625e-05,
+      "NN": 5.817413330078125e-05
+    },
+    "probs_norm": {
+      "A": 0.9996139110241272,
+      "B": 0.00015824881480217467,
+      "C": 8.484424408068401e-05,
+      "D": 8.484424408068401e-05,
+      "E": 5.8151672909232865e-05
+    },
+    "canonical_probs_norm": {
+      "YY": 0.9996139110241272,
+      "Y": 0.00015824881480217467,
+      "A": 8.484424408068401e-05,
+      "N": 8.484424408068401e-05,
+      "NN": 5.8151672909232865e-05
+    },
+    "is_valid": true,
+    "score": 2,
+    "processing_time": 5.909160614013672
+  },
+  "Q-000186": {
+    "id": "Q-000186",
+    "subject": "Physics",
+    "difficulty": "3",
+    "question": "Is special relativity primarily a theory of gravity?",
+    "answer": "No",
+    "split": "dev",
+    "form": "V0_letters",
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "prompt": "Question: Is special relativity primarily a theory of gravity?\n\nA) Definitely yes\nB) Probably yes\nC) Not sure\nD) Probably no\nE) Definitely no\nRespond with exactly one token.\nAnswer:\n",
+    "pred_label": "A",
+    "canonical_label": "YY",
+    "token_ids": {
+      "A": 236776,
+      "B": 236799,
+      "C": 236780,
+      "D": 236796,
+      "E": 236788
+    },
+    "canonical_token_ids": {
+      "YY": 236776,
+      "Y": 236799,
+      "A": 236780,
+      "N": 236796,
+      "NN": 236788
+    },
+    "logits": {
+      "A": 24.75,
+      "B": 22.875,
+      "C": 22.375,
+      "D": 19.875,
+      "E": 17.5
+    },
+    "canonical_logits": {
+      "YY": 24.75,
+      "Y": 22.875,
+      "A": 22.375,
+      "N": 19.875,
+      "NN": 17.5
+    },
+    "probs": {
+      "A": 0.796875,
+      "B": 0.1220703125,
+      "C": 0.07421875,
+      "D": 0.006072998046875,
+      "E": 0.0005645751953125
+    },
+    "canonical_probs": {
+      "YY": 0.796875,
+      "Y": 0.1220703125,
+      "A": 0.07421875,
+      "N": 0.006072998046875,
+      "NN": 0.0005645751953125
+    },
+    "probs_norm": {
+      "A": 0.7970331028799048,
+      "B": 0.12209453169116188,
+      "C": 0.07423347526822642,
+      "D": 0.0060742029516353034,
+      "E": 0.0005646872090716238
+    },
+    "canonical_probs_norm": {
+      "YY": 0.7970331028799048,
+      "Y": 0.12209453169116188,
+      "A": 0.07423347526822642,
+      "N": 0.0060742029516353034,
+      "NN": 0.0005646872090716238
+    },
+    "is_valid": true,
+    "score": -2,
+    "processing_time": 9.12860918045044
+  },
+  "Q-000191": {
+    "id": "Q-000191",
+    "subject": "Physics",
+    "difficulty": "3",
+    "question": "Does the hypothesized graviton particle mediate the force of gravity?",
+    "answer": "Unanswerable",
+    "split": "dev",
+    "form": "V0_letters",
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "prompt": "Question: Does the hypothesized graviton particle mediate the force of gravity?\n\nA) Definitely yes\nB) Probably yes\nC) Not sure\nD) Probably no\nE) Definitely no\nRespond with exactly one token.\nAnswer:\n",
+    "pred_label": "A",
+    "canonical_label": "YY",
+    "token_ids": {
+      "A": 236776,
+      "B": 236799,
+      "C": 236780,
+      "D": 236796,
+      "E": 236788
+    },
+    "canonical_token_ids": {
+      "YY": 236776,
+      "Y": 236799,
+      "A": 236780,
+      "N": 236796,
+      "NN": 236788
+    },
+    "logits": {
+      "A": 25.125,
+      "B": 17.125,
+      "C": 17.125,
+      "D": 16.5,
+      "E": 15.1875
+    },
+    "canonical_logits": {
+      "YY": 25.125,
+      "Y": 17.125,
+      "A": 17.125,
+      "N": 16.5,
+      "NN": 15.1875
+    },
+    "probs": {
+      "A": 1.0,
+      "B": 0.000335693359375,
+      "C": 0.000335693359375,
+      "D": 0.000179290771484375,
+      "E": 4.839897155761719e-05
+    },
+    "canonical_probs": {
+      "YY": 1.0,
+      "Y": 0.000335693359375,
+      "A": 0.000335693359375,
+      "N": 0.000179290771484375,
+      "NN": 4.839897155761719e-05
+    },
+    "probs_norm": {
+      "A": 0.9991017311505869,
+      "B": 0.0003353918164873186,
+      "C": 0.0003353918164873186,
+      "D": 0.00017912972016936334,
+      "E": 4.835549626912335e-05
+    },
+    "canonical_probs_norm": {
+      "YY": 0.9991017311505869,
+      "Y": 0.0003353918164873186,
+      "A": 0.0003353918164873186,
+      "N": 0.00017912972016936334,
+      "NN": 4.835549626912335e-05
+    },
+    "is_valid": true,
+    "score": -2,
+    "processing_time": 9.181971311569214
+  }
+}
