@@ -86,3 +86,5 @@ results/*/
 !results/.gitkeep
 outputs/*/
 !outputs/.gitkeep
+!outputs/figures/
+!outputs/figures/**
