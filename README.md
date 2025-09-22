@@ -1,6 +1,42 @@
 # MATS Abstention Direction Project
 
-A Python package for analyzing abstention directions in language models using Fisher Linear Discriminant Analysis.
+## Scientific Overview
+
+This project investigates **epistemic abstention in large language models** - whether LLMs encode "I don't know" as a simple internal feature that can be causally steered. We address the fundamental question: *Do models have a mechanistic one-dimensional knob for epistemic abstention?*
+
+### Key Research Question
+**Do LLMs encode epistemic abstention ("I don't know") as a simple internal feature that can be causally steered?**
+
+### Dataset Creation & Curation
+Existing benchmarks proved inadequate for studying epistemic abstention, as they focus on safety refusals or post-hoc calibration rather than genuine uncertainty, or suffer from severe compositional generalization issues. We constructed a Likert-scale dataset using **Gemini 2.5 Pro** (leveraging its large context window for comprehensive generation):
+
+- **LLM-assisted generation**: Carefully crafted prompts to generate factual Yes/No questions across 14 subjects and 5 difficulty levels
+- **Likert-style design**: Explicit abstention options alongside graded confidence to isolate epistemic uncertainty  
+- **Blind curation**: LLM blind cross-checks to ensure question quality
+
+**Dataset & Tools Location:**
+- 📝 **System & user prompts**: [`abstainer/dataset/prompts/`](abstainer/dataset/prompts/) (generation and curation prompts)
+- 🛠️ **Generation & quality control scripts**: [`abstainer/dataset/scripts/`](abstainer/dataset/scripts/) (including [`check_blind.py`](abstainer/dataset/scripts/check_blind.py) for dataset validation and comparison)
+- 📊 **Curated dataset**: [`abstainer/dataset/data/curated_questions.tsv`](abstainer/dataset/data/curated_questions.tsv)
+
+### Key Findings
+Using this curated dataset, we discovered that **abstention is encoded as a single linear direction** in the residual stream:
+
+- **Near-perfect separability**: AUC ≈ 0.99 on training data at layer 22 of `gemma-3-4b-it`
+- **Strong generalization**: AUC = 0.79 on held-out data with large effect size (Cohen's d = 1.21)  
+- **Late-layer concentration**: Separability emerges in mid-to-late layers, peaking around layer 22
+
+### Research Methods
+1. **Fisher Linear Discriminant Analysis** to identify abstention directions in representation space
+2. **Mechanistic probing** of internal model states during abstention decisions
+3. **Cross-validation** across prompt variants and held-out subjects
+4. **Geometric analysis** of how models represent epistemic uncertainty
+
+This work opens the door to **causal steering experiments** for improving model calibration and provides mechanistic insights into where epistemic uncertainty lives inside language models.
+
+## Package Description
+
+A Python package for analyzing abstention directions in language models using Fisher Linear Discriminant Analysis and other computational techniques.
 
 ## Project Structure
 
