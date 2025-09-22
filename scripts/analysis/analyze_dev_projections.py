@@ -1,5 +1,5 @@
-import pickle
 import os
+import pickle
 import sys
 from pathlib import Path
 
@@ -16,7 +16,9 @@ PROJECT_ROOT = Path(os.path.abspath(__file__)).parents[2]
 sys.path.append(str(PROJECT_ROOT))
 
 # Load the saved projections
-with open(os.path.join(PROJECT_ROOT, "outputs", "data", "layer22_dev_projections.pkl"), "rb") as f:
+with open(
+    os.path.join(PROJECT_ROOT, "outputs", "data", "layer22_dev_projections.pkl"), "rb"
+) as f:
     data = pickle.load(f)
 
 v1_projections = data["v1_projections"]
@@ -49,7 +51,9 @@ plt.xlabel("Projection onto Layer 22 LDA Direction")
 plt.ylabel("Frequency")
 plt.title("Distribution of Projections for V1 and V2 Dev Data")
 plt.legend()
-plt.savefig(os.path.join(PROJECT_ROOT, "outputs", "figures", "dev_projections_histogram.png"))
+plt.savefig(
+    os.path.join(PROJECT_ROOT, "outputs", "figures", "dev_projections_histogram.png")
+)
 plt.close()
 print("Saved histogram to outputs/figures/dev_projections_histogram.png")
 
@@ -83,7 +87,9 @@ plt.xlabel("Projection onto Layer 22 LDA Direction")
 plt.ylabel("Frequency")
 plt.title("Distribution of Projections by Answer Type")
 plt.legend()
-plt.savefig(os.path.join(PROJECT_ROOT, "outputs", "figures", "dev_projections_by_answer.png"))
+plt.savefig(
+    os.path.join(PROJECT_ROOT, "outputs", "figures", "dev_projections_by_answer.png")
+)
 plt.close()
 print("Saved answer-type histogram to outputs/figures/dev_projections_by_answer.png")
 
@@ -115,7 +121,11 @@ plt.xlabel("Difficulty Level")
 plt.ylabel("Projection onto Layer 22 LDA Direction")
 plt.title("Distribution of Projections by Question Difficulty")
 plt.grid(True, linestyle="--", alpha=0.7)
-plt.savefig(os.path.join(PROJECT_ROOT, "outputs", "figures", "dev_projections_by_difficulty.png"))
+plt.savefig(
+    os.path.join(
+        PROJECT_ROOT, "outputs", "figures", "dev_projections_by_difficulty.png"
+    )
+)
 plt.close()
 print("Saved difficulty boxplot to outputs/figures/dev_projections_by_difficulty.png")
 
@@ -156,7 +166,9 @@ plt.xlabel("Projection onto Layer 22 LDA Direction")
 plt.ylabel("Frequency")
 plt.title("Distribution of Projections: V1 vs V2")
 plt.legend()
-plt.savefig(os.path.join(PROJECT_ROOT, "outputs", "figures", "dev_projections_v1_vs_v2.png"))
+plt.savefig(
+    os.path.join(PROJECT_ROOT, "outputs", "figures", "dev_projections_v1_vs_v2.png")
+)
 plt.close()
 print("Saved V1 vs V2 comparison to outputs/figures/dev_projections_v1_vs_v2.png")
 

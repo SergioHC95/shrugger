@@ -48,7 +48,7 @@ def examine_npz(npz_file):
         # Try looking for metadata in standard locations
         metadata_paths = [
             Path(PROJECT_ROOT) / "outputs" / "data" / f"{Path(npz_file).stem}.json",
-            Path(PROJECT_ROOT) / "data" / f"{Path(npz_file).stem}.json"
+            Path(PROJECT_ROOT) / "data" / f"{Path(npz_file).stem}.json",
         ]
         for path in metadata_paths:
             if path.exists():
@@ -75,11 +75,13 @@ def main():
             project_relative_path = os.path.join(PROJECT_ROOT, npz_file)
             if os.path.exists(project_relative_path):
                 npz_file = project_relative_path
-    
+
     if not os.path.exists(npz_file):
         print(f"Error: File {npz_file} does not exist")
         print(f"Tried: {npz_file}")
-        print(f"Also tried relative to project root: {os.path.join(PROJECT_ROOT, sys.argv[1])}")
+        print(
+            f"Also tried relative to project root: {os.path.join(PROJECT_ROOT, sys.argv[1])}"
+        )
         sys.exit(1)
 
     examine_npz(npz_file)

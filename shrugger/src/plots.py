@@ -199,8 +199,11 @@ def save_figure(
     if directory is None:
         # Get path relative to the module location
         import os.path
+
         module_dir = Path(os.path.dirname(os.path.abspath(__file__)))
-        project_root = module_dir.parent.parent  # Go up two levels from shrugger/src to project root
+        project_root = (
+            module_dir.parent.parent
+        )  # Go up two levels from shrugger/src to project root
         directory = project_root / "outputs" / "figures"
     else:
         directory = Path(directory)
@@ -383,8 +386,8 @@ def plot_layer_performance(
     """
     # Sort layers by number
     layers = sorted(evaluations.keys())
-    aucs = [evaluations[l]["auc"] for l in layers]
-    cohens_d = [evaluations[l]["cohen_d"] for l in layers]
+    aucs = [evaluations[layer]["auc"] for layer in layers]
+    cohens_d = [evaluations[layer]["cohen_d"] for layer in layers]
 
     # Create a figure with two y-axes
     fig, ax1 = plt.subplots(figsize=figsize)
@@ -432,7 +435,7 @@ def plot_layer_performance(
 
     # Add a combined legend
     lines = line1 + line2
-    labels = [l.get_label() for l in lines]
+    labels = [line.get_label() for line in lines]
     ax1.legend(lines, labels, loc="upper center", fontsize=12)
 
     # Tight layout

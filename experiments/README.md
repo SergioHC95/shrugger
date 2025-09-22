@@ -1,6 +1,6 @@
 # Experiments
 
-This directory contains the main experiment scripts for the MATS abstention direction project.
+This directory contains the main experiment scripts for the shrugger project.
 
 ## Scripts
 
@@ -9,7 +9,6 @@ Runs comprehensive experiments across all prompt forms (V0-V5) and label permuta
 
 **Usage:**
 ```bash
-cd /path/to/MATS-Project
 python experiments/run_comprehensive_experiments.py
 ```
 
@@ -24,7 +23,6 @@ Analyzes experiment results and computes metrics.
 
 **Usage:**
 ```bash
-cd /path/to/MATS-Project
 python experiments/run_metrics_analysis.py
 ```
 

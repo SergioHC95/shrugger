@@ -7,7 +7,7 @@ name = "shrugger"
 version = "0.1.0"
 description = "Fisher LDA analysis for abstention directions in language models"
 authors = [
-    {name = "MATS Team", email = "team@example.com"}
+    {name = "SergioHC"}
 ]
 license = "MIT"
 requires-python = ">=3.8"

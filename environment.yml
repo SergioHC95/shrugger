@@ -1,8 +1,45 @@
 name: shrugger
 channels:
   - conda-forge
+  - defaults
 dependencies:
-  - python>=3.8
+  # Core
+  - python=3.13
   - pip
+
+  # Torch (CPU by default). If you need CUDA, see note below.
+  - pytorch
+
+  # Hugging Face + NLP utils
+  - transformers
+  - tokenizers
+  - datasets
+  - accelerate
+  - safetensors
+  - sentencepiece
+
+  # Numerics & plotting
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - tqdm
+  - pyyaml
+  - requests
+
+  # Notebooks
+  - jupyterlab
+  - ipykernel
+  - ipywidgets
+
+  # Dev tooling
+  - black
+  - ruff
+  - pytest
+  - pytest-cov
+
   - pip:
-    - -e .[dev,notebook,analysis]
+    - black[jupyter]
+    - -e .

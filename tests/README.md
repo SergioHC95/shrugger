@@ -1,6 +1,6 @@
 # Test Suite Organization
 
-This directory contains all tests for the MATS abstention direction project, organized by test type and functionality.
+This directory contains all tests for the shrugger project, organized by test type and functionality.
 
 ## Directory Structure
 

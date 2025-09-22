@@ -25,7 +25,7 @@ def find_latest_run(base_dir=None):
         base_path = PROJECT_ROOT / "results" / "comprehensive_experiments"
     else:
         base_path = Path(base_dir)
-        
+
     if not base_path.exists():
         print(f"Error: Directory {base_path} does not exist.")
         return None

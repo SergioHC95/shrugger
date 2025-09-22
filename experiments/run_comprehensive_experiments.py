@@ -46,7 +46,7 @@ if IN_COLAB:
     drive.mount("/content/drive")
 
     # Change to project directory (modify this path as needed)
-    PROJECT_PATH = "/content/drive/MyDrive/MATS-Project"
+    PROJECT_PATH = "/content/drive/MyDrive/shrugger"
     os.chdir(PROJECT_PATH)
     print(f"Changed directory to {PROJECT_PATH}")
 
@@ -66,7 +66,7 @@ warnings.filterwarnings("ignore", category=UserWarning, module="tqdm")
 if not IN_COLAB:
     # Get the absolute path to the project root
     project_root = Path(__file__).parent.parent.absolute()
-    
+
     # Add to Python path if not already there
     if str(project_root) not in sys.path:
         sys.path.insert(0, str(project_root))
@@ -75,6 +75,7 @@ if not IN_COLAB:
 # Import shrugger modules with error handling
 try:
     from shrugger import get_questions_by_filter, load_model, run_combined_experiment
+
     print("Successfully imported shrugger modules")
 except ImportError as e:
     print(f"Error importing shrugger modules: {e}")

@@ -417,7 +417,7 @@ if __name__ == "__main__":
             if len(only_in_A) > 0:
                 f.write(f"  Questions only in A ({len(only_in_A)}):\n")
                 unique_in_A = A[A[key].isin(only_in_A[key])][["question"]].copy()
-                for i, row in unique_in_A.iterrows():
+                for _i, row in unique_in_A.iterrows():
                     # Show first 60 characters of each question
                     question_preview = (
                         row["question"][:60] + "..."
@@ -432,7 +432,7 @@ if __name__ == "__main__":
             if len(only_in_B) > 0:
                 f.write(f"  Questions only in B ({len(only_in_B)}):\n")
                 unique_in_B = B[B[key].isin(only_in_B[key])][["question"]].copy()
-                for i, row in unique_in_B.iterrows():
+                for _i, row in unique_in_B.iterrows():
                     # Show first 60 characters of each question
                     question_preview = (
                         row["question"][:60] + "..."

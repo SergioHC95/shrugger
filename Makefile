@@ -1,4 +1,4 @@
-# Makefile for MATS abstention direction project
+# Makefile for shrugger project
 
 .PHONY: fix lint test test-unit test-integration test-analysis test-examples check ci coverage clean help
 

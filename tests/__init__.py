@@ -1,5 +1,5 @@
 """
-Test suite for the MATS abstention direction project.
+Test suite for the  abstention direction project.
 
 This package contains:
 - unit/: Unit tests for individual functions and classes

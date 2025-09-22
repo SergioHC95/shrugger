@@ -1,7 +1,17 @@
 # Mechanistic Steering for Hallucination Suppression
 
-## Executive Summary
-See [`REPORT.md`](REPORT.md)
+## Detailed Report
+See [`REPORT.md`](REPORT.md) for an executive summary ([`Comprehensive_Report_OLD.pdf`](Comprehensive_Report_OLD.pdf) for more details)
+
+| ![Figure 1: Steer projections](figs/l22train.png) | ![Figure 2: Layer performance](figs/l22trainclass.png) | ![Figure 3: ROC on dev set](figs/roc.png) |
+| :-- | :-- | :-- |
+| *Figure 1: Steer projections* | *Figure 2: Layer performance* | *Figure 3: ROC on dev set* |
+
+| ![Figure 4: Prompt abstention scores](outputs/figures/ca_scores_by_form.png) | ![Figure 5: Prompt accuracy scores](outputs/figures/accuracy_by_form_and_question_type.png) |
+| :-- | :-- |
+| *Figure 4: Prompt sensitivity 1* | *Figure 5: Prompt sensitivity 2* |
+
+
 
 ## Overview
 
@@ -99,7 +109,6 @@ A Python package for analyzing abstention directions in language models using Fi
 
 ## Development
 
-The package is installed in editable mode automatically when you create the environment.
 
 ### Running Different Test Suites
 
@@ -118,9 +127,17 @@ The package is installed in editable mode automatically when you create the envi
 
 - `experiments/run_comprehensive_experiments.py`: Run comprehensive experiments across configurations (works in Colab and local)
 - `experiments/run_metrics_analysis.py`: Analyze experiment results and compute metrics  
-- `scripts/run_fisher_analysis.py`: Main Fisher LDA analysis CLI
+- `scripts/analysis/run_fisher_analysis.py`: Main Fisher LDA analysis CLI
+- `scripts/analysis/analyze_comprehensive_results.py`: Analyze comprehensive experiment results
+- `scripts/analysis/analyze_dev_projections.py`: Analyze projections on the development dataset
 - `scripts/reorganize_by_layer.py`: Reorganize experiment data by layer
 - `scripts/cleanup_corrupted_files.py`: Clean up corrupted NPZ files
+
+## Main Notebooks
+
+- `notebooks/analysis/abstention_direction.ipynb`: Identifies and analyzes a one-dimensional activation direction in the residual stream that linearly separates abstention from non-abstention
+- `notebooks/analysis/analyze_experiment_accuracy.ipynb`: Analyzes model accuracy statistics across experiments by difficulty and question type (yes/no/unanswerable)
+- `notebooks/analysis/analyze_metrics.ipynb`: Provides visualizations and analysis of the Confident-Abstain (CA) and Hedging (HEDGE) metrics computed over experimental results
 
 ## License
 

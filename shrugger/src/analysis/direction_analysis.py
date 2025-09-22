@@ -20,7 +20,19 @@ import pandas as pd
 from sklearn.metrics import roc_auc_score, roc_curve
 
 # Import the save_figure function from plots module
-from ..plots import save_figure
+try:
+    from ..plots import save_figure
+except ImportError:
+    # When imported directly in tests
+    import os
+    import sys
+
+    # Add the parent directory to sys.path
+    module_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    if module_path not in sys.path:
+        sys.path.insert(0, module_path)
+
+    from plots import save_figure
 
 logger = logging.getLogger(__name__)
 

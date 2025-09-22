@@ -292,7 +292,7 @@ class MetricsAnalyzer:
         fig, ax = plt.subplots(figsize=figsize)
 
         # Plot CA scores without error bars (we'll add them manually)
-        bars = sns.barplot(
+        sns.barplot(
             x="form",
             y="ca_score_mean",
             data=form_stats,
@@ -327,13 +327,13 @@ class MetricsAnalyzer:
             ax.text(i, v + (y_max * 0.02), f"{v:.3f}", ha="center", fontsize=12)
 
         plt.tight_layout()
-        
+
         # Save figure if requested
         if save:
             if filename is None:
-                filename = f"ca_scores_by_form"
+                filename = "ca_scores_by_form"
             return save_figure(fig=fig, filename=filename)
-            
+
         return fig
 
     def plot_hedge_scores_by_form(
@@ -361,7 +361,7 @@ class MetricsAnalyzer:
         fig, ax = plt.subplots(figsize=figsize)
 
         # Plot HEDGE scores without error bars (we'll add them manually)
-        bars = sns.barplot(
+        sns.barplot(
             x="form",
             y="hedge_score_mean",
             data=form_stats,
@@ -396,13 +396,13 @@ class MetricsAnalyzer:
             ax.text(i, v + (y_max * 0.02), f"{v:.3f}", ha="center", fontsize=12)
 
         plt.tight_layout()
-        
+
         # Save figure if requested
         if save:
             if filename is None:
-                filename = f"hedge_scores_by_form"
+                filename = "hedge_scores_by_form"
             return save_figure(fig=fig, filename=filename)
-            
+
         return fig
 
     def plot_metrics_by_label_type(
@@ -519,17 +519,20 @@ class MetricsAnalyzer:
             )
 
         plt.tight_layout()
-        
+
         # Save figure if requested
         if save:
             if filename is None:
-                filename = f"metrics_by_label_type"
+                filename = "metrics_by_label_type"
             return save_figure(fig=fig, filename=filename)
-            
+
         return fig
 
     def plot_metric_distributions(
-        self, figsize: Tuple[int, int] = (16, 6), save: bool = True, filename: Optional[str] = None
+        self,
+        figsize: Tuple[int, int] = (16, 6),
+        save: bool = True,
+        filename: Optional[str] = None,
     ) -> plt.Figure:
         """
         Plot histograms of CA and HEDGE score distributions.
@@ -582,13 +585,13 @@ class MetricsAnalyzer:
         ax2.set_xlim(0, min(hedge_max * 1.1, hedge_99th_percentile * 1.3))
 
         plt.tight_layout()
-        
+
         # Save figure if requested
         if save:
             if filename is None:
-                filename = f"metric_distributions"
+                filename = "metric_distributions"
             return save_figure(fig=fig, filename=filename)
-            
+
         return fig
 
     def find_top_examples_by_metric(
@@ -684,7 +687,10 @@ def load_metrics_data(
 
 
 def plot_metrics_by_form(
-    metrics_df: pd.DataFrame, figsize: Tuple[int, int] = (12, 6), save: bool = True, filename: Optional[str] = None
+    metrics_df: pd.DataFrame,
+    figsize: Tuple[int, int] = (12, 6),
+    save: bool = True,
+    filename: Optional[str] = None,
 ) -> Tuple[plt.Figure, plt.Figure]:
     """
     Create bar plots of CA and HEDGE scores by form.
@@ -702,22 +708,27 @@ def plot_metrics_by_form(
     analyzer.metrics_df = metrics_df
 
     form_stats = analyzer.compute_metrics_by_form()
-    
+
     ca_filename = None
     hedge_filename = None
-    
+
     if filename is not None:
         ca_filename = f"{filename}_ca_scores"
         hedge_filename = f"{filename}_hedge_scores"
-        
+
     ca_fig = analyzer.plot_ca_scores_by_form(form_stats, figsize, save, ca_filename)
-    hedge_fig = analyzer.plot_hedge_scores_by_form(form_stats, figsize, save, hedge_filename)
+    hedge_fig = analyzer.plot_hedge_scores_by_form(
+        form_stats, figsize, save, hedge_filename
+    )
 
     return ca_fig, hedge_fig
 
 
 def plot_metrics_by_label_type(
-    metrics_df: pd.DataFrame, figsize: Tuple[int, int] = (10, 6), save: bool = True, filename: Optional[str] = None
+    metrics_df: pd.DataFrame,
+    figsize: Tuple[int, int] = (10, 6),
+    save: bool = True,
+    filename: Optional[str] = None,
 ) -> plt.Figure:
     """
     Create a grouped bar plot for CA and HEDGE scores by label type.
@@ -739,7 +750,10 @@ def plot_metrics_by_label_type(
 
 
 def plot_metric_distributions(
-    metrics_df: pd.DataFrame, figsize: Tuple[int, int] = (16, 6), save: bool = True, filename: Optional[str] = None
+    metrics_df: pd.DataFrame,
+    figsize: Tuple[int, int] = (16, 6),
+    save: bool = True,
+    filename: Optional[str] = None,
 ) -> plt.Figure:
     """
     Plot histograms of CA and HEDGE score distributions.
